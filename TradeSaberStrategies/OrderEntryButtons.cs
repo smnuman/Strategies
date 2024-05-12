@@ -525,58 +525,58 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				#endregion
 				
 				#region TradeSaber Socials
-			
-			if (showSocials)
-			{
-				if (UserControlCollection.Contains(myGrid29))
-					return;
 				
-				Dispatcher.InvokeAsync((() =>
+				if (showSocials)
 				{
-					myGrid29 = new System.Windows.Controls.Grid
+					if (UserControlCollection.Contains(myGrid29))
+						return;
+					
+					Dispatcher.InvokeAsync((() =>
 					{
-						Name = "MyCustomGrid", HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Bottom
-					};
-					
-					System.Windows.Controls.ColumnDefinition column1 = new System.Windows.Controls.ColumnDefinition();
-					System.Windows.Controls.ColumnDefinition column2 = new System.Windows.Controls.ColumnDefinition();
-					System.Windows.Controls.ColumnDefinition column3 = new System.Windows.Controls.ColumnDefinition();
-					
-					myGrid29.ColumnDefinitions.Add(column1);
-					myGrid29.ColumnDefinitions.Add(column2);
-					myGrid29.ColumnDefinitions.Add(column3);
-					
-					youtubeButton = new System.Windows.Controls.Button
-					{
-						Name = "YoutubeButton", Content = "Youtube", Foreground = Brushes.White, Background = Brushes.Red
-					};
-					
-					discordButton = new System.Windows.Controls.Button
-					{
-						Name = "DiscordButton", Content = "Discord", Foreground = Brushes.White, Background = Brushes.RoyalBlue
-					};
-					
-					tradeSaberButton = new System.Windows.Controls.Button
-					{
-						Name = "TradeSaberButton", Content = "TradeSaber", Foreground = Brushes.White, Background = Brushes.DarkOrange
-					};
-					
-					youtubeButton.Click += OnButtonClick;
-					discordButton.Click += OnButtonClick;
-					tradeSaberButton.Click += OnButtonClick;
-					
-					System.Windows.Controls.Grid.SetColumn(youtubeButton, 0);
-					System.Windows.Controls.Grid.SetColumn(discordButton, 1);
-					System.Windows.Controls.Grid.SetColumn(tradeSaberButton, 2);
-					
-					myGrid29.Children.Add(youtubeButton);
-					myGrid29.Children.Add(discordButton);
-					myGrid29.Children.Add(tradeSaberButton);
-					
-					UserControlCollection.Add(myGrid29);
-				}));
-			}
-		#endregion
+						myGrid29 = new System.Windows.Controls.Grid
+						{
+							Name = "MyCustomGrid", HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Bottom
+						};
+						
+						System.Windows.Controls.ColumnDefinition column1 = new System.Windows.Controls.ColumnDefinition();
+						System.Windows.Controls.ColumnDefinition column2 = new System.Windows.Controls.ColumnDefinition();
+						System.Windows.Controls.ColumnDefinition column3 = new System.Windows.Controls.ColumnDefinition();
+						
+						myGrid29.ColumnDefinitions.Add(column1);
+						myGrid29.ColumnDefinitions.Add(column2);
+						myGrid29.ColumnDefinitions.Add(column3);
+						
+						youtubeButton = new System.Windows.Controls.Button
+						{
+							Name = "YoutubeButton", Content = "Youtube", Foreground = Brushes.White, Background = Brushes.Red
+						};
+						
+						discordButton = new System.Windows.Controls.Button
+						{
+							Name = "DiscordButton", Content = "Discord", Foreground = Brushes.White, Background = Brushes.RoyalBlue
+						};
+						
+						tradeSaberButton = new System.Windows.Controls.Button
+						{
+							Name = "TradeSaberButton", Content = "TradeSaber", Foreground = Brushes.White, Background = Brushes.DarkOrange
+						};
+						
+						youtubeButton.Click += OnButtonClick;
+						discordButton.Click += OnButtonClick;
+						tradeSaberButton.Click += OnButtonClick;
+						
+						System.Windows.Controls.Grid.SetColumn(youtubeButton, 0);
+						System.Windows.Controls.Grid.SetColumn(discordButton, 1);
+						System.Windows.Controls.Grid.SetColumn(tradeSaberButton, 2);
+						
+						myGrid29.Children.Add(youtubeButton);
+						myGrid29.Children.Add(discordButton);
+						myGrid29.Children.Add(tradeSaberButton);
+						
+						UserControlCollection.Add(myGrid29);
+					}));
+				}
+				#endregion
 			}
 			
 			else if (State == State.Terminated)
@@ -1543,7 +1543,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				shortButtonMarket = new System.Windows.Controls.Button()//4
 				{		
 					
-					Content			= string.Format("Short Market"),
+					Content			= string.Format("Sell Market"),
 					Height			= 25,
 					Margin			= new Thickness(5,0,5,0),
 					Padding			= new Thickness(0,0,0,0),
@@ -1759,7 +1759,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 					trailButton.BorderThickness = new Thickness(2.0);
 				
 				//10. Line
-					lineButton.Background	= Brushes.Black;
+					lineButton.Background	= Brushes.Purple;
 					lineButton.BorderBrush	= Brushes.Black;	
 					lineButton.Foreground    = Brushes.White;	
 					lineButton.BorderThickness = new Thickness(2.0);
@@ -1813,7 +1813,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 					
 				
 				//17.
-					fibButton.Background	= Brushes.Black;
+					fibButton.Background	= Brushes.Purple;
 					fibButton.BorderBrush	= Brushes.Black;	
 					fibButton.Foreground    = Brushes.White;	
 					fibButton.BorderThickness = new Thickness(2.0);
@@ -2045,8 +2045,10 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 		protected override void OnBarUpdate()
 		{
 			if (State != State.Realtime ) 
+			{
 				return;
-			
+			}
+
 			if (countOnce && Position.MarketPosition == MarketPosition.Flat && unlockButtonClicked == false)
 			{
 				
@@ -2054,1685 +2056,1684 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				{
 					#region Entry Offset
 					
-			if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || (customLongClicked == true && enterClosePrice == false)
-				|| shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || (customShortClicked == true && enterClosePrice == false)
-				)				
-			{
-				//HL
-				entryAreaLong		= High[CandleLookBackEntry];
-				entryAreaShort		= Low[CandleLookBackEntry];	
-			}
-				
-			if ((customLongClicked || customShortClicked) && enterClosePrice == true)
-			{
-				//Previous Close Price	
-				entryAreaLong	= Close[CandleLookBackEntry];
-				entryAreaShort	= Close[CandleLookBackEntry];	
-			}
-				
-					
-			//Adds offset to your entry area. Gives user customization.
-			percentageCalcEntry 	= ((High[CandleLookBackEntry] - Low[CandleLookBackEntry]) * PercentageOffsetEntry);
-			priceCalcEntry 			= PriceOffsetEntry;
-			tickCalcEntry			= TickOffsetEntry * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetEntry = Math.Max(percentageCalcEntry, Math.Max(priceCalcEntry, tickCalcEntry));
-			
-			//Add both of them together to define final entry point
-			enterLong = entryAreaLong + candleBarOffsetEntry;
-			enterShort = entryAreaShort - candleBarOffsetEntry;
-			
-			
-			#region Entry Prints
-			
-			if (SystemPrint)
-			{
-				if (EntryPrints)
-				{
-					Print("percentageCalcEntry " + percentageCalcEntry + " " + Time[CandleLookBackEntry]);
-					Print("priceCalcEntry " + priceCalcEntry + " " + Time[CandleLookBackEntry]);
-					Print("tickCalcEntry " + tickCalcEntry + " " + Time[CandleLookBackEntry]);
-					
-					Print("candleBarOffsetEntry " + candleBarOffsetEntry + " " + Time[CandleLookBackEntry]);
-					
-					Print("enterLong " + enterLong + " " + Time[CandleLookBackEntry]);
-					Print("enterShort " + enterShort + " " + Time[CandleLookBackEntry]);
-				}
-			}
-			#endregion
-			
-			#endregion
-			
-					#region Stop Offset
-			
-			//Define what area you will set a stop (If it is based on the chart)
-			stopAreaLong		= Low[CandleLookBackStop];
-			stopAreaShort		= High[CandleLookBackStop];
-			
-			//Adds offset to your stop area. Gives user customization.
-			percentageCalcStop 		= ((High[CandleLookBackStop] - Low[CandleLookBackStop]) * PercentageOffsetStop);
-			priceCalcStop 			= PriceOffsetStop;
-			tickCalcStop			= TickOffsetStop * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetStop = Math.Max(percentageCalcStop, Math.Max(priceCalcStop, tickCalcStop));
-			
-			//Add both of them together to define final stop point
-			stopLong = stopAreaLong - candleBarOffsetStop;
-			stopShort = stopAreaShort + candleBarOffsetStop;
-			
-			#region StopPrints
-			
-			if (SystemPrint)
-			{
-				if (StopPrints)
-				{
-					Print("percentageCalcStop " + percentageCalcStop + " " + Time[CandleLookBackStop]);
-					Print("priceCalcStop " + priceCalcStop + " " + Time[CandleLookBackStop]);
-					Print("tickCalcStop " + tickCalcStop + " " + Time[CandleLookBackStop]);
-				
-					Print("candleBarOffsetStop " + candleBarOffsetStop + " " + Time[CandleLookBackStop]);
-					
-					Print("stopLong " + stopLong + " " + Time[CandleLookBackStop]);
-					Print("stopShort " + stopShort + " " + Time[CandleLookBackStop]);
-				}
-			}
-			
-			#endregion
-			
-			#endregion
-			
-					#region Breakeven Offset
-			
-			//Define what area you will set a breakeven (If it is based on the chart)
-			breakevenAreaLong		= entryAreaLong;
-			breakevenAreaShort		= entryAreaShort;
-			
-			//Adds offset to your breakeven area. Gives user customization.
-			percentageCalcBreakeven 	= ((entryAreaLong - stopAreaLong) * PercentageOffsetBreakeven);
-			priceCalcBreakeven 			= PriceOffsetBreakeven;
-			tickCalcBreakeven			= TickOffsetBreakeven * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetBreakeven = Math.Max(percentageCalcBreakeven, Math.Max(priceCalcBreakeven, tickCalcBreakeven));
-			
-			//Add both of them together to define final breakeven point
-			//breakevenLong = breakevenAreaLong - candleBarOffsetBreakeven;
-			//breakevenShort = breakevenAreaShort + candleBarOffsetBreakeven;
-			
-			#region BreakevenPrints
-			
-			if (SystemPrint)
-			{
-				if (BreakevenPrints)
-				{
-					Print("percentageCalcBreakeven " + percentageCalcBreakeven + " " + Time[1]);
-					Print("priceCalcBreakeven " + priceCalcBreakeven + " " + Time[1]);
-					Print("tickCalcBreakeven " + tickCalcBreakeven + " " + Time[1]);
-				
-					Print("candleBarOffsetBreakeven " + candleBarOffsetBreakeven + " " + Time[1]);
-					
-					Print("breakevenLong " + breakevenLong + " " + Time[1]);
-					Print("breakevenShort " + breakevenShort + " " + Time[1]);
-				}
-			}
-			
-			#endregion
-			
-			#endregion
-			
-					#region Range Values
-			
-			LongValuesOffset 	= Math.Round(enterLong - stopLong, 4);
-			ShortValuesOffset	= Math.Round(stopShort - enterShort, 4);
-			
-			LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 4);
-			ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 4);
-			
-			#endregion
-			
-					#region Limit Entry Offset
-			
-			if (useLimit)
-			{
-				percentageCalcLimitLong		= LongValuesOffset * PercentageOffsetLimit;
-				percentageCalcLimitShort	= ShortValuesOffset * PercentageOffsetLimit;
-				priceCalcLimit				= PriceOffsetLimit;
-				tickCalcLimit				= TickOffsetLimit * TickSize;
-				
-				limitOffsetLong				= Math.Max(percentageCalcLimitLong, Math.Max(priceCalcLimit, tickCalcLimit));	
-				limitOffsetShort			= Math.Max(percentageCalcLimitShort, Math.Max(priceCalcLimit, tickCalcLimit));
-				
-				if (AddOffset)
-				{
-					limitPriceSetLong			= enterLong + limitOffsetLong;
-					limitPriceSetShort			= enterShort - limitOffsetShort;
-				}
-				
-				else if (AddOffset == false)
-				{
-					limitPriceSetLong			= entryAreaLong + limitOffsetLong;
-					limitPriceSetShort			= entryAreaShort - limitOffsetShort;
-				}
-				
-				#region Limit Prints
-			
-			if (SystemPrint)
-			{
-				if (LimitPrints)
-				{
-					Print("percentageCalcLimitLong " + percentageCalcLimitLong + " " + Time[0]);
-					Print("percentageCalcLimitShort " + percentageCalcLimitShort + " " + Time[0]);
-					Print("priceCalcLimit " + priceCalcLimit + " " + Time[0]);
-					Print("tickCalcLimit " + tickCalcLimit + " " + Time[0]);
-					
-					Print("limitOffsetLong " + limitOffsetLong + " " + Time[0]);
-					Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
-					
-					Print("limitPriceSetLong " + limitPriceSetLong + " " + Time[0]);
-					Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
-				}
-			}
-			#endregion
-			}
-			
-			
-			#endregion
-			
-			
-					#region Offset Added Logic
-			
-			if (AddOffset) ///Update Prints
-			{	
-				//Long Trades
-				if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
-				{
+					if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || (customLongClicked == true && enterClosePrice == false)
+						|| shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || (customShortClicked == true && enterClosePrice == false)
+						)				
+					{
+						//HL
+						entryAreaLong		= High[CandleLookBackEntry];
+						entryAreaShort		= Low[CandleLookBackEntry];	
+					}
 						
-					#region Position Size Long
-				
-				if (autoPositionSize)
-				{
-					if (rrMode)
+					if ((customLongClicked || customShortClicked) && enterClosePrice == true)
 					{
-						riskOffset = MaxLossPerTrade / ( ( (LongValuesOffset) / TickSize) * myDbl);
+						//Previous Close Price	
+						entryAreaLong	= Close[CandleLookBackEntry];
+						entryAreaShort	= Close[CandleLookBackEntry];	
+					}
+						
+							
+					//Adds offset to your entry area. Gives user customization.
+					percentageCalcEntry 	= ((High[CandleLookBackEntry] - Low[CandleLookBackEntry]) * PercentageOffsetEntry);
+					priceCalcEntry 			= PriceOffsetEntry;
+					tickCalcEntry			= TickOffsetEntry * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetEntry = Math.Max(percentageCalcEntry, Math.Max(priceCalcEntry, tickCalcEntry));
+					
+					//Add both of them together to define final entry point
+					enterLong = entryAreaLong + candleBarOffsetEntry;
+					enterShort = entryAreaShort - candleBarOffsetEntry;
+					
+					
+					#region Entry Prints
+					
+					if (SystemPrint)
+					{
+						if (EntryPrints)
+						{
+							Print("percentageCalcEntry " + percentageCalcEntry + " " + Time[CandleLookBackEntry]);
+							Print("priceCalcEntry " + priceCalcEntry + " " + Time[CandleLookBackEntry]);
+							Print("tickCalcEntry " + tickCalcEntry + " " + Time[CandleLookBackEntry]);
+							
+							Print("candleBarOffsetEntry " + candleBarOffsetEntry + " " + Time[CandleLookBackEntry]);
+							
+							Print("enterLong " + enterLong + " " + Time[CandleLookBackEntry]);
+							Print("enterShort " + enterShort + " " + Time[CandleLookBackEntry]);
+						}
+					}
+					#endregion
+					
+					#endregion
+					
+					#region Stop Offset
+					
+					//Define what area you will set a stop (If it is based on the chart)
+					stopAreaLong		= Low[CandleLookBackStop];
+					stopAreaShort		= High[CandleLookBackStop];
+					
+					//Adds offset to your stop area. Gives user customization.
+					percentageCalcStop 		= ((High[CandleLookBackStop] - Low[CandleLookBackStop]) * PercentageOffsetStop);
+					priceCalcStop 			= PriceOffsetStop;
+					tickCalcStop			= TickOffsetStop * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetStop = Math.Max(percentageCalcStop, Math.Max(priceCalcStop, tickCalcStop));
+					
+					//Add both of them together to define final stop point
+					stopLong = stopAreaLong - candleBarOffsetStop;
+					stopShort = stopAreaShort + candleBarOffsetStop;
+					
+					#region StopPrints
+					
+					if (SystemPrint)
+					{
+						if (StopPrints)
+						{
+							Print("percentageCalcStop " + percentageCalcStop + " " + Time[CandleLookBackStop]);
+							Print("priceCalcStop " + priceCalcStop + " " + Time[CandleLookBackStop]);
+							Print("tickCalcStop " + tickCalcStop + " " + Time[CandleLookBackStop]);
+						
+							Print("candleBarOffsetStop " + candleBarOffsetStop + " " + Time[CandleLookBackStop]);
+							
+							Print("stopLong " + stopLong + " " + Time[CandleLookBackStop]);
+							Print("stopShort " + stopShort + " " + Time[CandleLookBackStop]);
+						}
 					}
 					
-					if (tickMode)
+					#endregion
+					
+					#endregion
+					
+					#region Breakeven Offset
+					
+					//Define what area you will set a breakeven (If it is based on the chart)
+					breakevenAreaLong		= entryAreaLong;
+					breakevenAreaShort		= entryAreaShort;
+					
+					//Adds offset to your breakeven area. Gives user customization.
+					percentageCalcBreakeven 	= ((entryAreaLong - stopAreaLong) * PercentageOffsetBreakeven);
+					priceCalcBreakeven 			= PriceOffsetBreakeven;
+					tickCalcBreakeven			= TickOffsetBreakeven * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetBreakeven = Math.Max(percentageCalcBreakeven, Math.Max(priceCalcBreakeven, tickCalcBreakeven));
+					
+					//Add both of them together to define final breakeven point
+					//breakevenLong = breakevenAreaLong - candleBarOffsetBreakeven;
+					//breakevenShort = breakevenAreaShort + candleBarOffsetBreakeven;
+					
+					#region BreakevenPrints
+					
+					if (SystemPrint)
 					{
-						riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
+						if (BreakevenPrints)
+						{
+							Print("percentageCalcBreakeven " + percentageCalcBreakeven + " " + Time[1]);
+							Print("priceCalcBreakeven " + priceCalcBreakeven + " " + Time[1]);
+							Print("tickCalcBreakeven " + tickCalcBreakeven + " " + Time[1]);
+						
+							Print("candleBarOffsetBreakeven " + candleBarOffsetBreakeven + " " + Time[1]);
+							
+							Print("breakevenLong " + breakevenLong + " " + Time[1]);
+							Print("breakevenShort " + breakevenShort + " " + Time[1]);
+						}
 					}
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSizeLong = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
+					
+					#endregion
+					
+					#endregion
+					
+					#region Range Values
+					
+					LongValuesOffset 	= Math.Round(enterLong - stopLong, 4);
+					ShortValuesOffset	= Math.Round(stopShort - enterShort, 4);
+					
+					LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 4);
+					ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 4);
+					
+					#endregion
+					
+					#region Limit Entry Offset
+					
+					if (useLimit)
 					{
+						percentageCalcLimitLong		= LongValuesOffset * PercentageOffsetLimit;
+						percentageCalcLimitShort	= ShortValuesOffset * PercentageOffsetLimit;
+						priceCalcLimit				= PriceOffsetLimit;
+						tickCalcLimit				= TickOffsetLimit * TickSize;
+						
+						limitOffsetLong				= Math.Max(percentageCalcLimitLong, Math.Max(priceCalcLimit, tickCalcLimit));	
+						limitOffsetShort			= Math.Max(percentageCalcLimitShort, Math.Max(priceCalcLimit, tickCalcLimit));
+						
+						if (AddOffset)
+						{
+							limitPriceSetLong			= enterLong + limitOffsetLong;
+							limitPriceSetShort			= enterShort - limitOffsetShort;
+						}
+						
+						else if (AddOffset == false)
+						{
+							limitPriceSetLong			= entryAreaLong + limitOffsetLong;
+							limitPriceSetShort			= entryAreaShort - limitOffsetShort;
+						}
+						
+						#region Limit Prints
+					
+					if (SystemPrint)
+					{
+						if (LimitPrints)
+						{
+							Print("percentageCalcLimitLong " + percentageCalcLimitLong + " " + Time[0]);
+							Print("percentageCalcLimitShort " + percentageCalcLimitShort + " " + Time[0]);
+							Print("priceCalcLimit " + priceCalcLimit + " " + Time[0]);
+							Print("tickCalcLimit " + tickCalcLimit + " " + Time[0]);
+							
+							Print("limitOffsetLong " + limitOffsetLong + " " + Time[0]);
+							Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
+							
+							Print("limitPriceSetLong " + limitPriceSetLong + " " + Time[0]);
+							Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
+						}
+					}
+					#endregion
+					}
+					
+					
+					#endregion
+					
+					
+					#region Offset Added Logic
+					
+					if (AddOffset) ///Update Prints
+					{	
+						//Long Trades
+						if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
+						{
+								
+							#region Position Size Long
+						
+						if (autoPositionSize)
+						{
+							if (rrMode)
+							{
+								riskOffset = MaxLossPerTrade / ( ( (LongValuesOffset) / TickSize) * myDbl);
+							}
+							
+							if (tickMode)
+							{
+								riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
+							}
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
 						positionSizeLong = (Convert.ToInt32(riskOffset));
 						
-						if (positionSizeLong < 1)
-						{
-							positionSizeLong = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
 						
-					firstTargetPositionLong = (Convert.ToInt32(positionSizeLong * splitPercent));
-						
-						if (firstTargetPositionLong < 1)
-						{
-							firstTargetPositionLong = 1;
-						}
-				
-					secondTargetPositionLong = positionSizeLong - firstTargetPositionLong; 
-						
-						if(secondTargetPositionLong < 1)
-						{
-							secondTargetPositionLong = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							//Single Target
+							if (dualTarget == false)
 							{
-								Print("positionSizeLong "+ positionSizeLong + " " + Time[0]);
-								Print("firstTargetPositionLong "+ firstTargetPositionLong + " " + Time[0]);
-								Print("secondTargetPositionLong "+ secondTargetPositionLong + " " + Time[0]);
+								positionSizeLong = (Convert.ToInt32(riskOffset));
+								
+								if (positionSizeLong < 1)
+								{
+									positionSizeLong = 1;
+								}
 							}
-						}
-						
-						#endregion
 							
-					#endregion
-			
-					#region Set Stop/Profit Long
-				
-				if (Low[0] > stopLong)
-				{
-					setStopLong = stopLong;
-					
-					setFirstTargetLong = enterLong + (LongValuesOffset * FirstTargetRR);
-					setFinalTargetLong = enterLong + (LongValuesOffset * FinalTargetRR);
-				}
-				
-				else if (Low[0] <= stopLong)
-				{
-					setStopLong = Low[0] - candleBarOffsetStop;
-					
-					setFirstTargetLong = enterLong + ((enterLong - setStopLong) * FirstTargetRR);
-					setFinalTargetLong = enterLong + ((enterLong - setStopLong) * FinalTargetRR);
-				}
-				
-				#region Profit Target Long Prints
-				
-				if (SystemPrint)
-				{
-					if (ProfitTatgetPrints)
-					{
-						Print("setStopLong "+ setStopLong + " " + Time[0]);
-						Print("setFirstTargetLong "+ setFirstTargetLong + " " + Time[0]);
-						Print("setFinalTargetLong "+ setFinalTargetLong + " " + Time[0]);		
-					}
-				}
-				
-				#endregion
-				
-				
-				#endregion
-				
-					#region Draw Lines / Text Long Offset
-		
-						#region RR mode
-						
-					if (rrMode)
-					{
-						RemoveDrawObject("EntryLine");
-						RemoveDrawObject("StopLine");
-					
-						Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
-						Draw.HorizontalLine(this, "StopLine", stopLong, Brushes.Red);
-					
-						if (DisplayText)
-						{
-							Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
-							+ "\nStop Line: " + Math.Round(stopLong, 4) + ("("+CandleLookBackStop+")")
-							
-							+ "\n\nMax Loss($): " + MaxLossPerTrade	
-							+ "\nRange($): " + LongValuesOffset
-							+ "\nRange(Ticks): " + LongValuesOffset / TickSize
-							+ "\nPosition Size: " + positionSizeLong	
-						
-							,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-						}
-					}
-						
-						#endregion 
-					
-						#region Tick Mode
-					
-					if (tickMode)
-					{
-						RemoveDrawObject("EntryLine");
-						RemoveDrawObject("StopLine");
-					
-						Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
-						Draw.HorizontalLine(this, "StopLine", enterLong - candleBarOffsetStop, Brushes.Red);
-					
-						if (DisplayText)
-						{
-							Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
-							+ "\nStop Line: " + Math.Round(enterLong - candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
-							
-							+ "\n\nMax Loss($): " + MaxLossPerTrade	
-							+ "\nRange($): " + candleBarOffsetStop
-							+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-							+ "\nPosition Size: " + positionSizeLong	
-						
-							,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-						}
-					}
-				
-					#endregion
-					
-					#endregion
-										
-				}
-				
-				
-				//Short Trades
-				if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
-				{
-				
-					#region Position Size Short
-				
-				if (autoPositionSize)
-				{
-					if (rrMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (ShortValuesOffset) / TickSize) * myDbl);
-					}
-					
-					if (tickMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
-					}
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSizeShort = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
-						positionSizeShort = (Convert.ToInt32(riskOffset));
-						
-						if (positionSizeShort < 1)
-						{
-							positionSizeShort = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
-						
-					firstTargetPositionShort = (Convert.ToInt32(positionSizeShort * splitPercent));
-						
-						if (firstTargetPositionShort < 1)
-						{
-							firstTargetPositionShort = 1;
-						}
-				
-					secondTargetPositionShort = positionSizeShort - firstTargetPositionShort; 
-						
-						if(secondTargetPositionShort < 1)
-						{
-							secondTargetPositionShort = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							//Dual Target
+							if (dualTarget)
 							{
-								Print("positionSizeShort "+ positionSizeShort + " " + Time[0]);
-								Print("firstTargetPositionShort "+ firstTargetPositionShort + " " + Time[0]);
-								Print("secondTargetPositionShort "+ secondTargetPositionShort + " " + Time[0]);
+								
+							firstTargetPositionLong = (Convert.ToInt32(positionSizeLong * splitPercent));
+								
+								if (firstTargetPositionLong < 1)
+								{
+									firstTargetPositionLong = 1;
+								}
+						
+							secondTargetPositionLong = positionSizeLong - firstTargetPositionLong; 
+								
+								if(secondTargetPositionLong < 1)
+								{
+									secondTargetPositionLong = 1;
+								}	
 							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSizeLong "+ positionSizeLong + " " + Time[0]);
+										Print("firstTargetPositionLong "+ firstTargetPositionLong + " " + Time[0]);
+										Print("secondTargetPositionLong "+ secondTargetPositionLong + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+									
+							#endregion
+					
+							#region Set Stop/Profit Long
+						
+						if (Low[0] > stopLong)
+						{
+							setStopLong = stopLong;
+							
+							setFirstTargetLong = enterLong + (LongValuesOffset * FirstTargetRR);
+							setFinalTargetLong = enterLong + (LongValuesOffset * FinalTargetRR);
 						}
 						
-						#endregion
+						else if (Low[0] <= stopLong)
+						{
+							setStopLong = Low[0] - candleBarOffsetStop;
+							
+							setFirstTargetLong = enterLong + ((enterLong - setStopLong) * FirstTargetRR);
+							setFinalTargetLong = enterLong + ((enterLong - setStopLong) * FinalTargetRR);
+						}
 						
-					
-					#endregion
-				
-					#region Set Stop/Profit Short
-				
-				if (High[0] < stopShort)
-				{
-					setStopShort = stopShort;
-					
-					setFirstTargetShort = enterShort - (ShortValuesOffset * FirstTargetRR);
-					setFinalTargetShort = enterShort - (ShortValuesOffset * FinalTargetRR);
-				}
-				
-				else if (High[0] >= stopShort)
-				{
-					setStopShort = High[0] + candleBarOffsetStop;
-					
-					setFirstTargetShort = enterShort - ((setStopShort - enterShort) * FirstTargetRR);
-					setFinalTargetShort = enterShort - ((setStopShort - enterShort) * FinalTargetRR);
-				}
-				
-				
-				#region Profit Target Prints
+						#region Profit Target Long Prints
 						
 						if (SystemPrint)
 						{
 							if (ProfitTatgetPrints)
 							{
-								Print("setStopShort "+ setStopShort + " " + Time[0]);
-								Print("setFirstTargetShort "+ setFirstTargetShort + " " + Time[0]);
-								Print("setFinalTargetShort "+ setFinalTargetShort + " " + Time[0]);
+								Print("setStopLong "+ setStopLong + " " + Time[0]);
+								Print("setFirstTargetLong "+ setFirstTargetLong + " " + Time[0]);
+								Print("setFinalTargetLong "+ setFinalTargetLong + " " + Time[0]);		
 							}
 						}
 						
 						#endregion
-				
-				#endregion
-					
-					#region Draw Lines / Text Short Offset
-				
-						#region RR Mode
 						
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopShort, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopShort, 4) + ("("+CandleLookBackStop+")")
+						
+						#endregion
+						
+							#region Draw Lines / Text Long Offset
+				
+								#region RR mode
+								
+							if (rrMode)
+							{
+								RemoveDrawObject("EntryLine");
+								RemoveDrawObject("StopLine");
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + ShortValuesOffset
-						+ "\nRange(Ticks): " + ShortValuesOffset / TickSize
-						+ "\nPosition Size: " + positionSizeShort	
+								Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
+								Draw.HorizontalLine(this, "StopLine", stopLong, Brushes.Red);
+							
+								if (DisplayText)
+								{
+									Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
+									+ "\nStop Line: " + Math.Round(stopLong, 4) + ("("+CandleLookBackStop+")")
+									
+									+ "\n\nMax Loss($): " + MaxLossPerTrade	
+									+ "\nRange($): " + LongValuesOffset
+									+ "\nRange(Ticks): " + LongValuesOffset / TickSize
+									+ "\nPosition Size: " + positionSizeLong	
+								
+									,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+								}
+							}
+								
+								#endregion 
+							
+								#region Tick Mode
+							
+							if (tickMode)
+							{
+								RemoveDrawObject("EntryLine");
+								RemoveDrawObject("StopLine");
+							
+								Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
+								Draw.HorizontalLine(this, "StopLine", enterLong - candleBarOffsetStop, Brushes.Red);
+							
+								if (DisplayText)
+								{
+									Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
+									+ "\nStop Line: " + Math.Round(enterLong - candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
+									
+									+ "\n\nMax Loss($): " + MaxLossPerTrade	
+									+ "\nRange($): " + candleBarOffsetStop
+									+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+									+ "\nPosition Size: " + positionSizeLong	
+								
+									,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+								}
+							}
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							#endregion
+							
+							#endregion
+												
+						}
+						
+						
+						//Short Trades
+						if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
+						{
+						
+							#region Position Size Short
+						
+						if (autoPositionSize)
+						{
+							if (rrMode)
+							{
+								riskOffset = MaxLossPerTrade / ( ( (ShortValuesOffset) / TickSize) * myDbl);
+							}
+							
+							if (tickMode)
+							{
+								riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
+							}
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
+						positionSizeShort = (Convert.ToInt32(riskOffset));
+						
+						
+							//Single Target
+							if (dualTarget == false)
+							{
+								positionSizeShort = (Convert.ToInt32(riskOffset));
+								
+								if (positionSizeShort < 1)
+								{
+									positionSizeShort = 1;
+								}
+							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPositionShort = (Convert.ToInt32(positionSizeShort * splitPercent));
+								
+								if (firstTargetPositionShort < 1)
+								{
+									firstTargetPositionShort = 1;
+								}
+						
+							secondTargetPositionShort = positionSizeShort - firstTargetPositionShort; 
+								
+								if(secondTargetPositionShort < 1)
+								{
+									secondTargetPositionShort = 1;
+								}	
+							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSizeShort "+ positionSizeShort + " " + Time[0]);
+										Print("firstTargetPositionShort "+ firstTargetPositionShort + " " + Time[0]);
+										Print("secondTargetPositionShort "+ secondTargetPositionShort + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+								
+							
+							#endregion
+						
+							#region Set Stop/Profit Short
+						
+						if (High[0] < stopShort)
+						{
+							setStopShort = stopShort;
+							
+							setFirstTargetShort = enterShort - (ShortValuesOffset * FirstTargetRR);
+							setFinalTargetShort = enterShort - (ShortValuesOffset * FinalTargetRR);
+						}
+						
+						else if (High[0] >= stopShort)
+						{
+							setStopShort = High[0] + candleBarOffsetStop;
+							
+							setFirstTargetShort = enterShort - ((setStopShort - enterShort) * FirstTargetRR);
+							setFinalTargetShort = enterShort - ((setStopShort - enterShort) * FinalTargetRR);
+						}
+						
+						
+						#region Profit Target Prints
+								
+								if (SystemPrint)
+								{
+									if (ProfitTatgetPrints)
+									{
+										Print("setStopShort "+ setStopShort + " " + Time[0]);
+										Print("setFirstTargetShort "+ setFirstTargetShort + " " + Time[0]);
+										Print("setFinalTargetShort "+ setFinalTargetShort + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+						
+						#endregion
+							
+							#region Draw Lines / Text Short Offset
+						
+								#region RR Mode
+								
+						if (rrMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", stopShort, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(stopShort, 4) + ("("+CandleLookBackStop+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + ShortValuesOffset
+								+ "\nRange(Ticks): " + ShortValuesOffset / TickSize
+								+ "\nPosition Size: " + positionSizeShort	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+							
+						}
+								
+							#endregion
+							
+								#region Tick Mode
+								
+						if (tickMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", enterShort + candleBarOffsetStop, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(enterShort + candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + candleBarOffsetStop
+								+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+								+ "\nPosition Size: " + positionSizeShort	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+							
+						}
+								
+							#endregion
+							
+						#endregion
+						
+						}
 					}
 					
-				}
-						
-					#endregion
+					#endregion	
 					
-						#region Tick Mode
-						
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", enterShort + candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(enterShort + candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
-							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSizeShort	
-						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-					
-				}
-						
-					#endregion
-					
-				#endregion
-				
-				}
-			}
-			
-			#endregion	
-			
 					#region W/O Offset 
-			/* Removed for simplicity of use
-			
-			if (AddOffset == false)
-			{	
-				//Long Trades
-				if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
-				{
-				
-					#region Position Size Long
-				
-				if (autoPositionSize)
-				{
-					riskOffset = MaxLossPerTrade / ( ( (LongValues) / TickSize) * myDbl);
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSize = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
+					/* Removed for simplicity of use
+					
+					if (AddOffset == false)
+					{	
+						//Long Trades
+						if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
+						{
+						
+							#region Position Size Long
+						
+						if (autoPositionSize)
+						{
+							riskOffset = MaxLossPerTrade / ( ( (LongValues) / TickSize) * myDbl);
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
 						positionSize = (Convert.ToInt32(riskOffset));
 						
-						if (positionSize < 1)
-						{
-							positionSize = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
 						
-					firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
-						
-						if (firstTargetPosition < 1)
-						{
-							firstTargetPosition = 1;
-						}
-				
-					secondTargetPosition = positionSize - firstTargetPosition; 
-						
-						if(secondTargetPosition < 1)
-						{
-							secondTargetPosition = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							//Single Target
+							if (dualTarget == false)
 							{
-								Print("positionSize "+ positionSize + " " + Time[0]);
-								Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
-								Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+								positionSize = (Convert.ToInt32(riskOffset));
+								
+								if (positionSize < 1)
+								{
+									positionSize = 1;
+								}
 							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
+								
+								if (firstTargetPosition < 1)
+								{
+									firstTargetPosition = 1;
+								}
+						
+							secondTargetPosition = positionSize - firstTargetPosition; 
+								
+								if(secondTargetPosition < 1)
+								{
+									secondTargetPosition = 1;
+								}	
+							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSize "+ positionSize + " " + Time[0]);
+										Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
+										Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+								
+							
+							
+						
+							#endregion
+							
+							#region Set Stop/Profit Long		
+							
+						if (Low[0] > stopAreaLong)
+						{
+							setStopLong = stopAreaLong;
 						}
+						
+						else if (Low[0] <= stopAreaLong)
+						{
+							setStopLong = Low[0];
+						}
+						
+						setFirstTarget = entryAreaLong + (LongValues * FirstTargetRR);
+						setFinalTarget = entryAreaLong + (LongValues * FinalTargetRR);
 						
 						#endregion
 						
-					
-					
-				
-					#endregion
-					
-					#region Set Stop/Profit Long		
-					
-				if (Low[0] > stopAreaLong)
-				{
-					setStopLong = stopAreaLong;
-				}
-				
-				else if (Low[0] <= stopAreaLong)
-				{
-					setStopLong = Low[0];
-				}
-				
-				setFirstTarget = entryAreaLong + (LongValues * FirstTargetRR);
-				setFinalTarget = entryAreaLong + (LongValues * FinalTargetRR);
-				
-				#endregion
-				
-					#region Draw Lines / Text Long W/O Offset
-				
-					#region RR mode
-				
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopAreaLong, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopAreaLong, 2) + ("("+CandleLookBackStop+")")
+							#region Draw Lines / Text Long W/O Offset
+						
+							#region RR mode
+						
+						if (rrMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + LongValues	
-						+ "\nRange(Ticks): " + LongValues / TickSize
-						+ "\nPosition Size: " + positionSize	
-						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-					
-					#endregion
-				
-					#region Tick mode
-				
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", entryAreaLong - candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(entryAreaLong - candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop	
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSize	
-						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-					
-					#endregion
-					
-					#endregion
-				
-				}
-				
-				//Short Trades
-				if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
-				{
-				
-					#region Position Size Short
-				
-				if (autoPositionSize)
-				{
-					riskOffset = MaxLossPerTrade / ( ( (ShortValues) / TickSize) * myDbl);
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSize = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
-						positionSize = (Convert.ToInt32(riskOffset));
-						
-						if (positionSize < 1)
-						{
-							positionSize = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
-						
-					firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
-						
-						if (firstTargetPosition < 1)
-						{
-							firstTargetPosition = 1;
-						}
-				
-					secondTargetPosition = positionSize - firstTargetPosition; 
-						
-						if(secondTargetPosition < 1)
-						{
-							secondTargetPosition = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", stopAreaLong, Brushes.Red);
+							
+							if (DisplayText)
 							{
-								Print("positionSize "+ positionSize + " " + Time[0]);
-								Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
-								Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(stopAreaLong, 2) + ("("+CandleLookBackStop+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + LongValues	
+								+ "\nRange(Ticks): " + LongValues / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
 							}
 						}
+							
+							#endregion
+						
+							#region Tick mode
+						
+						if (tickMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", entryAreaLong - candleBarOffsetStop, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(entryAreaLong - candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + candleBarOffsetStop	
+								+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+							
+							#endregion
+							
+							#endregion
+						
+						}
+						
+						//Short Trades
+						if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
+						{
+						
+							#region Position Size Short
+						
+						if (autoPositionSize)
+						{
+							riskOffset = MaxLossPerTrade / ( ( (ShortValues) / TickSize) * myDbl);
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
+						positionSize = (Convert.ToInt32(riskOffset));
+						
+						
+							//Single Target
+							if (dualTarget == false)
+							{
+								positionSize = (Convert.ToInt32(riskOffset));
+								
+								if (positionSize < 1)
+								{
+									positionSize = 1;
+								}
+							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
+								
+								if (firstTargetPosition < 1)
+								{
+									firstTargetPosition = 1;
+								}
+						
+							secondTargetPosition = positionSize - firstTargetPosition; 
+								
+								if(secondTargetPosition < 1)
+								{
+									secondTargetPosition = 1;
+								}	
+							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSize "+ positionSize + " " + Time[0]);
+										Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
+										Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+								
+							
+							#endregion
+							
+							#region Set Stop/Profit Short		
+							
+						if (High[0] < stopAreaShort)
+						{
+							setStopShort = stopAreaShort;
+						}
+						
+						else if (High[0] >= stopAreaShort)
+						{
+							setStopShort = High[0];
+						}
+						
+						setFirstTarget = entryAreaShort - (ShortValues * FirstTargetRR);
+						setFinalTarget = entryAreaShort - (ShortValues * FinalTargetRR);
 						
 						#endregion
 						
-					
-					#endregion
-					
-					#region Set Stop/Profit Short		
-					
-				if (High[0] < stopAreaShort)
-				{
-					setStopShort = stopAreaShort;
-				}
-				
-				else if (High[0] >= stopAreaShort)
-				{
-					setStopShort = High[0];
-				}
-				
-				setFirstTarget = entryAreaShort - (ShortValues * FirstTargetRR);
-				setFinalTarget = entryAreaShort - (ShortValues * FinalTargetRR);
-				
-				#endregion
-				
-					#region Draw Lines / Text Short W/O Offset
-				
-					#region RR mode
-				
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopAreaShort, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopAreaShort, 2) + ("("+CandleLookBackStop+")")
-							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + ShortValues	
-						+ "\nRange(Ticks): " + ShortValues / TickSize
-						+ "\nPosition Size: " + positionSize	
+							#region Draw Lines / Text Short W/O Offset
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-				
-					#endregion
-				
-					#region Tick mode
-				
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", entryAreaShort + candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round( entryAreaShort + candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
-							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop	
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSize	
+							#region RR mode
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+						if (rrMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", stopAreaShort, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(stopAreaShort, 2) + ("("+CandleLookBackStop+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + ShortValues	
+								+ "\nRange(Ticks): " + ShortValues / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+						
+							#endregion
+						
+							#region Tick mode
+						
+						if (tickMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", entryAreaShort + candleBarOffsetStop, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round( entryAreaShort + candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + candleBarOffsetStop	
+								+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+						
+							#endregion
+						
+							#endregion
+						
+						}
+						
 					}
-				}
-				
-					#endregion
-				
-					#endregion
-				
-				}
-				
-			}
-			*/
-			#endregion //Removed for now
-			
+					*/
+					#endregion //Removed for now
+					
 				}
 			
 				if (CandleRange)
 				{
 					#region Entry Offset
 	
-			if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || (customLongClicked == true && enterClosePrice == false)
-				|| shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || (customShortClicked == true && enterClosePrice == false)
-				)		
-			{	
-				//HL
-				entryAreaLong		= MAX(High, CandleLookBackEntry)[1];
-				entryAreaShort		= MIN(Low, CandleLookBackEntry)[1];
-			}	
-			
-			if ((customLongClicked || customShortClicked) && enterClosePrice == true)
-			{
-				//Previous Close Price	
-				entryAreaLong		= MAX(Close, CandleLookBackEntry)[1];
-				entryAreaShort		= MAX(Close, CandleLookBackEntry)[1];
-			}
-			
-			//Adds offset to your entry area. Gives user customization.
-			percentageCalcEntry 	= ((entryAreaLong - entryAreaShort) * PercentageOffsetEntry);
-			priceCalcEntry 			= PriceOffsetEntry;
-			tickCalcEntry			= TickOffsetEntry * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetEntry = Math.Max(percentageCalcEntry, Math.Max(priceCalcEntry, tickCalcEntry));
-			
-			//Add both of them together to define final entry point
-			enterLong = entryAreaLong + candleBarOffsetEntry;
-			enterShort = entryAreaShort - candleBarOffsetEntry;
+					if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || (customLongClicked == true && enterClosePrice == false)
+						|| shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || (customShortClicked == true && enterClosePrice == false)
+						)		
+					{	
+						//HL
+						entryAreaLong		= MAX(High, CandleLookBackEntry)[1];
+						entryAreaShort		= MIN(Low, CandleLookBackEntry)[1];
+					}	
+					
+					if ((customLongClicked || customShortClicked) && enterClosePrice == true)
+					{
+						//Previous Close Price	
+						entryAreaLong		= MAX(Close, CandleLookBackEntry)[1];
+						entryAreaShort		= MAX(Close, CandleLookBackEntry)[1];
+					}
+					
+					//Adds offset to your entry area. Gives user customization.
+					percentageCalcEntry 	= ((entryAreaLong - entryAreaShort) * PercentageOffsetEntry);
+					priceCalcEntry 			= PriceOffsetEntry;
+					tickCalcEntry			= TickOffsetEntry * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetEntry = Math.Max(percentageCalcEntry, Math.Max(priceCalcEntry, tickCalcEntry));
+					
+					//Add both of them together to define final entry point
+					enterLong = entryAreaLong + candleBarOffsetEntry;
+					enterShort = entryAreaShort - candleBarOffsetEntry;
+									
+					
+					#region Entry Prints
+					
+					if (SystemPrint)
+					{
+						if (EntryPrints)
+						{
+							Print("entryAreaLong " + entryAreaLong + " " + Time[1]);
+							Print("entryAreaShort " + entryAreaShort + " " + Time[1]);
 							
-			
-			#region Entry Prints
-			
-			if (SystemPrint)
-			{
-				if (EntryPrints)
-				{
-					Print("entryAreaLong " + entryAreaLong + " " + Time[1]);
-					Print("entryAreaShort " + entryAreaShort + " " + Time[1]);
+							Print("percentageCalcEntry Range " + percentageCalcEntry + " " + Time[1]);
+							Print("priceCalcEntry Range  " + priceCalcEntry + " " + Time[1]);
+							Print("tickCalcEntry Range  " + tickCalcEntry + " " + Time[1]);
+							
+							Print("candleBarOffsetEntry Range " + candleBarOffsetEntry + " " + Time[1]);
+							
+							Print("enterLong  " + enterLong + " " + Time[1]);
+							Print("enterShort "  + enterShort + " " + Time[1]);
+						}
+					}
+					#endregion
 					
-					Print("percentageCalcEntry Range " + percentageCalcEntry + " " + Time[1]);
-					Print("priceCalcEntry Range  " + priceCalcEntry + " " + Time[1]);
-					Print("tickCalcEntry Range  " + tickCalcEntry + " " + Time[1]);
-					
-					Print("candleBarOffsetEntry Range " + candleBarOffsetEntry + " " + Time[1]);
-					
-					Print("enterLong  " + enterLong + " " + Time[1]);
-					Print("enterShort "  + enterShort + " " + Time[1]);
-				}
-			}
-			#endregion
-			
-			#endregion
+					#endregion
 			
 					#region Stop Offset
 			
-			//Define what area you will set a stop (If it is based on the chart)
-			stopAreaLong		= MIN(Low, CandleLookBackStop)[1];
-			stopAreaShort		= MAX(High, CandleLookBackStop)[1];
-			
-			//Adds offset to your stop area. Gives user customization.
-			percentageCalcStop 		= ((stopAreaShort - stopAreaLong) * PercentageOffsetStop);
-			priceCalcStop 			= PriceOffsetStop;
-			tickCalcStop			= TickOffsetStop * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetStop = Math.Max(percentageCalcStop, Math.Max(priceCalcStop, tickCalcStop));
-			
-			//Add both of them together to define final stop point
-			stopLong = stopAreaLong - candleBarOffsetStop;
-			stopShort = stopAreaShort + candleBarOffsetStop;
-			
-			#region StopPrints
-			
-			if (SystemPrint)
-			{
-				if (StopPrints)
-				{
-					Print("percentageCalcStop Range " + percentageCalcStop + " " + Time[1]);
-					Print("priceCalcStop Range " + priceCalcStop + " " + Time[1]);
-					Print("tickCalcStop Range " + tickCalcStop + " " + Time[1]);
-				
-					Print("candleBarOffsetStop Range " + candleBarOffsetStop + " " + Time[1]);
+					//Define what area you will set a stop (If it is based on the chart)
+					stopAreaLong		= MIN(Low, CandleLookBackStop)[1];
+					stopAreaShort		= MAX(High, CandleLookBackStop)[1];
 					
-					Print("stopLong Range " + stopLong + " " + Time[1]);
-					Print("stopShort Range " + stopShort + " " + Time[1]);
-				}
-			}
-			
-			#endregion
-			
-			#endregion
+					//Adds offset to your stop area. Gives user customization.
+					percentageCalcStop 		= ((stopAreaShort - stopAreaLong) * PercentageOffsetStop);
+					priceCalcStop 			= PriceOffsetStop;
+					tickCalcStop			= TickOffsetStop * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetStop = Math.Max(percentageCalcStop, Math.Max(priceCalcStop, tickCalcStop));
+					
+					//Add both of them together to define final stop point
+					stopLong = stopAreaLong - candleBarOffsetStop;
+					stopShort = stopAreaShort + candleBarOffsetStop;
+					
+					#region StopPrints
+					
+					if (SystemPrint)
+					{
+						if (StopPrints)
+						{
+							Print("percentageCalcStop Range " + percentageCalcStop + " " + Time[1]);
+							Print("priceCalcStop Range " + priceCalcStop + " " + Time[1]);
+							Print("tickCalcStop Range " + tickCalcStop + " " + Time[1]);
+						
+							Print("candleBarOffsetStop Range " + candleBarOffsetStop + " " + Time[1]);
+							
+							Print("stopLong Range " + stopLong + " " + Time[1]);
+							Print("stopShort Range " + stopShort + " " + Time[1]);
+						}
+					}
+					
+					#endregion
+					
+					#endregion
 			
 					#region Breakeven Offset
 			
-			//Define what area you will set a breakeven (If it is based on the chart - Different from 'Actual Breakeven')
-			breakevenAreaLong		= entryAreaLong;
-			breakevenAreaShort		= entryAreaShort;
-			
-			//Adds offset to your breakeven area. Gives user customization.
-			percentageCalcBreakeven 	= ((entryAreaLong - stopAreaLong) * PercentageOffsetBreakeven);
-			priceCalcBreakeven 			= PriceOffsetBreakeven;
-			tickCalcBreakeven			= TickOffsetBreakeven * TickSize;
-			
-			//Picks the highest of the 3 numbers
-			candleBarOffsetBreakeven = Math.Max(percentageCalcBreakeven, Math.Max(priceCalcBreakeven, tickCalcBreakeven));
-			
-			#region BreakevenPrints
-			
-			if (SystemPrint)
-			{
-				if (BreakevenPrints)
-				{
-					Print("percentageCalcBreakeven Range " + percentageCalcBreakeven + " " + Time[1]);
-					Print("priceCalcBreakeven Range " + priceCalcBreakeven + " " + Time[1]);
-					Print("tickCalcBreakeven Range " + tickCalcBreakeven + " " + Time[1]);
-				
-					Print("candleBarOffsetBreakeven Range " + candleBarOffsetBreakeven + " " + Time[1]);
+					//Define what area you will set a breakeven (If it is based on the chart - Different from 'Actual Breakeven')
+					breakevenAreaLong		= entryAreaLong;
+					breakevenAreaShort		= entryAreaShort;
 					
-					Print("breakevenLong Range " + breakevenLong + " " + Time[1]);
-					Print("breakevenShort Range " + breakevenShort + " " + Time[1]);
-				}
-			}
-			
-			#endregion
-			
-			#endregion
+					//Adds offset to your breakeven area. Gives user customization.
+					percentageCalcBreakeven 	= ((entryAreaLong - stopAreaLong) * PercentageOffsetBreakeven);
+					priceCalcBreakeven 			= PriceOffsetBreakeven;
+					tickCalcBreakeven			= TickOffsetBreakeven * TickSize;
+					
+					//Picks the highest of the 3 numbers
+					candleBarOffsetBreakeven = Math.Max(percentageCalcBreakeven, Math.Max(priceCalcBreakeven, tickCalcBreakeven));
+					
+					#region BreakevenPrints
+					
+					if (SystemPrint)
+					{
+						if (BreakevenPrints)
+						{
+							Print("percentageCalcBreakeven Range " + percentageCalcBreakeven + " " + Time[1]);
+							Print("priceCalcBreakeven Range " + priceCalcBreakeven + " " + Time[1]);
+							Print("tickCalcBreakeven Range " + tickCalcBreakeven + " " + Time[1]);
+						
+							Print("candleBarOffsetBreakeven Range " + candleBarOffsetBreakeven + " " + Time[1]);
+							
+							Print("breakevenLong Range " + breakevenLong + " " + Time[1]);
+							Print("breakevenShort Range " + breakevenShort + " " + Time[1]);
+						}
+					}
+					
+					#endregion
+					
+					#endregion
 			
 					#region Range Values
 			
-			LongValuesOffset 	= Math.Round(enterLong - stopLong, 4);
-			ShortValuesOffset	= Math.Round(stopShort - enterShort, 4);
-			
-			LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 4);
-			ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 4);
-			/*
-			LongValuesOffset 	= Math.Round(enterLong - stopLong, 2);
-			ShortValuesOffset	= Math.Round(stopShort - enterShort, 2);
-			
-			LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 2);
-			ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 2);
-			
-			///////////////////////////////////////////////////////
-			LongValuesOffsetTickMode	= Math.Round(enterLong - (enterLong - candleBarOffsetStop), 2);
-			ShortValuesOffsetTickMode	= Math.Round((enterShort + candleBarOffsetStop) - enterShort, 2);
-			
-			LongValuesTickMode			= Math.Round(entryAreaLong - (entryAreaLong - candleBarOffsetStop), 2);
-			ShortValuesTickMode			= Math.Round((entryAreaShort + candleBarOffsetStop) - entryAreaShort, 2);
-			
-			
-			Print("LongValuesOffsetTickMode " + LongValuesOffsetTickMode);		
-			Print("ShortValuesOffsetTickMode " + ShortValuesOffsetTickMode);
-			
-			Print("LongValuesTickMode " + LongValuesTickMode);
-			Print("ShortValuesTickMode " + ShortValuesTickMode);
-		*/	
-			#endregion
+					LongValuesOffset 	= Math.Round(enterLong - stopLong, 4);
+					ShortValuesOffset	= Math.Round(stopShort - enterShort, 4);
+					
+					LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 4);
+					ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 4);
+					/*
+					LongValuesOffset 	= Math.Round(enterLong - stopLong, 2);
+					ShortValuesOffset	= Math.Round(stopShort - enterShort, 2);
+					
+					LongValues 			= Math.Round(entryAreaLong - stopAreaLong, 2);
+					ShortValues			= Math.Round(stopAreaShort - entryAreaShort, 2);
+					
+					///////////////////////////////////////////////////////
+					LongValuesOffsetTickMode	= Math.Round(enterLong - (enterLong - candleBarOffsetStop), 2);
+					ShortValuesOffsetTickMode	= Math.Round((enterShort + candleBarOffsetStop) - enterShort, 2);
+					
+					LongValuesTickMode			= Math.Round(entryAreaLong - (entryAreaLong - candleBarOffsetStop), 2);
+					ShortValuesTickMode			= Math.Round((entryAreaShort + candleBarOffsetStop) - entryAreaShort, 2);
+					
+					
+					Print("LongValuesOffsetTickMode " + LongValuesOffsetTickMode);		
+					Print("ShortValuesOffsetTickMode " + ShortValuesOffsetTickMode);
+					
+					Print("LongValuesTickMode " + LongValuesTickMode);
+					Print("ShortValuesTickMode " + ShortValuesTickMode);
+				*/	
+					#endregion
 					
 					#region Limit Entry Offset
 			
-			if (useLimit)
-			{
-				percentageCalcLimitLong		= LongValuesOffset * PercentageOffsetLimit;
-				percentageCalcLimitShort	= ShortValuesOffset * PercentageOffsetLimit;
-				priceCalcLimit				= PriceOffsetLimit;
-				tickCalcLimit				= TickOffsetLimit * TickSize;
-				
-				limitOffsetLong				= Math.Max(percentageCalcLimitLong, Math.Max(priceCalcLimit, tickCalcLimit));	
-				limitOffsetShort			= Math.Max(percentageCalcLimitShort, Math.Max(priceCalcLimit, tickCalcLimit));
-				
-				if (AddOffset)
-				{
-					limitPriceSetLong			= enterLong + limitOffsetLong;
-					limitPriceSetShort			= enterShort - limitOffsetShort;
-				}
-				
-				else if (AddOffset == false)
-				{
-					limitPriceSetLong			= entryAreaLong + limitOffsetLong;
-					limitPriceSetShort			= entryAreaShort - limitOffsetShort;
-				}
-				
-				#region Limit Prints
+					if (useLimit)
+					{
+						percentageCalcLimitLong		= LongValuesOffset * PercentageOffsetLimit;
+						percentageCalcLimitShort	= ShortValuesOffset * PercentageOffsetLimit;
+						priceCalcLimit				= PriceOffsetLimit;
+						tickCalcLimit				= TickOffsetLimit * TickSize;
+						
+						limitOffsetLong				= Math.Max(percentageCalcLimitLong, Math.Max(priceCalcLimit, tickCalcLimit));	
+						limitOffsetShort			= Math.Max(percentageCalcLimitShort, Math.Max(priceCalcLimit, tickCalcLimit));
+						
+						if (AddOffset)
+						{
+							limitPriceSetLong			= enterLong + limitOffsetLong;
+							limitPriceSetShort			= enterShort - limitOffsetShort;
+						}
+						
+						else if (AddOffset == false)
+						{
+							limitPriceSetLong			= entryAreaLong + limitOffsetLong;
+							limitPriceSetShort			= entryAreaShort - limitOffsetShort;
+						}
+						
+						#region Limit Prints
+					
+						if (SystemPrint)
+						{
+							if (LimitPrints)
+							{
+								Print("percentageCalcLimitLong " + percentageCalcLimitLong + " " + Time[0]);
+								Print("percentageCalcLimitShort " + percentageCalcLimitShort + " " + Time[0]);
+								Print("priceCalcLimit " + priceCalcLimit + " " + Time[0]);
+								Print("tickCalcLimit " + tickCalcLimit + " " + Time[0]);
+								
+								Print("limitOffsetLong " + limitOffsetLong + " " + Time[0]);
+								Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
+								
+								Print("limitPriceSetLong " + limitPriceSetLong + " " + Time[0]);
+								Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
+							}
+						}
+						#endregion
+					}
+					#endregion
 			
-			if (SystemPrint)
-			{
-				if (LimitPrints)
-				{
-					Print("percentageCalcLimitLong " + percentageCalcLimitLong + " " + Time[0]);
-					Print("percentageCalcLimitShort " + percentageCalcLimitShort + " " + Time[0]);
-					Print("priceCalcLimit " + priceCalcLimit + " " + Time[0]);
-					Print("tickCalcLimit " + tickCalcLimit + " " + Time[0]);
-					
-					Print("limitOffsetLong " + limitOffsetLong + " " + Time[0]);
-					Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
-					
-					Print("limitPriceSetLong " + limitPriceSetLong + " " + Time[0]);
-					Print("limitPriceSetShort " + limitPriceSetShort + " " + Time[0]);
-				}
-			}
-			#endregion
-			}
-				#endregion
-			
-					
 					#region Offset Added Logic
 			
-			if (AddOffset) ///Update Prints
-			{	
-				//Long Trades
-				if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
-				{
-						
-					#region Position Size Long
-				
-				if (autoPositionSize)
-				{
-					if (rrMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (LongValuesOffset) / TickSize) * myDbl);
-					}
-					
-					if (tickMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
-					}
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSizeLong = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
-						positionSizeLong = (Convert.ToInt32(riskOffset));
-						
-						if (positionSizeLong < 1)
+					if (AddOffset) ///Update Prints
+					{	
+						//Long Trades
+						if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
 						{
-							positionSizeLong = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
+								
+							#region Position Size Long
 						
-					firstTargetPositionLong = (Convert.ToInt32(positionSizeLong * splitPercent));
-						
-						if (firstTargetPositionLong < 1)
-						{
-							firstTargetPositionLong = 1;
-						}
-				
-					secondTargetPositionLong = positionSizeLong - firstTargetPositionLong; 
-						
-						if(secondTargetPositionLong < 1)
-						{
-							secondTargetPositionLong = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							if (autoPositionSize)
 							{
-								Print("positionSizeLong "+ positionSizeLong + " " + Time[0]);
-								Print("firstTargetPositionLong "+ firstTargetPositionLong + " " + Time[0]);
-								Print("secondTargetPositionLong "+ secondTargetPositionLong + " " + Time[0]);
+								if (rrMode)
+								{
+									riskOffset = MaxLossPerTrade / ( ( (LongValuesOffset) / TickSize) * myDbl);
+								}
+								
+								if (tickMode)
+								{
+									riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
+								}
 							}
-						}
-						
-						#endregion
-						
-					
-					#endregion
-				
-					#region Set Stop/Profit Long
-				
-				if (Low[0] > stopLong)
-				{
-					setStopLong = stopLong;
-					
-					setFirstTargetLong = enterLong + (LongValuesOffset * FirstTargetRR);
-					setFinalTargetLong = enterLong + (LongValuesOffset * FinalTargetRR);
-				}
-				
-				else if (Low[0] <= stopLong)
-				{
-					setStopLong = Low[0] - candleBarOffsetStop;
-					
-					setFirstTargetLong = enterLong + ((enterLong - setStopLong) * FirstTargetRR);
-					setFinalTargetLong = enterLong + ((enterLong - setStopLong) * FinalTargetRR);
-				}
-				
-	
-				#region Profit Target Long Prints
-				
-				if (SystemPrint)
-				{
-					if (ProfitTatgetPrints)
-					{
-						Print("setStopLong "+ setStopLong + " " + Time[0]);
-						Print("setFirstTargetLong "+ setFirstTargetLong + " " + Time[0]);
-						Print("setFinalTargetLong "+ setFinalTargetLong + " " + Time[0]);		
-					}
-				}
-				
-				#endregion
-				
-				#endregion
-				
-					#region Draw Lines / Text Long Offset
-		
-						#region RR mode
-						
-					if (rrMode)
-					{
-						RemoveDrawObject("EntryLine");
-						RemoveDrawObject("StopLine");
-					
-						Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
-						Draw.HorizontalLine(this, "StopLine", stopLong, Brushes.Red);
-					
-						if (DisplayText)
-						{
-							Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
-							+ "\nStop Line: " + Math.Round(stopLong, 4) + ("("+CandleLookBackStop+")")
 							
-							+ "\n\nMax Loss($): " + MaxLossPerTrade	
-							+ "\nRange($): " + LongValuesOffset
-							+ "\nRange(Ticks): " + LongValuesOffset / TickSize
-							+ "\nPosition Size: " + positionSizeLong	
-						
-							,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-						}
-					}
-						
-						#endregion 
-					
-						#region Tick Mode
-					
-					if (tickMode)
-					{
-						RemoveDrawObject("EntryLine");
-						RemoveDrawObject("StopLine");
-					
-						Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
-						Draw.HorizontalLine(this, "StopLine", enterLong - candleBarOffsetStop, Brushes.Red);
-					
-						if (DisplayText)
-						{
-							Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
-							+ "\nStop Line: " + Math.Round(enterLong - candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
-							
-							+ "\n\nMax Loss($): " + MaxLossPerTrade	
-							+ "\nRange($): " + candleBarOffsetStop
-							+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-							+ "\nPosition Size: " + positionSizeLong	
-						
-							,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-						}
-					}
-				
-					#endregion
-					
-					#endregion
-										
-				}
-				
-				
-				//Short Trades
-				if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
-				{
-				
-					#region Position Size Short
-				
-				if (autoPositionSize)
-				{
-					if (rrMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (ShortValuesOffset) / TickSize) * myDbl);
-					}
-					
-					if (tickMode)
-					{
-						riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
-					}
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSizeShort = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
-						positionSizeShort = (Convert.ToInt32(riskOffset));
-						
-						if (positionSizeShort < 1)
-						{
-							positionSizeShort = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
-						
-					firstTargetPositionShort = (Convert.ToInt32(positionSizeShort * splitPercent));
-						
-						if (firstTargetPositionShort < 1)
-						{
-							firstTargetPositionShort = 1;
-						}
-				
-					secondTargetPositionShort = positionSizeShort - firstTargetPositionShort; 
-						
-						if(secondTargetPositionShort < 1)
-						{
-							secondTargetPositionShort = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							else if (customPositionSize)
 							{
-								Print("positionSizeShort "+ positionSizeShort + " " + Time[0]);
-								Print("firstTargetPositionShort "+ firstTargetPositionShort + " " + Time[0]);
-								Print("secondTargetPositionShort "+ secondTargetPositionShort + " " + Time[0]);
+								riskOffset = CustomPositionAmount;
 							}
-						}
-						
-						#endregion
-						
-					
-					#endregion
-				
-					#region Set Stop/Profit Short
-				
-				if (High[0] < stopShort)
-				{
-					setStopShort = stopShort;
-				
-					setFirstTargetShort = enterShort - (ShortValuesOffset * FirstTargetRR);
-					setFinalTargetShort = enterShort - (ShortValuesOffset * FinalTargetRR);
-				}
-				
-				else if (High[0] >= stopShort)
-				{
-					setStopShort = High[0] + candleBarOffsetStop;
-					
-					setFirstTargetShort = enterShort - ((setStopShort - enterShort) * FirstTargetRR);
-					setFinalTargetShort = enterShort - ((setStopShort - enterShort) * FinalTargetRR);
-				}
-				
-				
-				#region Profit Target Prints
-						
-						if (SystemPrint)
-						{
-							if (ProfitTatgetPrints)
+							
+							positionSizeLong = (Convert.ToInt32(riskOffset));
+							
+							
+							//Single Target
+							if (dualTarget == false)
 							{
-								Print("setStopShort "+ setStopLong + " " + Time[0]);
-								Print("setFirstTargetShort "+ setFirstTargetShort + " " + Time[0]);
-								Print("setFinalTargetShort "+ setFinalTargetShort + " " + Time[0]);
+								positionSizeLong = (Convert.ToInt32(riskOffset));
+								
+								if (positionSizeLong < 1)
+								{
+									positionSizeLong = 1;
+								}
 							}
-						}
-						
-						#endregion
-				
-				#endregion
-					
-					#region Draw Lines / Text Short Offset
-				
-						#region RR Mode
-						
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopShort, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopShort, 4) + ("("+CandleLookBackStop+")")
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + ShortValuesOffset
-						+ "\nRange(Ticks): " + ShortValuesOffset / TickSize
-						+ "\nPosition Size: " + positionSizeShort	
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPositionLong = (Convert.ToInt32(positionSizeLong * splitPercent));
+								
+								if (firstTargetPositionLong < 1)
+								{
+									firstTargetPositionLong = 1;
+								}
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-					
-				}
-						
-					#endregion
-					
-						#region Tick Mode
-						
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", enterShort + candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(enterShort + candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
+							secondTargetPositionLong = positionSizeLong - firstTargetPositionLong; 
+								
+								if(secondTargetPositionLong < 1)
+								{
+									secondTargetPositionLong = 1;
+								}	
+							}
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSizeShort	
+							#region Position Size Prints
+							
+							if (SystemPrint)
+							{
+								if (PositionSizePrints)
+								{
+									Print("positionSizeLong "+ positionSizeLong + " " + Time[0]);
+									Print("firstTargetPositionLong "+ firstTargetPositionLong + " " + Time[0]);
+									Print("secondTargetPositionLong "+ secondTargetPositionLong + " " + Time[0]);
+								}
+							}
+							
+							#endregion
+								
+							
+							#endregion
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-					
-				}
-						
-					#endregion
-					
-				#endregion
+							#region Set Stop/Profit Long
+							
+							if (Low[0] > stopLong)
+							{
+								setStopLong = stopLong;
+								
+								setFirstTargetLong = enterLong + (LongValuesOffset * FirstTargetRR);
+								setFinalTargetLong = enterLong + (LongValuesOffset * FinalTargetRR);
+							}
+							
+							else if (Low[0] <= stopLong)
+							{
+								setStopLong = Low[0] - candleBarOffsetStop;
+								
+								setFirstTargetLong = enterLong + ((enterLong - setStopLong) * FirstTargetRR);
+								setFinalTargetLong = enterLong + ((enterLong - setStopLong) * FinalTargetRR);
+							}
+							
 				
-				}
-			}
+							#region Profit Target Long Prints
+							
+							if (SystemPrint)
+							{
+								if (ProfitTatgetPrints)
+								{
+									Print("setStopLong "+ setStopLong + " " + Time[0]);
+									Print("setFirstTargetLong "+ setFirstTargetLong + " " + Time[0]);
+									Print("setFinalTargetLong "+ setFinalTargetLong + " " + Time[0]);		
+								}
+							}
+							
+							#endregion
+							
+							#endregion
+						
+							#region Draw Lines / Text Long Offset
 			
-			#endregion	
+							#region RR mode
+							
+							if (rrMode)
+							{
+								RemoveDrawObject("EntryLine");
+								RemoveDrawObject("StopLine");
+							
+								Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
+								Draw.HorizontalLine(this, "StopLine", stopLong, Brushes.Red);
+							
+								if (DisplayText)
+								{
+									Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
+									+ "\nStop Line: " + Math.Round(stopLong, 4) + ("("+CandleLookBackStop+")")
+									
+									+ "\n\nMax Loss($): " + MaxLossPerTrade	
+									+ "\nRange($): " + LongValuesOffset
+									+ "\nRange(Ticks): " + LongValuesOffset / TickSize
+									+ "\nPosition Size: " + positionSizeLong	
+								
+									,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+								}
+							}
+								
+							#endregion 
+						
+							#region Tick Mode
+							
+							if (tickMode)
+							{
+								RemoveDrawObject("EntryLine");
+								RemoveDrawObject("StopLine");
+							
+								Draw.HorizontalLine(this, "EntryLine", enterLong, Brushes.Green);
+								Draw.HorizontalLine(this, "StopLine", enterLong - candleBarOffsetStop, Brushes.Red);
+							
+								if (DisplayText)
+								{
+									Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterLong, 4) + ("("+CandleLookBackEntry+")")
+									+ "\nStop Line: " + Math.Round(enterLong - candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
+									
+									+ "\n\nMax Loss($): " + MaxLossPerTrade	
+									+ "\nRange($): " + candleBarOffsetStop
+									+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+									+ "\nPosition Size: " + positionSizeLong	
+								
+									,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+								}
+							}
+						
+							#endregion
+							
+							#endregion
+												
+						}
+						
+						
+						//Short Trades
+						if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
+						{
+						
+							#region Position Size Short
+						
+							if (autoPositionSize)
+							{
+								if (rrMode)
+								{
+									riskOffset = MaxLossPerTrade / ( ( (ShortValuesOffset) / TickSize) * myDbl);
+								}
+								
+								if (tickMode)
+								{
+									riskOffset = MaxLossPerTrade / ( ( (candleBarOffsetStop) / TickSize) * myDbl);
+								}
+							}
+							
+							else if (customPositionSize)
+							{
+								riskOffset = CustomPositionAmount;
+							}
+							
+							positionSizeShort = (Convert.ToInt32(riskOffset));
+							
+						
+							//Single Target
+							if (dualTarget == false)
+							{
+								positionSizeShort = (Convert.ToInt32(riskOffset));
+								
+								if (positionSizeShort < 1)
+								{
+									positionSizeShort = 1;
+								}
+							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPositionShort = (Convert.ToInt32(positionSizeShort * splitPercent));
+								
+								if (firstTargetPositionShort < 1)
+								{
+									firstTargetPositionShort = 1;
+								}
+						
+							secondTargetPositionShort = positionSizeShort - firstTargetPositionShort; 
+								
+								if(secondTargetPositionShort < 1)
+								{
+									secondTargetPositionShort = 1;
+								}	
+							}
+							
+							#region Position Size Prints
+							
+							if (SystemPrint)
+							{
+								if (PositionSizePrints)
+								{
+									Print("positionSizeShort "+ positionSizeShort + " " + Time[0]);
+									Print("firstTargetPositionShort "+ firstTargetPositionShort + " " + Time[0]);
+									Print("secondTargetPositionShort "+ secondTargetPositionShort + " " + Time[0]);
+								}
+							}
+							
+							#endregion
+								
+							
+							#endregion
+						
+							#region Set Stop/Profit Short
+						
+							if (High[0] < stopShort)
+							{
+								setStopShort = stopShort;
+							
+								setFirstTargetShort = enterShort - (ShortValuesOffset * FirstTargetRR);
+								setFinalTargetShort = enterShort - (ShortValuesOffset * FinalTargetRR);
+							}
+							
+							else if (High[0] >= stopShort)
+							{
+								setStopShort = High[0] + candleBarOffsetStop;
+								
+								setFirstTargetShort = enterShort - ((setStopShort - enterShort) * FirstTargetRR);
+								setFinalTargetShort = enterShort - ((setStopShort - enterShort) * FinalTargetRR);
+							}
+							
+							
+							#region Profit Target Prints
+									
+							if (SystemPrint)
+							{
+								if (ProfitTatgetPrints)
+								{
+									Print("setStopShort "+ setStopLong + " " + Time[0]);
+									Print("setFirstTargetShort "+ setFirstTargetShort + " " + Time[0]);
+									Print("setFinalTargetShort "+ setFinalTargetShort + " " + Time[0]);
+								}
+							}
+							
+							#endregion
+						
+							#endregion
+							
+							#region Draw Lines / Text Short Offset
+						
+								#region RR Mode
+								
+								if (rrMode)
+								{
+									RemoveDrawObject("EntryLine");
+									RemoveDrawObject("StopLine");
+									
+									
+									Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
+									Draw.HorizontalLine(this, "StopLine", stopShort, Brushes.Red);
+									
+									if (DisplayText)
+									{
+										Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
+										+ "\nStop Line: " + Math.Round(stopShort, 4) + ("("+CandleLookBackStop+")")
+											
+										+ "\n\nMax Loss($): " + MaxLossPerTrade	
+										+ "\nRange($): " + ShortValuesOffset
+										+ "\nRange(Ticks): " + ShortValuesOffset / TickSize
+										+ "\nPosition Size: " + positionSizeShort	
+										
+										,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+									}
+									
+								}
+										
+								#endregion
+							
+								#region Tick Mode
+								
+								if (tickMode)
+								{
+									RemoveDrawObject("EntryLine");
+									RemoveDrawObject("StopLine");
+									
+									
+									Draw.HorizontalLine(this, "EntryLine", enterShort, Brushes.Green);
+									Draw.HorizontalLine(this, "StopLine", enterShort + candleBarOffsetStop, Brushes.Red);
+									
+									if (DisplayText)
+									{
+										Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(enterShort, 4) + ("("+CandleLookBackEntry+")")
+										+ "\nStop Line: " + Math.Round(enterShort + candleBarOffsetStop, 4) + ("("+candleBarOffsetStop / TickSize+")")
+											
+										+ "\n\nMax Loss($): " + MaxLossPerTrade	
+										+ "\nRange($): " + candleBarOffsetStop
+										+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+										+ "\nPosition Size: " + positionSizeShort	
+										
+										,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+									}
+									
+								}
+										
+								#endregion
+							
+							#endregion
+						
+						}
+					}
+					
+					#endregion	
 			
 					#region W/O Offset 
-			/* Removed for simplicity of use
-			if (AddOffset == false)
-			{	
-				//Long Trades
-				if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
-				{
-				
-					#region Position Size Long
-				
-				if (autoPositionSize)
-				{
-					riskOffset = MaxLossPerTrade / ( ( (LongValues) / TickSize) * myDbl);
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSize = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
+					/* Removed for simplicity of use
+					if (AddOffset == false)
+					{	
+						//Long Trades
+						if (longButtonHLClicked == true || longButtonMarketClicked == true || longLineButtonClicked == true || customLongClicked == true)
+						{
+						
+							#region Position Size Long
+						
+						if (autoPositionSize)
+						{
+							riskOffset = MaxLossPerTrade / ( ( (LongValues) / TickSize) * myDbl);
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
 						positionSize = (Convert.ToInt32(riskOffset));
 						
-						if (positionSize < 1)
-						{
-							positionSize = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
 						
-					firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
-						
-						if (firstTargetPosition < 1)
-						{
-							firstTargetPosition = 1;
-						}
-				
-					secondTargetPosition = positionSize - firstTargetPosition; 
-						
-						if(secondTargetPosition < 1)
-						{
-							secondTargetPosition = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							//Single Target
+							if (dualTarget == false)
 							{
-								Print("positionSize "+ positionSize + " " + Time[0]);
-								Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
-								Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+								positionSize = (Convert.ToInt32(riskOffset));
+								
+								if (positionSize < 1)
+								{
+									positionSize = 1;
+								}
 							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
+								
+								if (firstTargetPosition < 1)
+								{
+									firstTargetPosition = 1;
+								}
+						
+							secondTargetPosition = positionSize - firstTargetPosition; 
+								
+								if(secondTargetPosition < 1)
+								{
+									secondTargetPosition = 1;
+								}	
+							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSize "+ positionSize + " " + Time[0]);
+										Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
+										Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+								
+							
+							
+						
+							#endregion
+							
+							#region Set Stop/Profit Long		
+							
+						if (Low[0] > stopAreaLong)
+						{
+							setStopLong = stopAreaLong;
 						}
+						
+						else if (Low[0] <= stopAreaLong)
+						{
+							setStopLong = Low[0];
+						}
+						
+						setFirstTarget = entryAreaLong + (LongValues * FirstTargetRR);
+						setFinalTarget = entryAreaLong + (LongValues * FinalTargetRR);
 						
 						#endregion
 						
-					
-					
-				
-					#endregion
-					
-					#region Set Stop/Profit Long		
-					
-				if (Low[0] > stopAreaLong)
-				{
-					setStopLong = stopAreaLong;
-				}
-				
-				else if (Low[0] <= stopAreaLong)
-				{
-					setStopLong = Low[0];
-				}
-				
-				setFirstTarget = entryAreaLong + (LongValues * FirstTargetRR);
-				setFinalTarget = entryAreaLong + (LongValues * FinalTargetRR);
-				
-				#endregion
-				
-					#region Draw Lines / Text Long W/O Offset
-				
-					#region RR mode
-				
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopAreaLong, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopAreaLong, 2) + ("("+CandleLookBackStop+")")
+							#region Draw Lines / Text Long W/O Offset
+						
+							#region RR mode
+						
+						if (rrMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + LongValues	
-						+ "\nRange(Ticks): " + LongValues / TickSize
-						+ "\nPosition Size: " + positionSize	
-						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-					
-					#endregion
-				
-					#region Tick mode
-				
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", entryAreaLong - candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(entryAreaLong - candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
 							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop	
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSize	
-						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-					
-					#endregion
-					
-					#endregion
-				
-				}
-				
-				//Short Trades
-				if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
-				{
-				
-					#region Position Size Short
-				
-				if (autoPositionSize)
-				{
-					riskOffset = MaxLossPerTrade / ( ( (ShortValues) / TickSize) * myDbl);
-				}
-				
-				else if (customPositionSize)
-				{
-					riskOffset = CustomPositionAmount;
-				}
-				
-				positionSize = (Convert.ToInt32(riskOffset));
-				
-				
-					//Single Target
-					if (dualTarget == false)
-					{
-						positionSize = (Convert.ToInt32(riskOffset));
-						
-						if (positionSize < 1)
-						{
-							positionSize = 1;
-						}
-					}
-					
-					//Dual Target
-					if (dualTarget)
-					{
-						
-					firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
-						
-						if (firstTargetPosition < 1)
-						{
-							firstTargetPosition = 1;
-						}
-				
-					secondTargetPosition = positionSize - firstTargetPosition; 
-						
-						if(secondTargetPosition < 1)
-						{
-							secondTargetPosition = 1;
-						}	
-					}
-					
-						#region Position Size Prints
-						
-						if (SystemPrint)
-						{
-							if (PositionSizePrints)
+							Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", stopAreaLong, Brushes.Red);
+							
+							if (DisplayText)
 							{
-								Print("positionSize "+ positionSize + " " + Time[0]);
-								Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
-								Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(stopAreaLong, 2) + ("("+CandleLookBackStop+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + LongValues	
+								+ "\nRange(Ticks): " + LongValues / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
 							}
 						}
+							
+							#endregion
+						
+							#region Tick mode
+						
+						if (tickMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaLong, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", entryAreaLong - candleBarOffsetStop, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaLong, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(entryAreaLong - candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + candleBarOffsetStop	
+								+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+							
+							#endregion
+							
+							#endregion
+						
+						}
+						
+						//Short Trades
+						if (shortButtonHLClicked == true || shortButtonMarketClicked == true || shortLineButtonClicked == true || customShortClicked == true)
+						{
+						
+							#region Position Size Short
+						
+						if (autoPositionSize)
+						{
+							riskOffset = MaxLossPerTrade / ( ( (ShortValues) / TickSize) * myDbl);
+						}
+						
+						else if (customPositionSize)
+						{
+							riskOffset = CustomPositionAmount;
+						}
+						
+						positionSize = (Convert.ToInt32(riskOffset));
+						
+						
+							//Single Target
+							if (dualTarget == false)
+							{
+								positionSize = (Convert.ToInt32(riskOffset));
+								
+								if (positionSize < 1)
+								{
+									positionSize = 1;
+								}
+							}
+							
+							//Dual Target
+							if (dualTarget)
+							{
+								
+							firstTargetPosition = (Convert.ToInt32(positionSize * splitPercent));
+								
+								if (firstTargetPosition < 1)
+								{
+									firstTargetPosition = 1;
+								}
+						
+							secondTargetPosition = positionSize - firstTargetPosition; 
+								
+								if(secondTargetPosition < 1)
+								{
+									secondTargetPosition = 1;
+								}	
+							}
+							
+								#region Position Size Prints
+								
+								if (SystemPrint)
+								{
+									if (PositionSizePrints)
+									{
+										Print("positionSize "+ positionSize + " " + Time[0]);
+										Print("firstTargetPosition "+ firstTargetPosition + " " + Time[0]);
+										Print("secondTargetPosition "+ secondTargetPosition + " " + Time[0]);
+									}
+								}
+								
+								#endregion
+								
+							
+							#endregion
+							
+							#region Set Stop/Profit Short		
+							
+						if (High[0] < stopAreaShort)
+						{
+							setStopShort = stopAreaShort;
+						}
+						
+						else if (High[0] >= stopAreaShort)
+						{
+							setStopShort = High[0];
+						}
+						
+						setFirstTarget = entryAreaShort - (ShortValues * FirstTargetRR);
+						setFinalTarget = entryAreaShort - (ShortValues * FinalTargetRR);
 						
 						#endregion
 						
-					
-					#endregion
-					
-					#region Set Stop/Profit Short		
-					
-				if (High[0] < stopAreaShort)
-				{
-					setStopShort = stopAreaShort;
-				}
-				
-				else if (High[0] >= stopAreaShort)
-				{
-					setStopShort = High[0];
-				}
-				
-				setFirstTarget = entryAreaShort - (ShortValues * FirstTargetRR);
-				setFinalTarget = entryAreaShort - (ShortValues * FinalTargetRR);
-				
-				#endregion
-				
-					#region Draw Lines / Text Short W/O Offset
-				
-					#region RR mode
-				
-				if (rrMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", stopAreaShort, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round(stopAreaShort, 2) + ("("+CandleLookBackStop+")")
-							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + ShortValues	
-						+ "\nRange(Ticks): " + ShortValues / TickSize
-						+ "\nPosition Size: " + positionSize	
+							#region Draw Lines / Text Short W/O Offset
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
-					}
-				}
-				
-					#endregion
-				
-					#region Tick mode
-				
-				if (tickMode)
-				{
-					RemoveDrawObject("EntryLine");
-					RemoveDrawObject("StopLine");
-					
-					
-					Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
-					Draw.HorizontalLine(this, "StopLine", entryAreaShort + candleBarOffsetStop, Brushes.Red);
-					
-					if (DisplayText)
-					{
-						Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
-						+ "\nStop Line: " + Math.Round( entryAreaShort + candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
-							
-						+ "\n\nMax Loss($): " + MaxLossPerTrade	
-						+ "\nRange($): " + candleBarOffsetStop	
-						+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
-						+ "\nPosition Size: " + positionSize	
+							#region RR mode
 						
-						,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+						if (rrMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", stopAreaShort, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round(stopAreaShort, 2) + ("("+CandleLookBackStop+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + ShortValues	
+								+ "\nRange(Ticks): " + ShortValues / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+						
+							#endregion
+						
+							#region Tick mode
+						
+						if (tickMode)
+						{
+							RemoveDrawObject("EntryLine");
+							RemoveDrawObject("StopLine");
+							
+							
+							Draw.HorizontalLine(this, "EntryLine", entryAreaShort, Brushes.Green);
+							Draw.HorizontalLine(this, "StopLine", entryAreaShort + candleBarOffsetStop, Brushes.Red);
+							
+							if (DisplayText)
+							{
+								Draw.TextFixed(this, "TextBox", "Entry Line: " + Math.Round(entryAreaShort, 2) + ("("+CandleLookBackEntry+")")
+								+ "\nStop Line: " + Math.Round( entryAreaShort + candleBarOffsetStop, 2) + ("("+candleBarOffsetStop / TickSize+")")
+									
+								+ "\n\nMax Loss($): " + MaxLossPerTrade	
+								+ "\nRange($): " + candleBarOffsetStop	
+								+ "\nRange(Ticks): " + candleBarOffsetStop / TickSize
+								+ "\nPosition Size: " + positionSize	
+								
+								,TextPosition.BottomLeft, Brushes.White, new Gui.Tools.SimpleFont("Arial", 25), Brushes.Gold, Brushes.Black, 100);
+							}
+						}
+						
+							#endregion
+						
+							#endregion
+						
+						}
+						
 					}
-				}
-				
-					#endregion
-				
-					#endregion
-				
-				}
-				
-			}
-			*/
-			#endregion //Removed for now
+					*/
+					#endregion //Removed for now
 			
 				}
 			
@@ -3772,7 +3773,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 			
 			if (IsFirstTickOfBar)
 			{	
-				if (unlockButtonClicked && (customLongClicked || customShortClicked) && enterClosePrice == false)//armMarket == true && )
+				if (unlockButtonClicked && (customLongClicked || customShortClicked) && (enterClosePrice == false))	//armMarket == true && )
 				{
 					activateMarket = true;
 					Print("activateMarket Calcs Locked " + activateMarket);
@@ -3873,7 +3874,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 			
 			#endregion
 			
-			#region H/L Short
+			#region // H/L Short
 			
 			if (
 				(shortButtonHLClicked == true)
@@ -4193,91 +4194,91 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 						}
 					}
 				
-				if (dualTarget)
-				{
-					if(stopLoss)
+					if (dualTarget)
 					{
-						ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong", "MyEntryLong");
-						ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong2", "MyEntryLong2");
+						if(stopLoss)
+						{
+							ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong", "MyEntryLong");
+							ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong2", "MyEntryLong2");
+						}
+						
+						if(profitTarget)
+						{
+							ExitLongLimit(0, true, Position.Quantity, setFirstTargetLong, "MyTargetLong", "MyEntryLong");
+							ExitLongLimit(0, true, Position.Quantity, setFinalTargetLong, "MyTargetLong2", "MyEntryLong2");
+						}	
+					}
+
+					
+					#region Management Targets
+					
+					//Breakeven Area
+					breakevenAreaTrigger = enterLong + (enterLong - stopLong) * breakevenAreaTarget;
+					breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
+				
+					if (breakevenAreaSetAuto)
+					{
+						myFreeBEArea = true;
 					}
 					
-					if(profitTarget)
-					{
-						ExitLongLimit(0, true, Position.Quantity, setFirstTargetLong, "MyTargetLong", "MyEntryLong");
-						ExitLongLimit(0, true, Position.Quantity, setFinalTargetLong, "MyTargetLong2", "MyEntryLong2");
-					}	
-				}
-				
-				#endregion
-				
-				#region Management Targets
-				
-				//Breakeven Area
-				breakevenAreaTrigger = enterLong + (enterLong - stopLong) * breakevenAreaTarget;
-				breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
-			
-				if (breakevenAreaSetAuto)
-				{
-					myFreeBEArea = true;
-				}
-				
-				//Breakeven Actual
-				breakevenActualTrigger = enterLong + (enterLong - stopLong) * breakevenActualTarget;
-				breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
-				
-				if (breakevenActualSetAuto)
-				{
-					myFreeBEActual = true;
-				}
-				
-				//Candle Trail Stop
-				candleTrailTrigger = enterLong + (enterLong - stopLong) * candleTrailTarget;
-				//candleTrailStopSet = Low[1]; We set the stop later for new candle.
-				
-				if (candleTrailSetAuto)
-				{
-					myFreeCandleTrail = true;
-					activeTrail = true;
-				}
-				
-				#endregion
-				
-				#region Management Prints
-				
-				if (SystemPrint)
-				{
-					#region Breakeven
+					//Breakeven Actual
+					breakevenActualTrigger = enterLong + (enterLong - stopLong) * breakevenActualTarget;
+					breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
 					
-					if (BreakevenPrints)
+					if (breakevenActualSetAuto)
 					{
-						Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
-						Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
-						Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
-						
-						Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
-						Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
-						Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						myFreeBEActual = true;
+					}
+					
+					//Candle Trail Stop
+					candleTrailTrigger = enterLong + (enterLong - stopLong) * candleTrailTarget;
+					//candleTrailStopSet = Low[1]; We set the stop later for new candle.
+					
+					if (candleTrailSetAuto)
+					{
+						myFreeCandleTrail = true;
+						activeTrail = true;
 					}
 					
 					#endregion
+					
+					#region Management Prints
+					
+					if (SystemPrint)
+					{
+						#region Breakeven
+						
+						if (BreakevenPrints)
+						{
+							Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
+							Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
+							Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
+							
+							Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
+							Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
+							Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						}
+						
+						#endregion
+					}
+					
+					#endregion
+					
+					myFreeTrade = false;
+					
+					myFillCheck = true;
+
 				}
 				
-				#endregion
-				
-				myFreeTrade = false;
-				
-				myFillCheck = true;
-			}
-				
-			#endregion
-				
+				#endregion					
+
 				#region Partial Fill Long Position
 			
 				#region Stop/Profits
 				
-			if (Position.MarketPosition == MarketPosition.Long && myFreeTrade == true && Position.Quantity < positionSizeLong && IsFirstTickOfBar)
-			{
-				if (dualTarget == false)
+				if (Position.MarketPosition == MarketPosition.Long && myFreeTrade == true && Position.Quantity < positionSizeLong && IsFirstTickOfBar)
+				{
+					if (dualTarget == false)
 					{
 						if (stopLoss)
 						{
@@ -4289,80 +4290,83 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 							ExitLongLimit(0, true, Position.Quantity, setFinalTargetLong, "MyTargetLong", "MyEntryLong");
 						}
 					}
-				
-				if (dualTarget)
-				{
-					if(stopLoss)
+					
+					if (dualTarget)
 					{
-						ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong", "MyEntryLong");
-						ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong2", "MyEntryLong2");
+						if(stopLoss)
+						{
+							ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong", "MyEntryLong");
+							ExitLongStopMarket(0, true, Position.Quantity, setStopLong, "MyStopLong2", "MyEntryLong2");
+						}
+						
+						if(profitTarget)
+						{
+							ExitLongLimit(0, true, Position.Quantity, setFirstTargetLong, "MyTargetLong", "MyEntryLong");
+							ExitLongLimit(0, true, Position.Quantity, setFinalTargetLong, "MyTargetLong2", "MyEntryLong2");
+						}	
 					}
 					
-					if(profitTarget)
-					{
-						ExitLongLimit(0, true, Position.Quantity, setFirstTargetLong, "MyTargetLong", "MyEntryLong");
-						ExitLongLimit(0, true, Position.Quantity, setFinalTargetLong, "MyTargetLong2", "MyEntryLong2");
-					}	
-				}
-				
-				#endregion
-				
-				#region Management Targets
-				
-				//Breakeven Area
-				breakevenAreaTrigger = enterLong + (enterLong - stopLong) * breakevenAreaTarget;
-				breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
-			
-				if (breakevenAreaSetAuto)
-				{
-					myFreeBEArea = true;
-				}
-				
-				//Breakeven Actual
-				breakevenActualTrigger = enterLong + (enterLong - stopLong) * breakevenActualTarget;
-				breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
-				
-				if (breakevenActualSetAuto)
-				{
-					myFreeBEActual = true;
-				}
-				
-				//Candle Trail Stop
-				candleTrailTrigger = enterLong + (enterLong - stopLong) * candleTrailTarget;
-				//candleTrailStopSet = Low[1]; We set the stop later for new candle.
-				
-				if (candleTrailSetAuto)
-				{
-					myFreeCandleTrail = true;
-					activeTrail = true;
-				}
-				
-				#endregion
-				
-				#region Management Prints
-				
-				if (SystemPrint)
-				{
-					#region Breakeven
+	
 					
-					if (BreakevenPrints)
+					#region Management Targets
+					
+					//Breakeven Area
+					breakevenAreaTrigger = enterLong + (enterLong - stopLong) * breakevenAreaTarget;
+					breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
+				
+					if (breakevenAreaSetAuto)
 					{
-						Print("breakevenAreaTrigger " + breakevenAreaTrigger + " " +  Time[1]);
-						Print("breakevenAreaStopSet " + breakevenAreaStopSet + " " + Time[1]);
-						Print("myFreeBEArea " + myFreeBEArea + " " + Time[1]);
+						myFreeBEArea = true;
+					}
+					
+					//Breakeven Actual
+					breakevenActualTrigger = enterLong + (enterLong - stopLong) * breakevenActualTarget;
+					breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
+					
+					if (breakevenActualSetAuto)
+					{
+						myFreeBEActual = true;
+					}
+					
+					//Candle Trail Stop
+					candleTrailTrigger = enterLong + (enterLong - stopLong) * candleTrailTarget;
+					//candleTrailStopSet = Low[1]; We set the stop later for new candle.
+					
+					if (candleTrailSetAuto)
+					{
+						myFreeCandleTrail = true;
+						activeTrail = true;
 					}
 					
 					#endregion
+					
+					#region Management Prints
+					
+					if (SystemPrint)
+					{
+						#region Breakeven
+						
+						if (BreakevenPrints)
+						{
+							Print("breakevenAreaTrigger " + breakevenAreaTrigger + " " +  Time[1]);
+							Print("breakevenAreaStopSet " + breakevenAreaStopSet + " " + Time[1]);
+							Print("myFreeBEArea " + myFreeBEArea + " " + Time[1]);
+						}
+						
+						#endregion
+					}
+					
+					#endregion
+					
+					myFreeTrade = false;
 				}
+			
+				#endregion			
+			
+				#endregion
 				
 				#endregion
 				
-				myFreeTrade = false;
-			}
-			
-			#endregion
-			
-
 				//Short 
 				#region Filled Short Position	
 			
@@ -4383,84 +4387,86 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 						}
 					}
 				
-				if (dualTarget)
-				{
-					if(stopLoss)
+					if (dualTarget)
 					{
-						ExitShortStopMarket(0, true, Position.Quantity, setStopShort, "MyStopShort", "MyEntryShort");
-						ExitShortStopMarket(0, true, Position.Quantity, setStopShort, "MyStopShort2", "MyEntryShort2");
+						if(stopLoss)
+						{
+							ExitShortStopMarket(0, true, Position.Quantity, setStopShort, "MyStopShort", "MyEntryShort");
+							ExitShortStopMarket(0, true, Position.Quantity, setStopShort, "MyStopShort2", "MyEntryShort2");
+						}
+						
+						if(profitTarget)
+						{
+							ExitShortLimit(0, true, Position.Quantity, setFirstTargetShort, "MyTargetShort", "MyEntryShort");
+							ExitShortLimit(0, true, Position.Quantity, setFinalTargetShort, "MyTargetShort2", "MyEntryShort2");
+						}	
 					}
 					
-					if(profitTarget)
-					{
-						ExitShortLimit(0, true, Position.Quantity, setFirstTargetShort, "MyTargetShort", "MyEntryShort");
-						ExitShortLimit(0, true, Position.Quantity, setFinalTargetShort, "MyTargetShort2", "MyEntryShort2");
-					}	
-				}
-				
-				#endregion
-				
-				#region Management Targets
-				
-				//Breakeven Area
-				breakevenAreaTrigger = enterShort - (stopShort - enterShort) * breakevenAreaTarget;
-				breakevenAreaStopSet = breakevenAreaShort + candleBarOffsetBreakeven;
-			
-				if (breakevenAreaSetAuto)
-				{
-					myFreeBEArea = true;
-				}
-				
-				//Breakeven Actual
-				breakevenActualTrigger = enterShort - (stopShort - enterShort) * breakevenActualTarget;
-				breakevenActualStopSet = Position.AveragePrice + candleBarOffsetBreakeven;
-				
-				if (breakevenActualSetAuto)
-				{
-					myFreeBEActual = true;
-				}
-				
-				//Candle Trail Stop
-				candleTrailTrigger = enterShort - (stopShort - enterShort) * candleTrailTarget;
-				
-				
-				if (candleTrailSetAuto)
-				{
-					myFreeCandleTrail = true;
-					activeTrail = true;
-				}
-				
-				#endregion
-				
-				#region Management Prints
-				
-				if (SystemPrint)
-				{
-					#region Breakeven
+
 					
-					if (BreakevenPrints)
+					#region Management Targets
+					
+					//Breakeven Area
+					breakevenAreaTrigger = enterShort - (stopShort - enterShort) * breakevenAreaTarget;
+					breakevenAreaStopSet = breakevenAreaShort + candleBarOffsetBreakeven;
+				
+					if (breakevenAreaSetAuto)
 					{
-						Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
-						Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
-						Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
-						
-						Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
-						Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
-						Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						myFreeBEArea = true;
+					}
+					
+					//Breakeven Actual
+					breakevenActualTrigger = enterShort - (stopShort - enterShort) * breakevenActualTarget;
+					breakevenActualStopSet = Position.AveragePrice + candleBarOffsetBreakeven;
+					
+					if (breakevenActualSetAuto)
+					{
+						myFreeBEActual = true;
+					}
+					
+					//Candle Trail Stop
+					candleTrailTrigger = enterShort - (stopShort - enterShort) * candleTrailTarget;
+					
+					
+					if (candleTrailSetAuto)
+					{
+						myFreeCandleTrail = true;
+						activeTrail = true;
 					}
 					
 					#endregion
+					
+					#region Management Prints
+					
+					if (SystemPrint)
+					{
+						#region Breakeven
+						
+						if (BreakevenPrints)
+						{
+							Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
+							Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
+							Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
+							
+							Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
+							Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
+							Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						}
+						
+						#endregion
+					}
+					
+					#endregion
+					
+					myFreeTrade = false;
+					
+					myFillCheck = true;
+					
+		
+				
 				}
-				
-				#endregion
-				
-				myFreeTrade = false;
-				
-				myFillCheck = true;
-			}
-				
-			#endregion
-				
+				#endregion						
+
 				#region Partial Fill Short Position
 				
 				#region Stop/Profits
@@ -4557,11 +4563,9 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				
 				myFreeTrade = false;
 			}
-			
-			#endregion
-			
-			}
-			
+			//}
+
+		
 			if (tickMode)
 			{
 				//Long
@@ -4569,7 +4573,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 			
 				#region Stop/Profits			
 			
-				if (Position.MarketPosition == MarketPosition.Long && myFreeTrade == true && Position.Quantity == positionSizeLong)
+				if ((Position.MarketPosition == MarketPosition.Long) && (myFreeTrade == true) && (Position.Quantity == positionSizeLong))
 				{
 					if (dualTarget == false)
 					{
@@ -4583,83 +4587,84 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 							ExitLongLimit(0, true, Position.Quantity, Position.AveragePrice + (FinalTargetRR * TickSize), "MyTargetLong", "MyEntryLong");
 						}
 					}
-				
-				if (dualTarget)
-				{
-					if(stopLoss)
+					
+					if (dualTarget)
 					{
-						ExitLongStopMarket(0, true, Position.Quantity, Position.AveragePrice - candleBarOffsetStop, "MyStopLong", "MyEntryLong");
-						ExitLongStopMarket(0, true, Position.Quantity, Position.AveragePrice - candleBarOffsetStop, "MyStopLong2", "MyEntryLong2");
+						if(stopLoss)
+						{
+							ExitLongStopMarket(0, true, Position.Quantity, Position.AveragePrice - candleBarOffsetStop, "MyStopLong", "MyEntryLong");
+							ExitLongStopMarket(0, true, Position.Quantity, Position.AveragePrice - candleBarOffsetStop, "MyStopLong2", "MyEntryLong2");
+						}
+						
+						if(profitTarget)
+						{
+							ExitLongLimit(0, true, Position.Quantity, Position.AveragePrice + (FirstTargetRR * TickSize),  "MyTargetLong", "MyEntryLong");
+							ExitLongLimit(0, true, Position.Quantity, Position.AveragePrice + (FinalTargetRR * TickSize), "MyTargetLong2", "MyEntryLong2");
+						}	
+					}
+
+					
+					#region Management Targets
+					
+					//Breakeven Area
+					breakevenAreaTrigger = Position.AveragePrice + (breakevenAreaTarget * TickSize);
+					breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
+				
+					if (breakevenAreaSetAuto)
+					{
+						myFreeBEArea = true;
 					}
 					
-					if(profitTarget)
-					{
-						ExitLongLimit(0, true, Position.Quantity, Position.AveragePrice + (FirstTargetRR * TickSize),  "MyTargetLong", "MyEntryLong");
-						ExitLongLimit(0, true, Position.Quantity, Position.AveragePrice + (FinalTargetRR * TickSize), "MyTargetLong2", "MyEntryLong2");
-					}	
-				}
-				
-				#endregion
-				
-				#region Management Targets
-				
-				//Breakeven Area
-				breakevenAreaTrigger = Position.AveragePrice + (breakevenAreaTarget * TickSize);
-				breakevenAreaStopSet = breakevenAreaLong - candleBarOffsetBreakeven;
-			
-				if (breakevenAreaSetAuto)
-				{
-					myFreeBEArea = true;
-				}
-				
-				//Breakeven Actual
-				breakevenActualTrigger = Position.AveragePrice + (breakevenActualTarget * TickSize);
-				breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
-				
-				if (breakevenActualSetAuto)
-				{
-					myFreeBEActual = true;
-				}
-				
-				//Candle Trail Stop
-				candleTrailTrigger = Position.AveragePrice + (candleTrailTarget * TickSize);
-				
-				if (candleTrailSetAuto)
-				{
-					myFreeCandleTrail = true;
-					activeTrail = true;
-				}
-				
-				#endregion
-				
-				#region Management Prints
-				
-				if (SystemPrint)
-				{
-					#region Breakeven
+					//Breakeven Actual
+					breakevenActualTrigger = Position.AveragePrice + (breakevenActualTarget * TickSize);
+					breakevenActualStopSet = Position.AveragePrice - candleBarOffsetBreakeven;
 					
-					if (BreakevenPrints)
+					if (breakevenActualSetAuto)
 					{
-						Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
-						Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
-						Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
-						
-						Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
-						Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
-						Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						myFreeBEActual = true;
+					}
+					
+					//Candle Trail Stop
+					candleTrailTrigger = Position.AveragePrice + (candleTrailTarget * TickSize);
+					
+					if (candleTrailSetAuto)
+					{
+						myFreeCandleTrail = true;
+						activeTrail = true;
 					}
 					
 					#endregion
+					
+					#region Management Prints
+					
+					if (SystemPrint)
+					{
+						#region Breakeven
+						
+						if (BreakevenPrints)
+						{
+							Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
+							Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
+							Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
+							
+							Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
+							Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
+							Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						}
+						
+						#endregion
+					}
+					
+					#endregion
+					
+					myFreeTrade = false;
+					
+					myFillCheck = true;
 				}
+
+				#endregion			
 				
 				#endregion
-				
-				myFreeTrade = false;
-				
-				myFillCheck = true;
-			}
-				
-			#endregion
 				
 				#region Partial Fill Long Position
 			
@@ -4747,11 +4752,9 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				#endregion
 				
 				myFreeTrade = false;
-			}
-			
-			#endregion
-			
-
+				
+				#endregion
+												//}//*******************+++++++++++++++++++++********************//
 				//Short 
 				#region Filled Short Position	
 			
@@ -4846,19 +4849,16 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				myFreeTrade = false;
 				
 				myFillCheck = true;
-			}
 				
-			#endregion
+				#endregion
 				
 				#region Partial Fill Short Position
 				
 				#region Stop/Profits
-				
-			if (Position.MarketPosition == MarketPosition.Short && myFreeTrade == true && Position.Quantity < positionSizeShort && IsFirstTickOfBar)
-			{
-				
-				
-				if (dualTarget == false)
+					
+				if (Position.MarketPosition == MarketPosition.Short && myFreeTrade == true && Position.Quantity < positionSizeShort && IsFirstTickOfBar)
+				{
+					if (dualTarget == false)
 					{
 						if (stopLoss)
 						{
@@ -4870,88 +4870,83 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 							ExitShortLimit(0, true, Position.Quantity, Position.AveragePrice - (FinalTargetRR * TickSize), "MyTargetShort", "MyEntryShort");
 						}
 					}
-				
-				if (dualTarget)
-				{
-
-					
-					if(stopLoss)
+	
+					if (dualTarget)
 					{
-						ExitShortStopMarket(0, true, Position.Quantity, Position.AveragePrice + candleBarOffsetStop, "MyStopShort", "MyEntryShort");
-						ExitShortStopMarket(0, true, Position.Quantity, Position.AveragePrice + candleBarOffsetStop, "MyStopShort2", "MyEntryShort2");
+						if(stopLoss)
+						{
+							ExitShortStopMarket(0, true, Position.Quantity, Position.AveragePrice + candleBarOffsetStop, "MyStopShort", "MyEntryShort");
+							ExitShortStopMarket(0, true, Position.Quantity, Position.AveragePrice + candleBarOffsetStop, "MyStopShort2", "MyEntryShort2");
+						}
+						
+						if(profitTarget)
+						{
+							ExitShortLimit(0, true, Position.Quantity, Position.AveragePrice - (FirstTargetRR * TickSize), "MyTargetShort", "MyEntryShort");
+							ExitShortLimit(0, true, Position.Quantity, Position.AveragePrice - (FinalTargetRR * TickSize), "MyTargetShort2", "MyEntryShort2");
+						}	
 					}
 					
-					if(profitTarget)
+					#region Management Targets
+					
+					//Breakeven Area
+					breakevenAreaTrigger = Position.AveragePrice - (breakevenAreaTarget * TickSize);
+					breakevenAreaStopSet = breakevenAreaShort + candleBarOffsetBreakeven;
+				
+					if (breakevenAreaSetAuto)
 					{
-						ExitShortLimit(0, true, Position.Quantity, Position.AveragePrice - (FirstTargetRR * TickSize), "MyTargetShort", "MyEntryShort");
-						ExitShortLimit(0, true, Position.Quantity, Position.AveragePrice - (FinalTargetRR * TickSize), "MyTargetShort2", "MyEntryShort2");
-					}	
+						myFreeBEArea = true;
+					}
 					
+					//Breakeven Actual
+					breakevenActualTrigger = Position.AveragePrice - (breakevenActualTarget * TickSize);
+					breakevenActualStopSet = Position.AveragePrice + candleBarOffsetBreakeven;
 					
-				}
-				
-				#endregion
-				
-				#region Management Targets
-				
-				//Breakeven Area
-				breakevenAreaTrigger = Position.AveragePrice - (breakevenAreaTarget * TickSize);
-				breakevenAreaStopSet = breakevenAreaShort + candleBarOffsetBreakeven;
-			
-				if (breakevenAreaSetAuto)
-				{
-					myFreeBEArea = true;
-				}
-				
-				//Breakeven Actual
-				breakevenActualTrigger = Position.AveragePrice - (breakevenActualTarget * TickSize);
-				breakevenActualStopSet = Position.AveragePrice + candleBarOffsetBreakeven;
-				
-				if (breakevenActualSetAuto)
-				{
-					myFreeBEActual = true;
-				}
-				
-				//Candle Trail Stop
-				candleTrailTrigger = Position.AveragePrice - (candleTrailTarget * TickSize);
-				
-				if (candleTrailSetAuto)
-				{
-					myFreeCandleTrail = true;
-					activeTrail = true;
-				}
-				
-				#endregion
-				
-				#region Management Prints
-				
-				if (SystemPrint)
-				{
-					#region Breakeven
-					
-					if (BreakevenPrints)
+					if (breakevenActualSetAuto)
 					{
-						Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
-						Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
-						Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
-						
-						Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
-						Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
-						Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						myFreeBEActual = true;
+					}
+					
+					//Candle Trail Stop
+					candleTrailTrigger = Position.AveragePrice - (candleTrailTarget * TickSize);
+					
+					if (candleTrailSetAuto)
+					{
+						myFreeCandleTrail = true;
+						activeTrail = true;
 					}
 					
 					#endregion
+					
+					#region Management Prints
+					
+					if (SystemPrint)
+					{
+						#region Breakeven
+						
+						if (BreakevenPrints)
+						{
+							Print("breakeven(Area)Trigger " + breakevenAreaTrigger + " " +  Time[1]);
+							Print("breakeven(Area)StopSet " + breakevenAreaStopSet + " " + Time[1]);
+							Print("myFreeBE(Area) " + myFreeBEArea + " " + Time[1]);
+							
+							Print("breakeven(Actual)Trigger " + breakevenActualTrigger + " " +  Time[1]);
+							Print("breakeven(Actual)StopSet " + breakevenActualStopSet + " " + Time[1]);
+							Print("myFreeBE(Actual) " + myFreeBEActual + " " + Time[1]);
+						}
+						
+						#endregion
+					}
+					
+					#endregion
+					
+					myFreeTrade = false;
 				}
 				
 				#endregion
 				
-				myFreeTrade = false;
+				#endregion
+												//}//*******************+++++++++++++++++++++********************//
 			}
-			
-			#endregion
-			
-			}
-			
 			
 			///Management Logic - Breakeven/Trail Stop
 		
@@ -5334,7 +5329,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				
 			#endregion
 			
-		}
+		}}}}
 		
 	
 		protected override void OnPositionUpdate(Position position, double averagePrice, int quantity, MarketPosition marketPosition)
@@ -5353,66 +5348,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 				RemoveDrawObject("EntryLine");
 				RemoveDrawObject("StopLine");
 			}
-			
-			#region Trail Stop Cancel
-			
-			if (Position.MarketPosition == MarketPosition.Flat) 
-			{
-				myFreeCandleTrail = false;
-				
-				if (SystemPrint)
-				{
-					if (TrailPrints)
-					{
-						Print("myFree Trail ON Position " + myFreeCandleTrail + " " + Time[1]);
-					}
-				}
-				
-			}
-			
-			#endregion
-			
-			#region Fib Levels Updates
-			
-			if (Position.MarketPosition == MarketPosition.Flat)
-			{
-				fibCount 	= 1;
-				isFib 		= false;;
-				
-				RemoveDrawObject("FibLong");
-				RemoveDrawObject("FibShort");
-			}
-			
-			if (fibButtonClicked && Position.MarketPosition == MarketPosition.Long)
-			{
-				if (rrMode)
-				{
-					Draw.FibonacciRetracements(this, "FibLong", false, fibCount, setStopLong, fibCount, enterLong);
-				}
-				
-				if (tickMode)
-				{
-					Draw.FibonacciRetracements(this, "FibLong", false, fibCount, Position.AveragePrice - candleBarOffsetStop, fibCount, Position.AveragePrice);
-				}
-				
-			}
-			
-			if (fibButtonClicked && Position.MarketPosition == MarketPosition.Short)
-			{
-				if (rrMode)
-				{
-					Draw.FibonacciRetracements(this, "FibShort", false, fibCount, setStopShort, fibCount, enterShort);
-				}
-				
-				if (tickMode)
-				{
-					Draw.FibonacciRetracements(this, "FibShort", false, fibCount, Position.AveragePrice + candleBarOffsetStop, fibCount, Position.AveragePrice);
-				}
-			}
-			
-			#endregion
-			
-			
+
 		}
 		
 			
@@ -5480,7 +5416,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 		
 				}		
 				
-				#endregion
+			#endregion
 		}
 			
 		protected void RemoveWPFControls()
@@ -5540,7 +5476,7 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 			#endregion
 		}
 		
-		
+
 		#region Button Click Events
 		
 		private void OnButtonClick(object sender, RoutedEventArgs rea)
@@ -5574,7 +5510,6 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 		}
 		
 		#endregion
-		
 		
 		#region Properties
 			
@@ -6108,3 +6043,5 @@ namespace NinjaTrader.NinjaScript.Strategies.TradeSaberStrategies
 	}
 }
 
+#endregion
+#endregion

@@ -441,10 +441,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -470,6 +469,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -524,10 +524,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -553,6 +552,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -607,10 +607,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -636,6 +635,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -644,10 +644,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T16:27:14.9038608</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">MIN(Low, 3)[0]</LiveValue>
-              <BindingValue xsi:type="xsd:string">MIN(Low, 3)[0]</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">MIN(Low, 3)[0]</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -727,6 +726,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">MIN(Low, 3)[0]</LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -752,10 +752,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -781,6 +780,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -812,10 +812,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -841,6 +840,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -940,10 +940,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -969,6 +968,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -1013,10 +1013,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1042,6 +1041,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -1073,10 +1073,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1102,6 +1101,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -1134,10 +1134,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -1163,6 +1162,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -1258,11 +1258,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <BarsInProgress>
-                  <LiveValue xsi:type="xsd:string">0</LiveValue>
-                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>true</IsInt>
+                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">0</LiveValue>
                 </BarsInProgress>
                 <CurrencyType>Currency</CurrencyType>
                 <Date>2023-07-16T16:18:43.6210406</Date>
@@ -1300,11 +1300,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -1330,11 +1330,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <BarsInProgress>
-                  <LiveValue xsi:type="xsd:string">0</LiveValue>
-                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>true</IsInt>
+                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">0</LiveValue>
                 </BarsInProgress>
                 <CurrencyType>Currency</CurrencyType>
                 <Date>2023-07-16T16:19:10.2882448</Date>
@@ -1372,11 +1372,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -1616,11 +1616,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -1743,10 +1743,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1772,6 +1771,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -1786,10 +1786,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">InitialStopLong</LiveValue>
-              <BindingValue xsi:type="xsd:string">InitialStopLong</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">InitialStopLong</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1815,6 +1814,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">InitialStopLong</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -1868,10 +1868,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1897,6 +1896,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -1911,10 +1911,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">InitialStopLong</LiveValue>
-              <BindingValue xsi:type="xsd:string">InitialStopLong</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">InitialStopLong</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1940,6 +1939,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">InitialStopLong</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -1989,10 +1989,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2015,16 +2014,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -2050,6 +2048,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -2059,16 +2058,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2094,6 +2093,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2155,10 +2155,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2181,16 +2180,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
-                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -2216,6 +2214,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -2225,16 +2224,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2260,6 +2259,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2307,10 +2307,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2336,6 +2335,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2344,10 +2344,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T16:45:07.1510155</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetLong * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetLong * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetLong * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2370,16 +2369,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">BreakevenTargetLong</LiveValue>
-                    <BindingValue xsi:type="xsd:string">BreakevenTargetLong</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">BreakevenTargetLong</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -2405,6 +2403,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">BreakevenTargetLong</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -2414,6 +2413,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetLong * TickSize)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -2439,10 +2439,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2468,6 +2467,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2476,10 +2476,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T16:45:38.035707</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetLong * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetLong * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetLong * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2502,16 +2501,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">TrailTargetLong</LiveValue>
-                    <BindingValue xsi:type="xsd:string">TrailTargetLong</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">TrailTargetLong</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -2537,6 +2535,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">TrailTargetLong</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -2546,6 +2545,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetLong * TickSize)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -2639,10 +2639,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2668,6 +2667,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2780,10 +2780,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2809,6 +2808,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2853,10 +2853,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2882,6 +2881,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -2914,10 +2914,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -2943,6 +2942,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -3272,10 +3272,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3301,6 +3300,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -3332,10 +3332,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3361,6 +3360,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -3652,10 +3652,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3681,6 +3680,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -3695,10 +3695,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
-              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3726,6 +3725,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -3779,10 +3779,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3808,6 +3807,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -3822,10 +3822,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
-              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3853,6 +3852,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -3902,10 +3902,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -3928,16 +3927,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -3963,6 +3961,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -3972,16 +3971,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4007,6 +4006,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4068,10 +4068,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4094,16 +4093,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
-                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -4129,6 +4127,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -4138,16 +4137,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4173,6 +4172,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4220,10 +4220,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4249,6 +4248,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4281,10 +4281,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -4310,6 +4309,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -4639,10 +4639,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4668,6 +4667,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4699,10 +4699,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4728,6 +4727,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4759,10 +4759,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -4788,6 +4787,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -4820,10 +4820,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -4849,6 +4848,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -5132,10 +5132,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5161,6 +5160,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -5169,10 +5169,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:14:35.5889252</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(ATR(Close, Convert.ToInt32(AtrPeriod))[0] * AtrMultiply) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(ATR(AtrPeriod)[0] * AtrMultiply) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(ATR(AtrPeriod)[0] * AtrMultiply) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5262,16 +5261,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Multiply</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Multiply</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrMultiply</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrMultiply</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrMultiply</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -5297,6 +5295,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrMultiply</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -5306,6 +5305,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(ATR(Close, Convert.ToInt32(AtrPeriod))[0] * AtrMultiply) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -5399,10 +5399,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5428,6 +5427,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -5601,10 +5601,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5630,6 +5629,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -5638,10 +5638,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:25:05.5801039</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Close[0] - (AtrCurrentPrice)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Default input[0] - (AtrCurrentPrice)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Default input[0] - (AtrCurrentPrice)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5666,16 +5665,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Subtract</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Subtract</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -5701,6 +5699,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -5710,6 +5709,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Close[0] - (AtrCurrentPrice)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -5803,10 +5803,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -5832,6 +5831,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -5949,16 +5949,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Subtract</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Subtract</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -5984,6 +5983,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -6051,16 +6051,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Subtract</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Subtract</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -6086,6 +6085,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -6156,16 +6156,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Subtract</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Subtract</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -6191,6 +6190,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -6267,10 +6267,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6296,6 +6295,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -6310,10 +6310,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
-              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6339,6 +6338,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -6392,10 +6392,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6421,6 +6420,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -6435,10 +6435,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
-              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6464,6 +6463,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -6513,10 +6513,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6539,16 +6538,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Long</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -6574,6 +6572,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Long</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -6583,16 +6582,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Long * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6618,6 +6617,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -6679,10 +6679,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6705,16 +6704,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
-                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">TargetLong2</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -6740,6 +6738,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">TargetLong2</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -6749,16 +6748,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TargetLong2 * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6784,6 +6783,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -6831,10 +6831,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -6860,6 +6859,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7190,10 +7190,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7219,6 +7218,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7250,10 +7250,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7279,6 +7278,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7311,10 +7311,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -7340,6 +7339,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -7440,10 +7440,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7469,6 +7468,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7523,10 +7523,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7552,6 +7551,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7606,10 +7606,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7635,6 +7634,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7643,10 +7643,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:53:08.1258339</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">MAX(High, 3)[0]</LiveValue>
-              <BindingValue xsi:type="xsd:string">MAX(High, 3)[0]</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">MAX(High, 3)[0]</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7726,6 +7725,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">MAX(High, 3)[0]</LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -7751,10 +7751,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7780,6 +7779,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7811,10 +7811,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7840,6 +7839,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -7939,10 +7939,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -7968,6 +7967,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -8071,10 +8071,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -8100,6 +8099,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -8135,10 +8135,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -8164,6 +8163,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -8172,11 +8172,11 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T18:58:09.4098741</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">9999999999999</LiveValue>
-              <BindingValue xsi:type="xsd:string">9999999999999</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">9999999999999</BindingValue>
               <IsLiteral>true</IsLiteral>
+              <LiveValue xsi:type="xsd:string">9999999999999</LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -8202,10 +8202,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -8231,6 +8230,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -8263,10 +8263,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -8292,6 +8291,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -8387,11 +8387,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <BarsInProgress>
-                  <LiveValue xsi:type="xsd:string">0</LiveValue>
-                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>true</IsInt>
+                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">0</LiveValue>
                 </BarsInProgress>
                 <CurrencyType>Currency</CurrencyType>
                 <Date>2023-07-16T16:18:43.6210406</Date>
@@ -8429,11 +8429,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -8459,11 +8459,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <BarsInProgress>
-                  <LiveValue xsi:type="xsd:string">0</LiveValue>
-                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>true</IsInt>
+                  <BindingValue xsi:type="xsd:string">0</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">0</LiveValue>
                 </BarsInProgress>
                 <CurrencyType>Currency</CurrencyType>
                 <Date>2023-07-16T16:19:10.2882448</Date>
@@ -8501,11 +8501,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -8745,11 +8745,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <LookBackPeriod>0</LookBackPeriod>
                 <MarketPosition>Long</MarketPosition>
                 <NumericValue>
-                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
-                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">-1</BindingValue>
                   <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">-1</LiveValue>
                 </NumericValue>
                 <Period>0</Period>
                 <ReturnType>Number</ReturnType>
@@ -8872,10 +8872,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -8901,6 +8900,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -8915,10 +8915,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">InitialStopShort</LiveValue>
-              <BindingValue xsi:type="xsd:string">InitialStopShort</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">InitialStopShort</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -8944,6 +8943,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">InitialStopShort</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -8997,10 +8997,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9026,6 +9025,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9040,10 +9040,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">InitialStopShort</LiveValue>
-              <BindingValue xsi:type="xsd:string">InitialStopShort</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">InitialStopShort</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9069,6 +9068,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">InitialStopShort</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -9118,10 +9118,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9144,16 +9143,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -9179,6 +9177,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -9188,16 +9187,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9223,6 +9222,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9284,10 +9284,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9310,16 +9309,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -9345,6 +9343,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -9354,16 +9353,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9389,6 +9388,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9445,10 +9445,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9474,6 +9473,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9482,10 +9482,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:57:26.9807453</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetShort * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetShort * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetShort * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9508,16 +9507,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">BreakevenTargetShort</LiveValue>
-                    <BindingValue xsi:type="xsd:string">BreakevenTargetShort</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">BreakevenTargetShort</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -9543,6 +9541,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">BreakevenTargetShort</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -9552,6 +9551,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (BreakevenTargetShort * TickSize)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -9577,10 +9577,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9606,6 +9605,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9614,10 +9614,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:57:42.5615417</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetShort * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetShort * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetShort * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9640,16 +9639,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">TrailTargetShort</LiveValue>
-                    <BindingValue xsi:type="xsd:string">TrailTargetShort</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">TrailTargetShort</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -9675,6 +9673,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">TrailTargetShort</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -9684,6 +9683,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (TrailTargetShort * TickSize)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -9777,10 +9777,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9806,6 +9805,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9909,10 +9909,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -9938,6 +9937,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -9973,10 +9973,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10002,6 +10001,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -10034,10 +10034,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -10063,6 +10062,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -10392,10 +10392,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10421,6 +10420,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -10452,10 +10452,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10481,6 +10480,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -10513,10 +10513,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -10542,6 +10541,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -10832,10 +10832,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10861,6 +10860,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -10875,10 +10875,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
-              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10906,6 +10905,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -10959,10 +10959,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -10988,6 +10987,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -11002,10 +11002,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
-              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">Position.AveragePrice</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11033,6 +11032,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">Position.AveragePrice</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -11082,10 +11082,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11108,16 +11107,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -11143,6 +11141,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -11152,16 +11151,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11187,6 +11186,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -11248,10 +11248,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11274,16 +11273,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -11309,6 +11307,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -11318,16 +11317,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11353,6 +11352,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -11479,10 +11479,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11508,6 +11507,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -11552,10 +11552,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -11581,6 +11580,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -11613,10 +11613,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -11642,6 +11641,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -11971,10 +11971,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12000,6 +11999,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -12031,10 +12031,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12060,6 +12059,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -12091,10 +12091,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12120,6 +12119,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -12152,10 +12152,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -12181,6 +12180,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -12464,10 +12464,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12493,6 +12492,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -12501,10 +12501,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T17:14:35.5889252</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(ATR(Close, Convert.ToInt32(AtrPeriod))[0] * AtrMultiply) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(ATR(AtrPeriod)[0] * AtrMultiply) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(ATR(AtrPeriod)[0] * AtrMultiply) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12594,16 +12593,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Multiply</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Multiply</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrMultiply</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrMultiply</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrMultiply</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -12629,6 +12627,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrMultiply</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -12638,6 +12637,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(ATR(Close, Convert.ToInt32(AtrPeriod))[0] * AtrMultiply) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -12731,10 +12731,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -12760,6 +12759,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -12864,10 +12864,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -12893,6 +12892,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -13056,10 +13056,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13085,6 +13084,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -13093,10 +13093,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDateTime>2023-07-16T18:03:21.1980237</VariableDateTime>
             <VariableBool>false</VariableBool>
             <VariableDouble>
-              <LiveValue xsi:type="xsd:string">(Close[0] + (AtrCurrentPrice)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Default input[0] + (AtrCurrentPrice)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Default input[0] + (AtrCurrentPrice)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13121,16 +13120,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -13156,6 +13154,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -13165,6 +13164,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Close[0] + (AtrCurrentPrice)) </LiveValue>
             </VariableDouble>
           </ActionProperties>
           <ActionType>SetValue</ActionType>
@@ -13258,10 +13258,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13287,6 +13286,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -13395,16 +13395,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -13430,6 +13429,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -13497,16 +13497,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -13532,6 +13531,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -13602,16 +13602,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Arithmetic</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Arithmetic</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
-                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">AtrCurrentPrice</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -13637,6 +13636,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">AtrCurrentPrice</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -13713,10 +13713,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13742,6 +13741,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -13756,10 +13756,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
-              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13785,6 +13784,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -13838,10 +13838,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13867,6 +13866,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -13881,10 +13881,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             </SignalName>
             <SoundLocation />
             <StopPrice>
-              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
-              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">AtrStopSet</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13910,6 +13909,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">AtrStopSet</LiveValue>
             </StopPrice>
             <Tag>
               <SeparatorCharacter> </SeparatorCharacter>
@@ -13959,10 +13959,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -13985,16 +13984,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target1Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -14020,6 +14018,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target1Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -14029,16 +14028,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target1Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize1</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14064,6 +14063,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize1</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -14125,10 +14125,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
             <LimitPrice>
-              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
-              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14151,16 +14150,15 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <MarketPosition>Long</MarketPosition>
                 <OffsetBuilder>
                   <ConditionOffset>
-                    <OffsetOperator>Add</OffsetOperator>
-                    <OffsetType>Ticks</OffsetType>
                     <IsSetEnabled>false</IsSetEnabled>
                     <OffsetValue>0</OffsetValue>
+                    <OffsetOperator>Add</OffsetOperator>
+                    <OffsetType>Ticks</OffsetType>
                   </ConditionOffset>
                   <Offset>
-                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
-                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">Target2Short</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -14186,6 +14184,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       <Time>0001-01-01T00:00:00</Time>
                     </DynamicValue>
                     <IsLiteral>false</IsLiteral>
+                    <LiveValue xsi:type="xsd:string">Target2Short</LiveValue>
                   </Offset>
                 </OffsetBuilder>
                 <Period>0</Period>
@@ -14195,16 +14194,16 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">(Position.AveragePrice + (Target2Short * TickSize)) </LiveValue>
             </LimitPrice>
             <LogLevel>Information</LogLevel>
             <Mode>Currency</Mode>
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
-              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">PositionSize2</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14230,6 +14229,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">PositionSize2</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -14354,10 +14354,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14383,6 +14382,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -14427,10 +14427,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14456,6 +14455,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -14488,10 +14488,9 @@ namespace NinjaTrader.NinjaScript.Strategies
           <OffsetType>Currency</OffsetType>
           <Priority>Medium</Priority>
           <Quantity>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -14517,6 +14516,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
@@ -14846,10 +14846,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14875,6 +14874,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
@@ -14906,10 +14906,9 @@ namespace NinjaTrader.NinjaScript.Strategies
             <OffsetType>Currency</OffsetType>
             <Priority>Medium</Priority>
             <Quantity>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -14935,6 +14934,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />

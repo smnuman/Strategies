@@ -340,10 +340,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
-                          <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -369,6 +368,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -378,10 +378,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -407,6 +406,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -424,10 +424,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -453,6 +452,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -462,10 +462,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -491,6 +490,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -508,10 +508,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -537,6 +536,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -546,10 +546,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
-                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -575,6 +574,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -584,11 +584,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -598,10 +598,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
-                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -627,6 +626,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -783,10 +783,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
-                          <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -812,6 +811,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -821,10 +821,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -850,6 +849,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -867,10 +867,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -896,6 +895,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -905,10 +905,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -934,6 +933,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -951,10 +951,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -980,6 +979,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -989,10 +989,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
-                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1018,6 +1017,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1027,11 +1027,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1041,10 +1041,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
-                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1070,6 +1069,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1226,10 +1226,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1255,6 +1254,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1264,10 +1264,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Fast</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1293,6 +1292,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Fast</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1310,10 +1310,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1339,6 +1338,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1348,10 +1348,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Slow</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1377,6 +1376,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Slow</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1394,10 +1394,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
-                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">MACD_Smooth</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1423,6 +1422,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">MACD_Smooth</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1432,10 +1432,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
-                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">StDev_Bars</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1461,6 +1460,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">StDev_Bars</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1470,11 +1470,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1484,10 +1484,9 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
-                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">DeadZone</BindingValue>
                           <DynamicValue>
                             <Children />
                             <IsExpanded>false</IsExpanded>
@@ -1513,6 +1512,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">DeadZone</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1736,6 +1736,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <VariableName>shorts</VariableName>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set ShortProfitTarget</Name>
@@ -1757,6 +1758,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -1791,6 +1793,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">Target</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Target</Name>
@@ -1824,6 +1827,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <VariableName>ShortProfitTarget</VariableName>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set LongStopLoss</Name>
@@ -1845,6 +1849,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -1879,6 +1884,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">Stop</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Stop</Name>
@@ -1913,6 +1919,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>false</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Set LongStopLoss</Name>
@@ -1934,6 +1941,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>false</IsSelected>
               <Name>Default order quantity</Name>
@@ -1968,6 +1976,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">Stop</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>true</IsSelected>
               <Name>Stop</Name>
@@ -3171,6 +3180,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set SetPTSL</Name>
@@ -3192,6 +3202,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -3230,6 +3241,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>false</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Set SetPTSL</Name>
@@ -3251,6 +3263,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>false</IsSelected>
               <Name>Default order quantity</Name>
@@ -3754,6 +3767,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set SetPTSL</Name>
@@ -3775,6 +3789,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -3813,6 +3828,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>false</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Set SetPTSL</Name>
@@ -3834,6 +3850,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>false</IsSelected>
               <Name>Default order quantity</Name>
@@ -4103,6 +4120,7 @@ namespace NinjaTrader.NinjaScript.Strategies
     <ConditionalAction>
       <Actions>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Enter short position by a stop limit order</Name>
@@ -4124,6 +4142,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4157,6 +4176,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (LongStopLoss * TickSize)) </BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Average position price</Name>
@@ -4187,6 +4207,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                     <IsInt>false</IsInt>
                     <BindingValue xsi:type="xsd:string">LongStopLoss</BindingValue>
                     <DynamicValue>
+                      <Children />
                       <IsExpanded>false</IsExpanded>
                       <IsSelected>true</IsSelected>
                       <Name>LongStopLoss</Name>
@@ -4238,6 +4259,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Enter short position by a limit order</Name>
@@ -4255,6 +4277,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Target * TickSize)) </BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Average position price</Name>
@@ -4285,6 +4308,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                     <IsInt>false</IsInt>
                     <BindingValue xsi:type="xsd:string">Target</BindingValue>
                     <DynamicValue>
+                      <Children />
                       <IsExpanded>false</IsExpanded>
                       <IsSelected>true</IsSelected>
                       <Name>Target</Name>
@@ -4329,6 +4353,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4381,6 +4406,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set SetPTSL</Name>
@@ -4402,6 +4428,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4446,6 +4473,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Current market position</Name>
@@ -4471,6 +4499,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Market position</Name>
@@ -4505,6 +4534,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Last_trade</Name>
@@ -4530,6 +4560,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Numeric value</Name>
@@ -4571,6 +4602,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>SetPTSL</Name>
@@ -4596,6 +4628,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>True</Name>
@@ -4630,6 +4663,7 @@ namespace NinjaTrader.NinjaScript.Strategies
     <ConditionalAction>
       <Actions>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Enter long position by a stop limit order</Name>
@@ -4651,6 +4685,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4684,6 +4719,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (Stop * TickSize)) </BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Average position price</Name>
@@ -4714,6 +4750,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                     <IsInt>false</IsInt>
                     <BindingValue xsi:type="xsd:string">Stop</BindingValue>
                     <DynamicValue>
+                      <Children />
                       <IsExpanded>false</IsExpanded>
                       <IsSelected>true</IsSelected>
                       <Name>Stop</Name>
@@ -4774,6 +4811,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Enter long position by a limit order</Name>
@@ -4791,6 +4829,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">(Position.AveragePrice + (ShortProfitTarget * TickSize)) </BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Average position price</Name>
@@ -4821,6 +4860,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                     <IsInt>false</IsInt>
                     <BindingValue xsi:type="xsd:string">ShortProfitTarget</BindingValue>
                     <DynamicValue>
+                      <Children />
                       <IsExpanded>false</IsExpanded>
                       <IsSelected>true</IsSelected>
                       <Name>ShortProfitTarget</Name>
@@ -4865,6 +4905,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4908,6 +4949,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Set SetPTSL</Name>
@@ -4929,6 +4971,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -4967,6 +5010,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>false</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Set SetPTSL</Name>
@@ -4988,6 +5032,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>false</IsSelected>
               <Name>Default order quantity</Name>
@@ -5160,6 +5205,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>SetPTSL</Name>
@@ -5185,6 +5231,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>True</Name>
