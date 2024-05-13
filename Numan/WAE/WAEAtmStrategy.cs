@@ -22,7 +22,7 @@ using NinjaTrader.NinjaScript.DrawingTools;
 #endregion
 
 //This namespace holds Strategies in this folder and is required. Do not change it.
-namespace NinjaTrader.NinjaScript.Strategies.MyStrategies
+namespace NinjaTrader.NinjaScript.Strategies.Numan
 {
 	#region // Properties display preference
 	[Gui.CategoryOrder("Trading Params", 1)]
@@ -32,7 +32,7 @@ namespace NinjaTrader.NinjaScript.Strategies.MyStrategies
 	
 	public class WAEAtmStrategy : Strategy
 	{
-		private NinjaTrader.NinjaScript.Indicators.NMN.WAE_Mod WAE;
+		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE;
 		
 		/// <summary>
 		/// Addition by Numan

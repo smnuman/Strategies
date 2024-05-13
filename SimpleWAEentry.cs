@@ -31,7 +31,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 		private bool PossibleShort;
 		private bool TradingTimeFound;
 
-		private NinjaTrader.NinjaScript.Indicators.NMN.WAE_Mod WAE_Mod1;
+		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE_Mod1;
 
 		protected override void OnStateChange()
 		{

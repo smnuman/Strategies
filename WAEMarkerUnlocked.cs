@@ -23,11 +23,11 @@ using NinjaTrader.NinjaScript.DrawingTools;
 #endregion
 
 //This namespace holds Strategies in this folder and is required. Do not change it. 
-namespace NinjaTrader.NinjaScript.Strategies.NMNStrategies
+namespace NinjaTrader.NinjaScript.Strategies.Numan
 {
 	public class WAEMarkerUnlocked : Strategy
 	{
-		private NinjaTrader.NinjaScript.Indicators.NMN.WAE_Mod WAE;
+		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE;
 		private NinjaTrader.NinjaScript.Indicators.ATR dzATR;
 		private Series<int> HiExplosion;
 		private Series<int> LoExplosion;

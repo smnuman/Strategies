@@ -165,6 +165,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -215,6 +216,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDouble>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">YesterdaysPNL[1]</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -286,6 +288,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -336,6 +339,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDouble>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">SystemPerformance.AllTrades.TradesPerformance.Currency.CumProfit</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -392,6 +396,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -442,6 +447,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <VariableDouble>
             <DefaultValue>0</DefaultValue>
             <IsInt>false</IsInt>
+            <BindingValue xsi:type="xsd:string">SystemPerformance.AllTrades.TradesPerformance.Currency.CumProfit</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -504,6 +510,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -554,6 +561,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDouble>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">SystemPerformance.AllTrades.TradesPerformance.Currency.CumProfit</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -618,6 +626,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -723,6 +732,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -841,6 +851,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Y>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Low[0] + (-9 * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>true</IsExpanded>
@@ -873,6 +884,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                   <Offset>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">-9</BindingValue>
                     <IsLiteral>true</IsLiteral>
                     <LiveValue xsi:type="xsd:string">-9</LiveValue>
                   </Offset>
@@ -962,6 +974,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1078,6 +1091,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Y>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(Low[0] + (-5 * TickSize)) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1110,6 +1124,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                   <Offset>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">-5</BindingValue>
                     <IsLiteral>true</IsLiteral>
                     <LiveValue xsi:type="xsd:string">-5</LiveValue>
                   </Offset>
@@ -1166,6 +1181,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1226,6 +1242,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -1352,6 +1369,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1388,6 +1406,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <VariableDouble>
               <DefaultValue>0</DefaultValue>
               <IsInt>false</IsInt>
+              <BindingValue xsi:type="xsd:string">(StrategyTotallPNL[0] - (YesterdaysPNL[0])) </BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -1434,6 +1453,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                   <Offset>
                     <DefaultValue>0</DefaultValue>
                     <IsInt>false</IsInt>
+                    <BindingValue xsi:type="xsd:string">YesterdaysPNL[0]</BindingValue>
                     <DynamicValue>
                       <Children />
                       <IsExpanded>false</IsExpanded>
@@ -1559,635 +1579,6 @@ namespace NinjaTrader.NinjaScript.Strategies
       </Conditions>
       <SetName>Set 3</SetName>
       <SetNumber>3</SetNumber>
-    </ConditionalAction>
-    <ConditionalAction>
-      <Actions>
-        <WizardAction>
-          <Children />
-          <IsExpanded>false</IsExpanded>
-          <IsSelected>true</IsSelected>
-          <Name>Enter long position</Name>
-          <OffsetType>Arithmetic</OffsetType>
-          <ActionProperties>
-            <DashStyle>Solid</DashStyle>
-            <DivideTimePrice>false</DivideTimePrice>
-            <Id />
-            <File />
-            <IsAutoScale>false</IsAutoScale>
-            <IsSimulatedStop>false</IsSimulatedStop>
-            <IsStop>false</IsStop>
-            <LogLevel>Information</LogLevel>
-            <Mode>Currency</Mode>
-            <OffsetType>Currency</OffsetType>
-            <Priority>Medium</Priority>
-            <Quantity>
-              <DefaultValue>0</DefaultValue>
-              <IsInt>true</IsInt>
-              <DynamicValue>
-                <Children />
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>false</IsSelected>
-                <Name>Default order quantity</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>DefaultQuantity</Command>
-                  <Parameters />
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2019-09-04T08:04:32.3073177</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </DynamicValue>
-              <IsLiteral>false</IsLiteral>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            </Quantity>
-            <ServiceName />
-            <ScreenshotPath />
-            <SoundLocation />
-            <Tag>
-              <SeparatorCharacter> </SeparatorCharacter>
-              <Strings>
-                <NinjaScriptString>
-                  <Index>0</Index>
-                  <StringValue>Set Enter long position</StringValue>
-                </NinjaScriptString>
-              </Strings>
-            </Tag>
-            <TextPosition>BottomLeft</TextPosition>
-            <VariableDateTime>2019-09-04T08:04:32.3073177</VariableDateTime>
-            <VariableBool>false</VariableBool>
-          </ActionProperties>
-          <ActionType>Enter</ActionType>
-          <Command>
-            <Command>EnterLong</Command>
-            <Parameters>
-              <string>quantity</string>
-              <string>signalName</string>
-            </Parameters>
-          </Command>
-        </WizardAction>
-        <WizardAction>
-          <IsExpanded>true</IsExpanded>
-          <IsSelected>true</IsSelected>
-          <Name>Print</Name>
-          <OffsetType>Arithmetic</OffsetType>
-          <ActionProperties>
-            <DashStyle>Solid</DashStyle>
-            <DivideTimePrice>false</DivideTimePrice>
-            <Id />
-            <File />
-            <IsAutoScale>false</IsAutoScale>
-            <IsSimulatedStop>false</IsSimulatedStop>
-            <IsStop>false</IsStop>
-            <LogLevel>Information</LogLevel>
-            <MessageValue>
-              <SeparatorCharacter> </SeparatorCharacter>
-              <Strings>
-                <NinjaScriptString>
-                  <Index>0</Index>
-                  <StringValue>enter long</StringValue>
-                </NinjaScriptString>
-                <NinjaScriptString>
-                  <Action>
-                    <IsExpanded>false</IsExpanded>
-                    <IsSelected>true</IsSelected>
-                    <Name>DailyPNL</Name>
-                    <OffsetType>Arithmetic</OffsetType>
-                    <AssignedCommand>
-                      <Command>DailyPNL</Command>
-                      <Parameters />
-                    </AssignedCommand>
-                    <BarsAgo>0</BarsAgo>
-                    <CurrencyType>Currency</CurrencyType>
-                    <Date>2020-07-13T09:20:46.4668325</Date>
-                    <DayOfWeek>Sunday</DayOfWeek>
-                    <EndBar>0</EndBar>
-                    <ForceSeriesIndex>false</ForceSeriesIndex>
-                    <LookBackPeriod>0</LookBackPeriod>
-                    <MarketPosition>Long</MarketPosition>
-                    <Period>0</Period>
-                    <ReturnType>Number</ReturnType>
-                    <StartBar>0</StartBar>
-                    <State>Undefined</State>
-                    <Time>0001-01-01T00:00:00</Time>
-                  </Action>
-                  <Index>1</Index>
-                  <StringValue>DailyPNL</StringValue>
-                </NinjaScriptString>
-                <NinjaScriptString>
-                  <Index>3</Index>
-                  <StringValue> &gt;   </StringValue>
-                </NinjaScriptString>
-                <NinjaScriptString>
-                  <Action>
-                    <IsExpanded>false</IsExpanded>
-                    <IsSelected>true</IsSelected>
-                    <Name>DailyLoss</Name>
-                    <OffsetType>Arithmetic</OffsetType>
-                    <AssignedCommand>
-                      <Command>DailyLoss</Command>
-                      <Parameters />
-                    </AssignedCommand>
-                    <BarsAgo>0</BarsAgo>
-                    <CurrencyType>Currency</CurrencyType>
-                    <Date>2020-07-13T09:21:19.0080087</Date>
-                    <DayOfWeek>Sunday</DayOfWeek>
-                    <EndBar>0</EndBar>
-                    <ForceSeriesIndex>false</ForceSeriesIndex>
-                    <LookBackPeriod>0</LookBackPeriod>
-                    <MarketPosition>Long</MarketPosition>
-                    <Period>0</Period>
-                    <ReturnType>Number</ReturnType>
-                    <StartBar>0</StartBar>
-                    <State>Undefined</State>
-                    <Time>0001-01-01T00:00:00</Time>
-                  </Action>
-                  <Index>3</Index>
-                  <StringValue>DailyLoss</StringValue>
-                </NinjaScriptString>
-              </Strings>
-            </MessageValue>
-            <Mode>Currency</Mode>
-            <OffsetType>Currency</OffsetType>
-            <Priority>Medium</Priority>
-            <Quantity>
-              <DefaultValue>0</DefaultValue>
-              <IsInt>true</IsInt>
-              <DynamicValue>
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>false</IsSelected>
-                <Name>Default order quantity</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>DefaultQuantity</Command>
-                  <Parameters />
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2020-07-13T09:20:00.5134729</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </DynamicValue>
-              <IsLiteral>false</IsLiteral>
-              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-            </Quantity>
-            <ServiceName />
-            <ScreenshotPath />
-            <SoundLocation />
-            <Tag>
-              <SeparatorCharacter> </SeparatorCharacter>
-              <Strings>
-                <NinjaScriptString>
-                  <Index>0</Index>
-                  <StringValue>Set Print</StringValue>
-                </NinjaScriptString>
-              </Strings>
-            </Tag>
-            <TextPosition>BottomLeft</TextPosition>
-            <VariableDateTime>2020-07-13T09:20:00.5134729</VariableDateTime>
-            <VariableBool>false</VariableBool>
-          </ActionProperties>
-          <ActionType>Misc</ActionType>
-          <Command>
-            <Command>Print</Command>
-            <Parameters>
-              <string>MessageValue</string>
-            </Parameters>
-          </Command>
-        </WizardAction>
-      </Actions>
-      <ActiveAction>
-        <IsExpanded>true</IsExpanded>
-        <IsSelected>true</IsSelected>
-        <Name>Print</Name>
-        <OffsetType>Arithmetic</OffsetType>
-        <ActionProperties>
-          <DashStyle>Solid</DashStyle>
-          <DivideTimePrice>false</DivideTimePrice>
-          <Id />
-          <File />
-          <IsAutoScale>false</IsAutoScale>
-          <IsSimulatedStop>false</IsSimulatedStop>
-          <IsStop>false</IsStop>
-          <LogLevel>Information</LogLevel>
-          <MessageValue>
-            <SeparatorCharacter> </SeparatorCharacter>
-            <Strings>
-              <NinjaScriptString>
-                <Index>0</Index>
-                <StringValue>enter long</StringValue>
-              </NinjaScriptString>
-              <NinjaScriptString>
-                <Action>
-                  <IsExpanded>false</IsExpanded>
-                  <IsSelected>true</IsSelected>
-                  <Name>DailyPNL</Name>
-                  <OffsetType>Arithmetic</OffsetType>
-                  <AssignedCommand>
-                    <Command>DailyPNL</Command>
-                    <Parameters />
-                  </AssignedCommand>
-                  <BarsAgo>0</BarsAgo>
-                  <CurrencyType>Currency</CurrencyType>
-                  <Date>2020-07-13T09:20:46.4668325</Date>
-                  <DayOfWeek>Sunday</DayOfWeek>
-                  <EndBar>0</EndBar>
-                  <ForceSeriesIndex>false</ForceSeriesIndex>
-                  <LookBackPeriod>0</LookBackPeriod>
-                  <MarketPosition>Long</MarketPosition>
-                  <Period>0</Period>
-                  <ReturnType>Number</ReturnType>
-                  <StartBar>0</StartBar>
-                  <State>Undefined</State>
-                  <Time>0001-01-01T00:00:00</Time>
-                </Action>
-                <Index>1</Index>
-                <StringValue>DailyPNL</StringValue>
-              </NinjaScriptString>
-              <NinjaScriptString>
-                <Index>3</Index>
-                <StringValue> &gt;   </StringValue>
-              </NinjaScriptString>
-              <NinjaScriptString>
-                <Action>
-                  <IsExpanded>false</IsExpanded>
-                  <IsSelected>true</IsSelected>
-                  <Name>DailyLoss</Name>
-                  <OffsetType>Arithmetic</OffsetType>
-                  <AssignedCommand>
-                    <Command>DailyLoss</Command>
-                    <Parameters />
-                  </AssignedCommand>
-                  <BarsAgo>0</BarsAgo>
-                  <CurrencyType>Currency</CurrencyType>
-                  <Date>2020-07-13T09:21:19.0080087</Date>
-                  <DayOfWeek>Sunday</DayOfWeek>
-                  <EndBar>0</EndBar>
-                  <ForceSeriesIndex>false</ForceSeriesIndex>
-                  <LookBackPeriod>0</LookBackPeriod>
-                  <MarketPosition>Long</MarketPosition>
-                  <Period>0</Period>
-                  <ReturnType>Number</ReturnType>
-                  <StartBar>0</StartBar>
-                  <State>Undefined</State>
-                  <Time>0001-01-01T00:00:00</Time>
-                </Action>
-                <Index>3</Index>
-                <StringValue>DailyLoss</StringValue>
-              </NinjaScriptString>
-            </Strings>
-          </MessageValue>
-          <Mode>Currency</Mode>
-          <OffsetType>Currency</OffsetType>
-          <Priority>Medium</Priority>
-          <Quantity>
-            <DefaultValue>0</DefaultValue>
-            <IsInt>true</IsInt>
-            <DynamicValue>
-              <IsExpanded>false</IsExpanded>
-              <IsSelected>false</IsSelected>
-              <Name>Default order quantity</Name>
-              <OffsetType>Arithmetic</OffsetType>
-              <AssignedCommand>
-                <Command>DefaultQuantity</Command>
-                <Parameters />
-              </AssignedCommand>
-              <BarsAgo>0</BarsAgo>
-              <CurrencyType>Currency</CurrencyType>
-              <Date>2020-07-13T09:20:00.5134729</Date>
-              <DayOfWeek>Sunday</DayOfWeek>
-              <EndBar>0</EndBar>
-              <ForceSeriesIndex>false</ForceSeriesIndex>
-              <LookBackPeriod>0</LookBackPeriod>
-              <MarketPosition>Long</MarketPosition>
-              <Period>0</Period>
-              <ReturnType>Number</ReturnType>
-              <StartBar>0</StartBar>
-              <State>Undefined</State>
-              <Time>0001-01-01T00:00:00</Time>
-            </DynamicValue>
-            <IsLiteral>false</IsLiteral>
-            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
-          </Quantity>
-          <ServiceName />
-          <ScreenshotPath />
-          <SoundLocation />
-          <Tag>
-            <SeparatorCharacter> </SeparatorCharacter>
-            <Strings>
-              <NinjaScriptString>
-                <Index>0</Index>
-                <StringValue>Set Print</StringValue>
-              </NinjaScriptString>
-            </Strings>
-          </Tag>
-          <TextPosition>BottomLeft</TextPosition>
-          <VariableDateTime>2020-07-13T09:20:00.5134729</VariableDateTime>
-          <VariableBool>false</VariableBool>
-        </ActionProperties>
-        <ActionType>Misc</ActionType>
-        <Command>
-          <Command>Print</Command>
-          <Parameters>
-            <string>MessageValue</string>
-          </Parameters>
-        </Command>
-      </ActiveAction>
-      <AnyOrAll>All</AnyOrAll>
-      <Conditions>
-        <WizardConditionGroup>
-          <AnyOrAll>Any</AnyOrAll>
-          <Conditions>
-            <WizardCondition>
-              <LeftItem xsi:type="WizardConditionItem">
-                <Children />
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>SMA</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>SMA</Command>
-                  <Parameters>
-                    <string>AssociatedIndicator</string>
-                    <string>BarsAgo</string>
-                    <string>OffsetBuilder</string>
-                  </Parameters>
-                </AssignedCommand>
-                <AssociatedIndicator>
-                  <AcceptableSeries>Indicator DataSeries CustomSeries DefaultSeries</AcceptableSeries>
-                  <CustomProperties>
-                    <item>
-                      <key>
-                        <string>Period</string>
-                      </key>
-                      <value>
-                        <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <DefaultValue>0</DefaultValue>
-                          <IsInt>true</IsInt>
-                          <IsLiteral>true</IsLiteral>
-                        </anyType>
-                      </value>
-                    </item>
-                  </CustomProperties>
-                  <IndicatorHolder>
-                    <IndicatorName>SMA</IndicatorName>
-                    <Plots>
-                      <Plot>
-                        <IsOpacityVisible>false</IsOpacityVisible>
-                        <BrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF00FF00&lt;/SolidColorBrush&gt;</BrushSerialize>
-                        <DashStyleHelper>Solid</DashStyleHelper>
-                        <Opacity>100</Opacity>
-                        <Width>1</Width>
-                        <AutoWidth>false</AutoWidth>
-                        <Max>1.7976931348623157E+308</Max>
-                        <Min>-1.7976931348623157E+308</Min>
-                        <Name>SMA</Name>
-                        <PlotStyle>Line</PlotStyle>
-                      </Plot>
-                    </Plots>
-                  </IndicatorHolder>
-                  <IsExplicitlyNamed>false</IsExplicitlyNamed>
-                  <IsPriceTypeLocked>false</IsPriceTypeLocked>
-                  <PlotOnChart>true</PlotOnChart>
-                  <PriceType>Close</PriceType>
-                  <SeriesType>Indicator</SeriesType>
-                </AssociatedIndicator>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2019-09-04T08:03:39.9816955</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Series</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </LeftItem>
-              <Lookback>1</Lookback>
-              <Operator>CrossAbove</Operator>
-              <RightItem xsi:type="WizardConditionItem">
-                <Children />
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>SMA</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>SMA</Command>
-                  <Parameters>
-                    <string>AssociatedIndicator</string>
-                    <string>BarsAgo</string>
-                    <string>OffsetBuilder</string>
-                  </Parameters>
-                </AssignedCommand>
-                <AssociatedIndicator>
-                  <AcceptableSeries>Indicator DataSeries CustomSeries DefaultSeries</AcceptableSeries>
-                  <CustomProperties>
-                    <item>
-                      <key>
-                        <string>Period</string>
-                      </key>
-                      <value>
-                        <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <DefaultValue>0</DefaultValue>
-                          <IsInt>true</IsInt>
-                          <IsLiteral>true</IsLiteral>
-                        </anyType>
-                      </value>
-                    </item>
-                  </CustomProperties>
-                  <IndicatorHolder>
-                    <IndicatorName>SMA</IndicatorName>
-                    <Plots>
-                      <Plot>
-                        <IsOpacityVisible>false</IsOpacityVisible>
-                        <BrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFDAA520&lt;/SolidColorBrush&gt;</BrushSerialize>
-                        <DashStyleHelper>Solid</DashStyleHelper>
-                        <Opacity>100</Opacity>
-                        <Width>1</Width>
-                        <AutoWidth>false</AutoWidth>
-                        <Max>1.7976931348623157E+308</Max>
-                        <Min>-1.7976931348623157E+308</Min>
-                        <Name>SMA</Name>
-                        <PlotStyle>Line</PlotStyle>
-                      </Plot>
-                    </Plots>
-                  </IndicatorHolder>
-                  <IsExplicitlyNamed>false</IsExplicitlyNamed>
-                  <IsPriceTypeLocked>false</IsPriceTypeLocked>
-                  <PlotOnChart>true</PlotOnChart>
-                  <PriceType>Close</PriceType>
-                  <SeriesType>Indicator</SeriesType>
-                </AssociatedIndicator>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2019-09-04T08:03:40.026606</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Series</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </RightItem>
-            </WizardCondition>
-          </Conditions>
-          <IsGroup>false</IsGroup>
-          <DisplayName>CrossAbove(SMA(Close, 10), SMA(Close, 30), 1)</DisplayName>
-        </WizardConditionGroup>
-        <WizardConditionGroup>
-          <AnyOrAll>Any</AnyOrAll>
-          <Conditions>
-            <WizardCondition>
-              <LeftItem xsi:type="WizardConditionItem">
-                <Children />
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>Current bar</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>CurrentBars[{0}]</Command>
-                  <Parameters>
-                    <string>Series1</string>
-                  </Parameters>
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2019-12-26T13:46:22.7836986</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>true</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </LeftItem>
-              <Lookback>1</Lookback>
-              <Operator>Greater</Operator>
-              <RightItem xsi:type="WizardConditionItem">
-                <Children />
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>Numeric value</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>{0}</Command>
-                  <Parameters>
-                    <string>NumericValue</string>
-                  </Parameters>
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2019-12-26T13:46:22.8056474</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <NumericValue>
-                  <DefaultValue>0</DefaultValue>
-                  <IsInt>false</IsInt>
-                  <IsLiteral>true</IsLiteral>
-                  <LiveValue xsi:type="xsd:string">20</LiveValue>
-                </NumericValue>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </RightItem>
-            </WizardCondition>
-          </Conditions>
-          <IsGroup>false</IsGroup>
-          <DisplayName>CurrentBars[Default input] &gt; 20</DisplayName>
-        </WizardConditionGroup>
-        <WizardConditionGroup>
-          <AnyOrAll>Any</AnyOrAll>
-          <Conditions>
-            <WizardCondition>
-              <LeftItem xsi:type="WizardConditionItem">
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>DailyPNL</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>DailyPNL</Command>
-                  <Parameters />
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2020-07-13T09:17:11.3781693</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </LeftItem>
-              <Lookback>1</Lookback>
-              <Operator>Greater</Operator>
-              <RightItem xsi:type="WizardConditionItem">
-                <IsExpanded>false</IsExpanded>
-                <IsSelected>true</IsSelected>
-                <Name>DailyLoss</Name>
-                <OffsetType>Arithmetic</OffsetType>
-                <AssignedCommand>
-                  <Command>DailyLoss</Command>
-                  <Parameters />
-                </AssignedCommand>
-                <BarsAgo>0</BarsAgo>
-                <CurrencyType>Currency</CurrencyType>
-                <Date>2020-07-13T09:17:11.3821587</Date>
-                <DayOfWeek>Sunday</DayOfWeek>
-                <EndBar>0</EndBar>
-                <ForceSeriesIndex>false</ForceSeriesIndex>
-                <LookBackPeriod>0</LookBackPeriod>
-                <MarketPosition>Long</MarketPosition>
-                <Period>0</Period>
-                <ReturnType>Number</ReturnType>
-                <StartBar>0</StartBar>
-                <State>Undefined</State>
-                <Time>0001-01-01T00:00:00</Time>
-              </RightItem>
-            </WizardCondition>
-          </Conditions>
-          <IsGroup>false</IsGroup>
-          <DisplayName>DailyPNL &gt; DailyLoss</DisplayName>
-        </WizardConditionGroup>
-      </Conditions>
-      <SetName>Set 5</SetName>
-      <SetNumber>5</SetNumber>
     </ConditionalAction>
     <ConditionalAction>
       <Actions>
@@ -2380,6 +1771,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2443,6 +1835,651 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
+          <Name>Enter long position</Name>
+          <OffsetType>Arithmetic</OffsetType>
+          <ActionProperties>
+            <DashStyle>Solid</DashStyle>
+            <DivideTimePrice>false</DivideTimePrice>
+            <Id />
+            <File />
+            <IsAutoScale>false</IsAutoScale>
+            <IsSimulatedStop>false</IsSimulatedStop>
+            <IsStop>false</IsStop>
+            <LogLevel>Information</LogLevel>
+            <Mode>Currency</Mode>
+            <OffsetType>Currency</OffsetType>
+            <Priority>Medium</Priority>
+            <Quantity>
+              <DefaultValue>0</DefaultValue>
+              <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
+              <DynamicValue>
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>false</IsSelected>
+                <Name>Default order quantity</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>DefaultQuantity</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2019-09-04T08:04:32.3073177</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </DynamicValue>
+              <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SoundLocation />
+            <Tag>
+              <SeparatorCharacter> </SeparatorCharacter>
+              <Strings>
+                <NinjaScriptString>
+                  <Index>0</Index>
+                  <StringValue>Set Enter long position</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </Tag>
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2019-09-04T08:04:32.3073177</VariableDateTime>
+            <VariableBool>false</VariableBool>
+          </ActionProperties>
+          <ActionType>Enter</ActionType>
+          <Command>
+            <Command>EnterLong</Command>
+            <Parameters>
+              <string>quantity</string>
+              <string>signalName</string>
+            </Parameters>
+          </Command>
+        </WizardAction>
+        <WizardAction>
+          <Children />
+          <IsExpanded>true</IsExpanded>
+          <IsSelected>true</IsSelected>
+          <Name>Print</Name>
+          <OffsetType>Arithmetic</OffsetType>
+          <ActionProperties>
+            <DashStyle>Solid</DashStyle>
+            <DivideTimePrice>false</DivideTimePrice>
+            <Id />
+            <File />
+            <IsAutoScale>false</IsAutoScale>
+            <IsSimulatedStop>false</IsSimulatedStop>
+            <IsStop>false</IsStop>
+            <LogLevel>Information</LogLevel>
+            <MessageValue>
+              <SeparatorCharacter> </SeparatorCharacter>
+              <Strings>
+                <NinjaScriptString>
+                  <Index>0</Index>
+                  <StringValue>enter long</StringValue>
+                </NinjaScriptString>
+                <NinjaScriptString>
+                  <Action>
+                    <Children />
+                    <IsExpanded>false</IsExpanded>
+                    <IsSelected>true</IsSelected>
+                    <Name>DailyPNL</Name>
+                    <OffsetType>Arithmetic</OffsetType>
+                    <AssignedCommand>
+                      <Command>DailyPNL</Command>
+                      <Parameters />
+                    </AssignedCommand>
+                    <BarsAgo>0</BarsAgo>
+                    <CurrencyType>Currency</CurrencyType>
+                    <Date>2020-07-13T09:20:46.4668325</Date>
+                    <DayOfWeek>Sunday</DayOfWeek>
+                    <EndBar>0</EndBar>
+                    <ForceSeriesIndex>false</ForceSeriesIndex>
+                    <LookBackPeriod>0</LookBackPeriod>
+                    <MarketPosition>Long</MarketPosition>
+                    <Period>0</Period>
+                    <ReturnType>Number</ReturnType>
+                    <StartBar>0</StartBar>
+                    <State>Undefined</State>
+                    <Time>0001-01-01T00:00:00</Time>
+                  </Action>
+                  <Index>1</Index>
+                  <StringValue>DailyPNL</StringValue>
+                </NinjaScriptString>
+                <NinjaScriptString>
+                  <Index>3</Index>
+                  <StringValue> &gt;   </StringValue>
+                </NinjaScriptString>
+                <NinjaScriptString>
+                  <Action>
+                    <Children />
+                    <IsExpanded>false</IsExpanded>
+                    <IsSelected>true</IsSelected>
+                    <Name>DailyLoss</Name>
+                    <OffsetType>Arithmetic</OffsetType>
+                    <AssignedCommand>
+                      <Command>DailyLoss</Command>
+                      <Parameters />
+                    </AssignedCommand>
+                    <BarsAgo>0</BarsAgo>
+                    <CurrencyType>Currency</CurrencyType>
+                    <Date>2020-07-13T09:21:19.0080087</Date>
+                    <DayOfWeek>Sunday</DayOfWeek>
+                    <EndBar>0</EndBar>
+                    <ForceSeriesIndex>false</ForceSeriesIndex>
+                    <LookBackPeriod>0</LookBackPeriod>
+                    <MarketPosition>Long</MarketPosition>
+                    <Period>0</Period>
+                    <ReturnType>Number</ReturnType>
+                    <StartBar>0</StartBar>
+                    <State>Undefined</State>
+                    <Time>0001-01-01T00:00:00</Time>
+                  </Action>
+                  <Index>3</Index>
+                  <StringValue>DailyLoss</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </MessageValue>
+            <Mode>Currency</Mode>
+            <OffsetType>Currency</OffsetType>
+            <Priority>Medium</Priority>
+            <Quantity>
+              <DefaultValue>0</DefaultValue>
+              <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
+              <DynamicValue>
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>false</IsSelected>
+                <Name>Default order quantity</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>DefaultQuantity</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2020-07-13T09:20:00.5134729</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </DynamicValue>
+              <IsLiteral>false</IsLiteral>
+              <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SoundLocation />
+            <Tag>
+              <SeparatorCharacter> </SeparatorCharacter>
+              <Strings>
+                <NinjaScriptString>
+                  <Index>0</Index>
+                  <StringValue>Set Print</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </Tag>
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2020-07-13T09:20:00.5134729</VariableDateTime>
+            <VariableBool>false</VariableBool>
+          </ActionProperties>
+          <ActionType>Misc</ActionType>
+          <Command>
+            <Command>Print</Command>
+            <Parameters>
+              <string>MessageValue</string>
+            </Parameters>
+          </Command>
+        </WizardAction>
+      </Actions>
+      <ActiveAction>
+        <Children />
+        <IsExpanded>true</IsExpanded>
+        <IsSelected>true</IsSelected>
+        <Name>Print</Name>
+        <OffsetType>Arithmetic</OffsetType>
+        <ActionProperties>
+          <DashStyle>Solid</DashStyle>
+          <DivideTimePrice>false</DivideTimePrice>
+          <Id />
+          <File />
+          <IsAutoScale>false</IsAutoScale>
+          <IsSimulatedStop>false</IsSimulatedStop>
+          <IsStop>false</IsStop>
+          <LogLevel>Information</LogLevel>
+          <MessageValue>
+            <SeparatorCharacter> </SeparatorCharacter>
+            <Strings>
+              <NinjaScriptString>
+                <Index>0</Index>
+                <StringValue>enter long</StringValue>
+              </NinjaScriptString>
+              <NinjaScriptString>
+                <Action>
+                  <Children />
+                  <IsExpanded>false</IsExpanded>
+                  <IsSelected>true</IsSelected>
+                  <Name>DailyPNL</Name>
+                  <OffsetType>Arithmetic</OffsetType>
+                  <AssignedCommand>
+                    <Command>DailyPNL</Command>
+                    <Parameters />
+                  </AssignedCommand>
+                  <BarsAgo>0</BarsAgo>
+                  <CurrencyType>Currency</CurrencyType>
+                  <Date>2020-07-13T09:20:46.4668325</Date>
+                  <DayOfWeek>Sunday</DayOfWeek>
+                  <EndBar>0</EndBar>
+                  <ForceSeriesIndex>false</ForceSeriesIndex>
+                  <LookBackPeriod>0</LookBackPeriod>
+                  <MarketPosition>Long</MarketPosition>
+                  <Period>0</Period>
+                  <ReturnType>Number</ReturnType>
+                  <StartBar>0</StartBar>
+                  <State>Undefined</State>
+                  <Time>0001-01-01T00:00:00</Time>
+                </Action>
+                <Index>1</Index>
+                <StringValue>DailyPNL</StringValue>
+              </NinjaScriptString>
+              <NinjaScriptString>
+                <Index>3</Index>
+                <StringValue> &gt;   </StringValue>
+              </NinjaScriptString>
+              <NinjaScriptString>
+                <Action>
+                  <Children />
+                  <IsExpanded>false</IsExpanded>
+                  <IsSelected>true</IsSelected>
+                  <Name>DailyLoss</Name>
+                  <OffsetType>Arithmetic</OffsetType>
+                  <AssignedCommand>
+                    <Command>DailyLoss</Command>
+                    <Parameters />
+                  </AssignedCommand>
+                  <BarsAgo>0</BarsAgo>
+                  <CurrencyType>Currency</CurrencyType>
+                  <Date>2020-07-13T09:21:19.0080087</Date>
+                  <DayOfWeek>Sunday</DayOfWeek>
+                  <EndBar>0</EndBar>
+                  <ForceSeriesIndex>false</ForceSeriesIndex>
+                  <LookBackPeriod>0</LookBackPeriod>
+                  <MarketPosition>Long</MarketPosition>
+                  <Period>0</Period>
+                  <ReturnType>Number</ReturnType>
+                  <StartBar>0</StartBar>
+                  <State>Undefined</State>
+                  <Time>0001-01-01T00:00:00</Time>
+                </Action>
+                <Index>3</Index>
+                <StringValue>DailyLoss</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </MessageValue>
+          <Mode>Currency</Mode>
+          <OffsetType>Currency</OffsetType>
+          <Priority>Medium</Priority>
+          <Quantity>
+            <DefaultValue>0</DefaultValue>
+            <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
+            <DynamicValue>
+              <Children />
+              <IsExpanded>false</IsExpanded>
+              <IsSelected>false</IsSelected>
+              <Name>Default order quantity</Name>
+              <OffsetType>Arithmetic</OffsetType>
+              <AssignedCommand>
+                <Command>DefaultQuantity</Command>
+                <Parameters />
+              </AssignedCommand>
+              <BarsAgo>0</BarsAgo>
+              <CurrencyType>Currency</CurrencyType>
+              <Date>2020-07-13T09:20:00.5134729</Date>
+              <DayOfWeek>Sunday</DayOfWeek>
+              <EndBar>0</EndBar>
+              <ForceSeriesIndex>false</ForceSeriesIndex>
+              <LookBackPeriod>0</LookBackPeriod>
+              <MarketPosition>Long</MarketPosition>
+              <Period>0</Period>
+              <ReturnType>Number</ReturnType>
+              <StartBar>0</StartBar>
+              <State>Undefined</State>
+              <Time>0001-01-01T00:00:00</Time>
+            </DynamicValue>
+            <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">DefaultQuantity</LiveValue>
+          </Quantity>
+          <ServiceName />
+          <ScreenshotPath />
+          <SoundLocation />
+          <Tag>
+            <SeparatorCharacter> </SeparatorCharacter>
+            <Strings>
+              <NinjaScriptString>
+                <Index>0</Index>
+                <StringValue>Set Print</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </Tag>
+          <TextPosition>BottomLeft</TextPosition>
+          <VariableDateTime>2020-07-13T09:20:00.5134729</VariableDateTime>
+          <VariableBool>false</VariableBool>
+        </ActionProperties>
+        <ActionType>Misc</ActionType>
+        <Command>
+          <Command>Print</Command>
+          <Parameters>
+            <string>MessageValue</string>
+          </Parameters>
+        </Command>
+      </ActiveAction>
+      <AnyOrAll>All</AnyOrAll>
+      <Conditions>
+        <WizardConditionGroup>
+          <AnyOrAll>Any</AnyOrAll>
+          <Conditions>
+            <WizardCondition>
+              <LeftItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>SMA</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>SMA</Command>
+                  <Parameters>
+                    <string>AssociatedIndicator</string>
+                    <string>BarsAgo</string>
+                    <string>OffsetBuilder</string>
+                  </Parameters>
+                </AssignedCommand>
+                <AssociatedIndicator>
+                  <AcceptableSeries>Indicator DataSeries CustomSeries DefaultSeries</AcceptableSeries>
+                  <CustomProperties>
+                    <item>
+                      <key>
+                        <string>Period</string>
+                      </key>
+                      <value>
+                        <anyType xsi:type="NumberBuilder">
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
+                          <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
+                        </anyType>
+                      </value>
+                    </item>
+                  </CustomProperties>
+                  <IndicatorHolder>
+                    <IndicatorName>SMA</IndicatorName>
+                    <Plots>
+                      <Plot>
+                        <IsOpacityVisible>false</IsOpacityVisible>
+                        <BrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF00FF00&lt;/SolidColorBrush&gt;</BrushSerialize>
+                        <DashStyleHelper>Solid</DashStyleHelper>
+                        <Opacity>100</Opacity>
+                        <Width>1</Width>
+                        <AutoWidth>false</AutoWidth>
+                        <Max>1.7976931348623157E+308</Max>
+                        <Min>-1.7976931348623157E+308</Min>
+                        <Name>SMA</Name>
+                        <PlotStyle>Line</PlotStyle>
+                      </Plot>
+                    </Plots>
+                  </IndicatorHolder>
+                  <IsExplicitlyNamed>false</IsExplicitlyNamed>
+                  <IsPriceTypeLocked>false</IsPriceTypeLocked>
+                  <PlotOnChart>true</PlotOnChart>
+                  <PriceType>Close</PriceType>
+                  <SeriesType>Indicator</SeriesType>
+                </AssociatedIndicator>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2019-09-04T08:03:39.9816955</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Series</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </LeftItem>
+              <Lookback>1</Lookback>
+              <Operator>CrossAbove</Operator>
+              <RightItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>SMA</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>SMA</Command>
+                  <Parameters>
+                    <string>AssociatedIndicator</string>
+                    <string>BarsAgo</string>
+                    <string>OffsetBuilder</string>
+                  </Parameters>
+                </AssignedCommand>
+                <AssociatedIndicator>
+                  <AcceptableSeries>Indicator DataSeries CustomSeries DefaultSeries</AcceptableSeries>
+                  <CustomProperties>
+                    <item>
+                      <key>
+                        <string>Period</string>
+                      </key>
+                      <value>
+                        <anyType xsi:type="NumberBuilder">
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
+                          <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
+                        </anyType>
+                      </value>
+                    </item>
+                  </CustomProperties>
+                  <IndicatorHolder>
+                    <IndicatorName>SMA</IndicatorName>
+                    <Plots>
+                      <Plot>
+                        <IsOpacityVisible>false</IsOpacityVisible>
+                        <BrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFDAA520&lt;/SolidColorBrush&gt;</BrushSerialize>
+                        <DashStyleHelper>Solid</DashStyleHelper>
+                        <Opacity>100</Opacity>
+                        <Width>1</Width>
+                        <AutoWidth>false</AutoWidth>
+                        <Max>1.7976931348623157E+308</Max>
+                        <Min>-1.7976931348623157E+308</Min>
+                        <Name>SMA</Name>
+                        <PlotStyle>Line</PlotStyle>
+                      </Plot>
+                    </Plots>
+                  </IndicatorHolder>
+                  <IsExplicitlyNamed>false</IsExplicitlyNamed>
+                  <IsPriceTypeLocked>false</IsPriceTypeLocked>
+                  <PlotOnChart>true</PlotOnChart>
+                  <PriceType>Close</PriceType>
+                  <SeriesType>Indicator</SeriesType>
+                </AssociatedIndicator>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2019-09-04T08:03:40.026606</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Series</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </RightItem>
+            </WizardCondition>
+          </Conditions>
+          <IsGroup>false</IsGroup>
+          <DisplayName>CrossAbove(SMA(Close, 10), SMA(Close, 30), 1)</DisplayName>
+        </WizardConditionGroup>
+        <WizardConditionGroup>
+          <AnyOrAll>Any</AnyOrAll>
+          <Conditions>
+            <WizardCondition>
+              <LeftItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Current bar</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>CurrentBars[{0}]</Command>
+                  <Parameters>
+                    <string>Series1</string>
+                  </Parameters>
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2019-12-26T13:46:22.7836986</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>true</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </LeftItem>
+              <Lookback>1</Lookback>
+              <Operator>Greater</Operator>
+              <RightItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Numeric value</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>{0}</Command>
+                  <Parameters>
+                    <string>NumericValue</string>
+                  </Parameters>
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2019-12-26T13:46:22.8056474</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <NumericValue>
+                  <DefaultValue>0</DefaultValue>
+                  <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">20</BindingValue>
+                  <IsLiteral>true</IsLiteral>
+                  <LiveValue xsi:type="xsd:string">20</LiveValue>
+                </NumericValue>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </RightItem>
+            </WizardCondition>
+          </Conditions>
+          <IsGroup>false</IsGroup>
+          <DisplayName>CurrentBars[Default input] &gt; 20</DisplayName>
+        </WizardConditionGroup>
+        <WizardConditionGroup>
+          <AnyOrAll>Any</AnyOrAll>
+          <Conditions>
+            <WizardCondition>
+              <LeftItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>DailyPNL</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>DailyPNL</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2020-07-13T09:17:11.3781693</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </LeftItem>
+              <Lookback>1</Lookback>
+              <Operator>Greater</Operator>
+              <RightItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>DailyLoss</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>DailyLoss</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2020-07-13T09:17:11.3821587</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>Number</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </RightItem>
+            </WizardCondition>
+          </Conditions>
+          <IsGroup>false</IsGroup>
+          <DisplayName>DailyPNL &gt; DailyLoss</DisplayName>
+        </WizardConditionGroup>
+      </Conditions>
+      <SetName>Set 5</SetName>
+      <SetNumber>5</SetNumber>
+    </ConditionalAction>
+    <ConditionalAction>
+      <Actions>
+        <WizardAction>
+          <Children />
+          <IsExpanded>false</IsExpanded>
+          <IsSelected>true</IsSelected>
           <Name>Enter short position</Name>
           <OffsetType>Arithmetic</OffsetType>
           <ActionProperties>
@@ -2460,6 +2497,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2513,6 +2551,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
         <WizardAction>
+          <Children />
           <IsExpanded>true</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Print</Name>
@@ -2601,6 +2640,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+              <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
                 <Children />
                 <IsExpanded>false</IsExpanded>
@@ -2654,6 +2694,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>true</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Print</Name>
@@ -2742,6 +2783,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
               <Children />
               <IsExpanded>false</IsExpanded>
@@ -2822,10 +2864,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2892,10 +2935,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2997,6 +3041,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <NumericValue>
                   <DefaultValue>0</DefaultValue>
                   <IsInt>false</IsInt>
+                  <BindingValue xsi:type="xsd:string">20</BindingValue>
                   <IsLiteral>true</IsLiteral>
                   <LiveValue xsi:type="xsd:string">20</LiveValue>
                 </NumericValue>
@@ -3016,6 +3061,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>DailyPNL</Name>
@@ -3041,6 +3087,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Greater</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>DailyLoss</Name>

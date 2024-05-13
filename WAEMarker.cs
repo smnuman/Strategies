@@ -27,7 +27,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 {
 	public class WAEMarker : Strategy
 	{
-		private NinjaTrader.NinjaScript.Indicators.NMN.WAE_Mod WAE_Mod1;
+		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE_Mod1;
 		private Series<int> HiExplosion;
 		private Series<int> LoExplosion;
 

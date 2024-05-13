@@ -23,7 +23,7 @@ using NinjaTrader.NinjaScript.DrawingTools;
 #endregion
 
 //This namespace holds Strategies in this folder and is required. Do not change it. 
-namespace NinjaTrader.NinjaScript.Strategies.NMNStrategies
+namespace NinjaTrader.NinjaScript.Strategies.Numan
 {	
 	[Gui.CategoryOrder("Trading Params", 1)] 
 	[Gui.CategoryOrder("WAE Parameters", 2)] 
@@ -33,7 +33,7 @@ namespace NinjaTrader.NinjaScript.Strategies.NMNStrategies
 	{
 		#region private variables
 		#region --- Strategy specific private variables ---
-		private NinjaTrader.NinjaScript.Indicators.NMN.WAE_Mod WAE;
+		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE;
 		private const string myLong = "LongEntry", myShort = "ShortEntry", myLExit = "LongExit", mySExit = "ShortExit";
 		private bool 	setSLTP, 
 						WAELong1, WAELong2, WAELong3, 
