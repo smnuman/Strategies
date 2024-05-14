@@ -35,7 +35,8 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 		private double TargetPrice1;
 		private double TargetPrice2;
 		
-		private int zeroBar, currentBar, lastBar;
+		private const int zeroBar = 0;
+		private int current_Bar, previous_Bar;
 
 		private NinjaTrader.NinjaScript.Indicators.Numan.WAE_Mod WAE;
 
@@ -63,6 +64,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				// Disable this property for performance gains in Strategy Analyzer optimizations
 				// See the Help Guide for additional information
 				IsInstantiatedOnEachOptimizationIteration	= true;
+				
 				Sensitivity					= 300;
 				PosQty_1					= 1;
 				PosQty_2					= 1;
@@ -75,18 +77,24 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				ProfitTargetON				= false;
 				MultiProfitTargetON			= true;
 				
+				BackTestON					= false;
+				
 				ProfitTarget_1		= 20;
 				ProfitTarget_2		= 40;
 				
 				// bar indices
-				zeroBar						= 0;
-				currentBar					= 0;
-				lastBar						= 1;
+//				zeroBar						= 0;	// made it a constant
+				current_Bar					= 1;
+				previous_Bar				= 2;
 				
 				EntryPrice					= 0;
 				TargetPrice1				= 0;
 				TargetPrice2				= 0;
 
+				fixed_rr					= true;
+				
+				risk						= 25;
+				reward						= 75;				
 			}
 			else if (State == State.Configure)
 			{
@@ -105,17 +113,17 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			{
 				case MarketPosition.Long:
 					result = Close[zeroBar] >= ( Position.AveragePrice + P * TickSize );
-					BackBrush = Brushes.LightSalmon ;
-					Print(string.Format("{0} : (LONG) Entry Price [{1}], Exit at [{2}]",Convert.ToString(Times[0][0]), Position.AveragePrice, ( Position.AveragePrice + P * TickSize ) ));
+//					BackBrush = Brushes.LightSalmon ;
+					Print(string.Format("{0} [CheckPrice]: (LONG) Entry Price [{1}], Exit at [{2}]",Convert.ToString(Times[0][0]), Position.AveragePrice, ( Position.AveragePrice + P * TickSize ) ));
 					break;
 				case MarketPosition.Short:
 					result = Close[zeroBar] <= ( Position.AveragePrice - P * TickSize );
-					BackBrush = Brushes.LightGreen ;
-					Print(string.Format("{0} : (SHORT) Entry Price [{1}], Exit at [{2}]",Convert.ToString(Times[0][0]), Position.AveragePrice, ( Position.AveragePrice - P * TickSize ) ));
+//					BackBrush = Brushes.LightGreen ;
+					Print(string.Format("{0} [CheckPrice]: (SHORT) Entry Price [{1}], Exit at [{2}]",Convert.ToString(Times[0][0]), Position.AveragePrice, ( Position.AveragePrice - P * TickSize ) ));
 					break;
 				default:
 					result = false;
-					Print(string.Format("{0} : ==== S K I P ==== : Market is Flat - Please check syntax",Convert.ToString(Times[0][0]) ));
+					Print(string.Format("{0} [CheckPrice]: ==== S K I P ==== : Market is Flat - Please check syntax",Convert.ToString(Times[0][0]) ));
 					break;
 			}
 			return (result);
@@ -126,8 +134,8 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			bool result;
 			
 			// Bars since last Entry and Exit OK
-			result = ( (BarsSinceEntryExecution() == -1) || (BarsSinceEntryExecution() > OrderDelays) )
-				 && ( (BarsSinceExitExecution() == -1) || (BarsSinceExitExecution() > OrderDelays) );
+			result = 	( (BarsSinceEntryExecution() == -1) || (BarsSinceEntryExecution() > OrderDelays) )
+					&& 	( (BarsSinceExitExecution() == -1)  || (BarsSinceExitExecution() > OrderDelays) );
 			return result;
 		}
 
@@ -136,8 +144,20 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			if (BarsInProgress != 0) 
 				return;
 
+			if (!BackTestON & State == State.Historical)
+				return;
+			
+			if (!BackTestON && State != State.Realtime)
+				return;
+
 			if (CurrentBars[0] < BarsRequiredToTrade)
 				return;
+			
+			if (fixed_rr)
+			{
+				SetProfitTarget("", CalculationMode.Ticks, reward / TickSize);
+				SetStopLoss("", CalculationMode.Ticks, risk / TickSize, false);
+			}
 
 			#region -- 'exits' on Profit Target --
 			if (ProfitTargetON)
@@ -171,7 +191,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			if (
 				( Position.MarketPosition == MarketPosition.Short )
 				 // WAE TrendDown >= 0
-				 && ( WAE.TrendDown[1] >= 0 )	// for confirmation, index '[1]' is used instead of '[0]'
+				 && ( WAE.TrendDown[1] >= 0 )	// for confirmation, index '[1]' is used instead of '[0]' : DO NOT Change
 				)
 			{
 				ExitShort(Convert.ToInt32(PosQty_2), @"ExitShort2", @"Short2");
@@ -183,7 +203,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			 // Set 6
 			if ((Position.MarketPosition == MarketPosition.Long)
 				// WAE TrendUp <= 0 
-				&& ((WAE.TrendUp[1] <= 0)	// for confirmation, index '[1]' is used instead of '[0]'
+				&& ((WAE.TrendUp[1] <= 0)	// for confirmation, index '[1]' is used instead of '[0]' : DO NOT Change
 				))
 			{
 				ExitLong(Convert.ToInt32(PosQty_2), @"ExitLong2", @"Long2");
@@ -194,7 +214,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			/// =================================================================
 			#endregion
 
-			// If not the First tick of Bar then many entries will be done in the same bar
+			// If not the First tick of Bar then many trades will be entered in the same bar
 			if ( !IsFirstTickOfBar )	
 				return;
 			
@@ -208,22 +228,22 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 						);
 			
 			// Waddah Attar Trend check
-			standardEntry 	= entryOK && ( WAE.TrendUp[currentBar] >= WAE.TrendUp[lastBar] ); 
+			standardEntry 	= entryOK && ( WAE.TrendUp[current_Bar] >= WAE.TrendUp[previous_Bar] ); 
 			
-			// Waddah Attar explosion is still on.
-			repeatEntry 	= entryOK && ( WAE.ExplosionLine[currentBar] >= WAE.ExplosionLine[lastBar] ); 
+			// Waddah Attar explosion continuity check.
+			repeatEntry 	= entryOK && ( WAE.ExplosionLine[current_Bar] >= WAE.ExplosionLine[previous_Bar] ); 
 			
 			// Set 8 : Executing the Long entries
 			if ( standardEntry )
 			{
 				if 	( 
 					  ( // WAExplosion CrossUp -> Explosion check
-						(WAE.TrendUp[currentBar] > WAE.ExplosionLine[currentBar])
-						&& (WAE.TrendUp[lastBar] < WAE.ExplosionLine[lastBar]) )
+						(WAE.TrendUp[current_Bar] > WAE.ExplosionLine[current_Bar])
+						&& (WAE.TrendUp[previous_Bar] < WAE.ExplosionLine[previous_Bar]) )
 					 
-					||( // WAExplosion CrissCrossUp
-						(WAE.TrendUp[currentBar] > WAE.ExplosionLine[currentBar])
-						&& (WAE.TrendDown[lastBar] < WAE.ExplosionLineDn[lastBar]))
+					||( // WAExplosion CrissCrossUp -> Reversal check
+						(WAE.TrendUp[current_Bar] > WAE.ExplosionLine[current_Bar])
+						&& (WAE.TrendDown[previous_Bar] < WAE.ExplosionLineDn[previous_Bar]))
 					)
 				{
 					EnterLong(Convert.ToInt32(PosQty_1), @"Long1");
@@ -253,22 +273,22 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 						);
 			
 			// Waddah Attar Trend check
-			standardEntry 	= entryOK && ( WAE.TrendDown[currentBar] <= WAE.TrendDown[lastBar] ); 
+			standardEntry 	= entryOK && ( WAE.TrendDown[current_Bar] <= WAE.TrendDown[previous_Bar] ); 
 			
-			// Waddah Attar explosion is still on.
-			repeatEntry 	= entryOK && ( WAE.ExplosionLineDn[currentBar] <= WAE.ExplosionLineDn[lastBar] ); 
+			// Waddah Attar explosion continuity check.
+			repeatEntry 	= entryOK && ( WAE.ExplosionLineDn[current_Bar] <= WAE.ExplosionLineDn[previous_Bar] ); 
 			
 			// Set 11 : Executing the Short entries
 			if ( standardEntry )
 			{
 				if 	( 
 					  ( // WAExplosion CrossDown -> Explosion check
-						(WAE.TrendDown[0] < WAE.ExplosionLineDn[0])
-				 		&& (WAE.TrendDown[1] > WAE.ExplosionLineDn[1]) )
+						(WAE.TrendDown[current_Bar] < WAE.ExplosionLineDn[current_Bar])
+				 		&& (WAE.TrendDown[previous_Bar] > WAE.ExplosionLineDn[previous_Bar]) )
 					 
-					||( // WAExplosion CrissCrossDown
-						(WAE.TrendDown[0] < WAE.ExplosionLineDn[0])
-				 		&& (WAE.TrendUp[1] > WAE.ExplosionLine[1]) )
+					||( // WAExplosion CrissCrossDown -> Reversal check
+						(WAE.TrendDown[current_Bar] < WAE.ExplosionLineDn[current_Bar])
+				 		&& (WAE.TrendUp[previous_Bar] > WAE.ExplosionLine[previous_Bar]) )
 					)
 				{
 					EnterShort(Convert.ToInt32(PosQty_1), @"Short1");
@@ -341,6 +361,31 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 		[Display(Name="MultiProfitTargetON", Description="If multiple target acquisition is intended !!", Order=12, GroupName="Parameters")]
 		public bool MultiProfitTargetON
 		{ get; set; }
+		
+		[NinjaScriptProperty]
+		[Display(Name="Backtest ON? ", Description="Check for backtest !!", Order=12, GroupName="Parameters")]
+		public bool BackTestON
+		{ get; set; }
+		
+		//
+						
+		[NinjaScriptProperty]
+		[Display(Name="Use Fixed R:R", Description ="", Order=204, GroupName="Strategy")]
+		public bool fixed_rr
+		{ get; set; }
+		
+		[NinjaScriptProperty]
+		[Range(0, double.MaxValue)]
+		[Display(Name="Risk (Points)", Description="", Order=301, GroupName="Risk")]
+		public double risk
+		{ get; set; }
+		
+		[NinjaScriptProperty]
+		[Range(0, double.MaxValue)]
+		[Display(Name="Reward (Points)", Description="", Order=302, GroupName="Risk")]
+		public double reward
+		{ get; set; }
+		
 		#endregion
 
 	}
