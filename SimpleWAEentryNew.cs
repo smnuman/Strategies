@@ -53,20 +53,28 @@ namespace NinjaTrader.NinjaScript.Strategies
 				// Disable this property for performance gains in Strategy Analyzer optimizations
 				// See the Help Guide for additional information
 				IsInstantiatedOnEachOptimizationIteration	= true;
+<<<<<<< Updated upstream
 				Sensitivity					= 300;
 				Quantity					= 1;
 				Fixed_rr					= false;
 				Risk					= 20;
 				Reward					= 100;
+=======
+				Qty					= 1;
+>>>>>>> Stashed changes
 			}
 			else if (State == State.Configure)
 			{
 			}
 			else if (State == State.DataLoaded)
 			{				
+<<<<<<< Updated upstream
 				WAE_Mod1				= WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200);
 				SetStopLoss("", CalculationMode.Ticks, Risk, false);
 				SetProfitTarget("", CalculationMode.Ticks, Reward);
+=======
+				WAE_Mod1				= WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200);
+>>>>>>> Stashed changes
 			}
 		}
 
@@ -79,6 +87,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 				return;
 
 			 // Set 1
+<<<<<<< Updated upstream
 			if ((Position.MarketPosition == MarketPosition.Flat)
 				 && (CrossAbove(WAE_Mod1.TrendUp, WAE_Mod1.ExplosionLine, 1)))
 			{
@@ -90,20 +99,41 @@ namespace NinjaTrader.NinjaScript.Strategies
 				 && (CrossBelow(WAE_Mod1.TrendDown, WAE_Mod1.ExplosionLineDn, 1)))
 			{
 				EnterShort(Convert.ToInt32(Quantity), "");
+=======
+			if ((CrossAbove(WAE_Mod1.TrendUp, WAE_Mod1.ExplosionLine, 1))
+				 && (Position.MarketPosition == MarketPosition.Flat))
+			{
+				EnterLong(Convert.ToInt32(Qty), @"Long");
+			}
+			
+			 // Set 2
+			if ((CrossBelow(WAE_Mod1.TrendDown, WAE_Mod1.ExplosionLineDn, 1))
+				 && (Position.MarketPosition == MarketPosition.Flat))
+			{
+				EnterShort(Convert.ToInt32(Qty), @"Short");
+>>>>>>> Stashed changes
 			}
 			
 			 // Set 3
 			if ((Position.MarketPosition == MarketPosition.Long)
 				 && (WAE_Mod1.TrendUp[0] <= 0))
 			{
+<<<<<<< Updated upstream
 				ExitLong(Convert.ToInt32(Quantity), "", "");
+=======
+				ExitLong(Convert.ToInt32(Qty), @"Exit", @"Long");
+>>>>>>> Stashed changes
 			}
 			
 			 // Set 4
 			if ((Position.MarketPosition == MarketPosition.Short)
 				 && (WAE_Mod1.TrendDown[0] >= 0))
 			{
+<<<<<<< Updated upstream
 				ExitShort(Convert.ToInt32(Quantity), "", "");
+=======
+				ExitShort(Convert.ToInt32(Qty), @"Exit", @"Short");
+>>>>>>> Stashed changes
 			}
 			
 		}
@@ -111,6 +141,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 		#region Properties
 		[NinjaScriptProperty]
 		[Range(1, int.MaxValue)]
+<<<<<<< Updated upstream
 		[Display(Name="Sensitivity", Description="Waddah Attar Explosion sensitivity", Order=1, GroupName="Parameters")]
 		public int Sensitivity
 		{ get; set; }
@@ -134,6 +165,10 @@ namespace NinjaTrader.NinjaScript.Strategies
 		[NinjaScriptProperty]
 		[Display(Name="Reward", Order=5, GroupName="Parameters")]
 		public int Reward
+=======
+		[Display(Name="Qty", Order=1, GroupName="Parameters")]
+		public int Qty
+>>>>>>> Stashed changes
 		{ get; set; }
 		#endregion
 
@@ -168,6 +203,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+<<<<<<< Updated upstream
               <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
               <DynamicValue>
                 <IsExpanded>false</IsExpanded>
@@ -176,11 +212,25 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
                   <Command>Quantity</Command>
+=======
+              <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+              <DynamicValue>
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Qty</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Qty</Command>
+>>>>>>> Stashed changes
                   <Parameters />
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:39:10.7783429</Date>
+=======
+                <Date>2024-05-14T07:19:57.7810351</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -193,22 +243,40 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
               <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
             <SoundLocation />
             <Tag>
+=======
+              <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SignalName>
+>>>>>>> Stashed changes
               <SeparatorCharacter> </SeparatorCharacter>
               <Strings>
                 <NinjaScriptString>
                   <Index>0</Index>
+<<<<<<< Updated upstream
                   <StringValue>Set Enter long position</StringValue>
                 </NinjaScriptString>
               </Strings>
             </Tag>
             <TextPosition>BottomLeft</TextPosition>
             <VariableDateTime>2024-05-14T06:39:03.5567667</VariableDateTime>
+=======
+                  <StringValue>Long</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </SignalName>
+            <SoundLocation />
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2024-05-14T07:19:55.2324941</VariableDateTime>
+>>>>>>> Stashed changes
             <VariableBool>false</VariableBool>
           </ActionProperties>
           <ActionType>Enter</ActionType>
@@ -221,6 +289,81 @@ namespace NinjaTrader.NinjaScript.Strategies
           </Command>
         </WizardAction>
       </Actions>
+<<<<<<< Updated upstream
+=======
+      <ActiveAction>
+        <IsExpanded>false</IsExpanded>
+        <IsSelected>true</IsSelected>
+        <Name>Enter long position</Name>
+        <OffsetType>Arithmetic</OffsetType>
+        <ActionProperties>
+          <DashStyle>Solid</DashStyle>
+          <DivideTimePrice>false</DivideTimePrice>
+          <Id />
+          <File />
+          <IsAutoScale>false</IsAutoScale>
+          <IsSimulatedStop>false</IsSimulatedStop>
+          <IsStop>false</IsStop>
+          <LogLevel>Information</LogLevel>
+          <Mode>Currency</Mode>
+          <OffsetType>Currency</OffsetType>
+          <Priority>Medium</Priority>
+          <Quantity>
+            <DefaultValue>0</DefaultValue>
+            <IsInt>true</IsInt>
+            <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+            <DynamicValue>
+              <IsExpanded>false</IsExpanded>
+              <IsSelected>true</IsSelected>
+              <Name>Qty</Name>
+              <OffsetType>Arithmetic</OffsetType>
+              <AssignedCommand>
+                <Command>Qty</Command>
+                <Parameters />
+              </AssignedCommand>
+              <BarsAgo>0</BarsAgo>
+              <CurrencyType>Currency</CurrencyType>
+              <Date>2024-05-14T07:19:57.7810351</Date>
+              <DayOfWeek>Sunday</DayOfWeek>
+              <EndBar>0</EndBar>
+              <ForceSeriesIndex>false</ForceSeriesIndex>
+              <LookBackPeriod>0</LookBackPeriod>
+              <MarketPosition>Long</MarketPosition>
+              <Period>0</Period>
+              <ReturnType>Number</ReturnType>
+              <StartBar>0</StartBar>
+              <State>Undefined</State>
+              <Time>0001-01-01T00:00:00</Time>
+            </DynamicValue>
+            <IsLiteral>false</IsLiteral>
+            <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+          </Quantity>
+          <ServiceName />
+          <ScreenshotPath />
+          <SignalName>
+            <SeparatorCharacter> </SeparatorCharacter>
+            <Strings>
+              <NinjaScriptString>
+                <Index>0</Index>
+                <StringValue>Long</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </SignalName>
+          <SoundLocation />
+          <TextPosition>BottomLeft</TextPosition>
+          <VariableDateTime>2024-05-14T07:19:55.2324941</VariableDateTime>
+          <VariableBool>false</VariableBool>
+        </ActionProperties>
+        <ActionType>Enter</ActionType>
+        <Command>
+          <Command>EnterLong</Command>
+          <Parameters>
+            <string>quantity</string>
+            <string>signalName</string>
+          </Parameters>
+        </Command>
+      </ActiveAction>
+>>>>>>> Stashed changes
       <AnyOrAll>All</AnyOrAll>
       <Conditions>
         <WizardConditionGroup>
@@ -230,6 +373,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <LeftItem xsi:type="WizardConditionItem">
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
+<<<<<<< Updated upstream
                 <Name>Current market position</Name>
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
@@ -289,6 +433,8 @@ namespace NinjaTrader.NinjaScript.Strategies
               <LeftItem xsi:type="WizardConditionItem">
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
+=======
+>>>>>>> Stashed changes
                 <Name>WAE_Mod</Name>
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
@@ -308,6 +454,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -336,6 +483,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -516,7 +670,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:36:15.5811228</Date>
+=======
+                <Date>2024-05-14T06:21:50.5958033</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -552,6 +710,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -580,6 +739,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -760,7 +926,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:36:15.5851222</Date>
+=======
+                <Date>2024-05-14T06:21:50.6208033</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -775,7 +945,70 @@ namespace NinjaTrader.NinjaScript.Strategies
             </WizardCondition>
           </Conditions>
           <IsGroup>false</IsGroup>
+<<<<<<< Updated upstream
           <DisplayName>CrossAbove(WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200).TrendUp, WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200).ExplosionLine, 1)</DisplayName>
+=======
+          <DisplayName>CrossAbove(WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200).TrendUp, WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200).ExplosionLine, 1)</DisplayName>
+        </WizardConditionGroup>
+        <WizardConditionGroup>
+          <AnyOrAll>Any</AnyOrAll>
+          <Conditions>
+            <WizardCondition>
+              <LeftItem xsi:type="WizardConditionItem">
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Current market position</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Position.MarketPosition</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2024-05-14T06:23:07.385323</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>MarketData</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </LeftItem>
+              <Lookback>1</Lookback>
+              <Operator>Equals</Operator>
+              <RightItem xsi:type="WizardConditionItem">
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Market position</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>MarketPosition.{0}</Command>
+                  <Parameters>
+                    <string>MarketPosition</string>
+                  </Parameters>
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2024-05-14T06:23:07.3983292</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Flat</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>MarketData</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </RightItem>
+            </WizardCondition>
+          </Conditions>
+          <IsGroup>false</IsGroup>
+          <DisplayName>Position.MarketPosition = MarketPosition.Flat</DisplayName>
+>>>>>>> Stashed changes
         </WizardConditionGroup>
       </Conditions>
       <SetName>Set 1</SetName>
@@ -803,6 +1036,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+<<<<<<< Updated upstream
               <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
               <DynamicValue>
                 <IsExpanded>false</IsExpanded>
@@ -811,11 +1045,25 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
                   <Command>Quantity</Command>
+=======
+              <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+              <DynamicValue>
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Qty</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Qty</Command>
+>>>>>>> Stashed changes
                   <Parameters />
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:39:51.8079909</Date>
+=======
+                <Date>2024-05-14T07:20:22.3294011</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -828,22 +1076,40 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
               <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
             <SoundLocation />
             <Tag>
+=======
+              <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SignalName>
+>>>>>>> Stashed changes
               <SeparatorCharacter> </SeparatorCharacter>
               <Strings>
                 <NinjaScriptString>
                   <Index>0</Index>
+<<<<<<< Updated upstream
                   <StringValue>Set Enter short position</StringValue>
                 </NinjaScriptString>
               </Strings>
             </Tag>
             <TextPosition>BottomLeft</TextPosition>
             <VariableDateTime>2024-05-14T06:39:47.5672819</VariableDateTime>
+=======
+                  <StringValue>Short</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </SignalName>
+            <SoundLocation />
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2024-05-14T07:20:19.5270926</VariableDateTime>
+>>>>>>> Stashed changes
             <VariableBool>false</VariableBool>
           </ActionProperties>
           <ActionType>Enter</ActionType>
@@ -876,6 +1142,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+<<<<<<< Updated upstream
             <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
             <DynamicValue>
               <IsExpanded>false</IsExpanded>
@@ -884,11 +1151,25 @@ namespace NinjaTrader.NinjaScript.Strategies
               <OffsetType>Arithmetic</OffsetType>
               <AssignedCommand>
                 <Command>Quantity</Command>
+=======
+            <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+            <DynamicValue>
+              <IsExpanded>false</IsExpanded>
+              <IsSelected>true</IsSelected>
+              <Name>Qty</Name>
+              <OffsetType>Arithmetic</OffsetType>
+              <AssignedCommand>
+                <Command>Qty</Command>
+>>>>>>> Stashed changes
                 <Parameters />
               </AssignedCommand>
               <BarsAgo>0</BarsAgo>
               <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
               <Date>2024-05-14T06:39:51.8079909</Date>
+=======
+              <Date>2024-05-14T07:20:22.3294011</Date>
+>>>>>>> Stashed changes
               <DayOfWeek>Sunday</DayOfWeek>
               <EndBar>0</EndBar>
               <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -901,22 +1182,40 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
             <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
           <SoundLocation />
           <Tag>
+=======
+            <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+          </Quantity>
+          <ServiceName />
+          <ScreenshotPath />
+          <SignalName>
+>>>>>>> Stashed changes
             <SeparatorCharacter> </SeparatorCharacter>
             <Strings>
               <NinjaScriptString>
                 <Index>0</Index>
+<<<<<<< Updated upstream
                 <StringValue>Set Enter short position</StringValue>
               </NinjaScriptString>
             </Strings>
           </Tag>
           <TextPosition>BottomLeft</TextPosition>
           <VariableDateTime>2024-05-14T06:39:47.5672819</VariableDateTime>
+=======
+                <StringValue>Short</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </SignalName>
+          <SoundLocation />
+          <TextPosition>BottomLeft</TextPosition>
+          <VariableDateTime>2024-05-14T07:20:19.5270926</VariableDateTime>
+>>>>>>> Stashed changes
           <VariableBool>false</VariableBool>
         </ActionProperties>
         <ActionType>Enter</ActionType>
@@ -938,6 +1237,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
+<<<<<<< Updated upstream
                 <Name>Current market position</Name>
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
@@ -999,6 +1299,8 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
+=======
+>>>>>>> Stashed changes
                 <Name>WAE_Mod</Name>
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
@@ -1018,6 +1320,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -1046,6 +1349,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -1226,7 +1536,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:36:15.5811228</Date>
+=======
+                <Date>2024-05-14T06:21:50.5958033</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1263,6 +1577,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -1291,6 +1606,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -1471,7 +1793,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:36:15.5851222</Date>
+=======
+                <Date>2024-05-14T06:21:50.6208033</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1486,7 +1812,72 @@ namespace NinjaTrader.NinjaScript.Strategies
             </WizardCondition>
           </Conditions>
           <IsGroup>false</IsGroup>
+<<<<<<< Updated upstream
           <DisplayName>CrossBelow(WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200).TrendDown, WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200).ExplosionLineDn, 1)</DisplayName>
+=======
+          <DisplayName>CrossBelow(WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200).TrendDown, WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200).ExplosionLineDn, 1)</DisplayName>
+        </WizardConditionGroup>
+        <WizardConditionGroup>
+          <AnyOrAll>Any</AnyOrAll>
+          <Conditions>
+            <WizardCondition>
+              <LeftItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Current market position</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Position.MarketPosition</Command>
+                  <Parameters />
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2024-05-14T06:23:07.385323</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Long</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>MarketData</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </LeftItem>
+              <Lookback>1</Lookback>
+              <Operator>Equals</Operator>
+              <RightItem xsi:type="WizardConditionItem">
+                <Children />
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Market position</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>MarketPosition.{0}</Command>
+                  <Parameters>
+                    <string>MarketPosition</string>
+                  </Parameters>
+                </AssignedCommand>
+                <BarsAgo>0</BarsAgo>
+                <CurrencyType>Currency</CurrencyType>
+                <Date>2024-05-14T06:23:07.3983292</Date>
+                <DayOfWeek>Sunday</DayOfWeek>
+                <EndBar>0</EndBar>
+                <ForceSeriesIndex>false</ForceSeriesIndex>
+                <LookBackPeriod>0</LookBackPeriod>
+                <MarketPosition>Flat</MarketPosition>
+                <Period>0</Period>
+                <ReturnType>MarketData</ReturnType>
+                <StartBar>0</StartBar>
+                <State>Undefined</State>
+                <Time>0001-01-01T00:00:00</Time>
+              </RightItem>
+            </WizardCondition>
+          </Conditions>
+          <IsGroup>false</IsGroup>
+          <DisplayName>Position.MarketPosition = MarketPosition.Flat</DisplayName>
+>>>>>>> Stashed changes
         </WizardConditionGroup>
       </Conditions>
       <SetName>Set 2</SetName>
@@ -1504,6 +1895,18 @@ namespace NinjaTrader.NinjaScript.Strategies
             <DivideTimePrice>false</DivideTimePrice>
             <Id />
             <File />
+<<<<<<< Updated upstream
+=======
+            <FromEntrySignal>
+              <SeparatorCharacter> </SeparatorCharacter>
+              <Strings>
+                <NinjaScriptString>
+                  <Index>0</Index>
+                  <StringValue>Long</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </FromEntrySignal>
+>>>>>>> Stashed changes
             <IsAutoScale>false</IsAutoScale>
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
@@ -1514,6 +1917,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+<<<<<<< Updated upstream
               <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
               <DynamicValue>
                 <IsExpanded>false</IsExpanded>
@@ -1522,11 +1926,25 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
                   <Command>Quantity</Command>
+=======
+              <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+              <DynamicValue>
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Qty</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Qty</Command>
+>>>>>>> Stashed changes
                   <Parameters />
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:42:19.6464623</Date>
+=======
+                <Date>2024-05-14T07:20:54.3762224</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1539,22 +1957,40 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
               <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
             <SoundLocation />
             <Tag>
+=======
+              <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SignalName>
+>>>>>>> Stashed changes
               <SeparatorCharacter> </SeparatorCharacter>
               <Strings>
                 <NinjaScriptString>
                   <Index>0</Index>
+<<<<<<< Updated upstream
                   <StringValue>Set Exit long position</StringValue>
                 </NinjaScriptString>
               </Strings>
             </Tag>
             <TextPosition>BottomLeft</TextPosition>
             <VariableDateTime>2024-05-14T06:42:09.7374795</VariableDateTime>
+=======
+                  <StringValue>Exit</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </SignalName>
+            <SoundLocation />
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2024-05-14T07:21:09.3835684</VariableDateTime>
+>>>>>>> Stashed changes
             <VariableBool>false</VariableBool>
           </ActionProperties>
           <ActionType>Exit</ActionType>
@@ -1578,6 +2014,18 @@ namespace NinjaTrader.NinjaScript.Strategies
           <DivideTimePrice>false</DivideTimePrice>
           <Id />
           <File />
+<<<<<<< Updated upstream
+=======
+          <FromEntrySignal>
+            <SeparatorCharacter> </SeparatorCharacter>
+            <Strings>
+              <NinjaScriptString>
+                <Index>0</Index>
+                <StringValue>Long</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </FromEntrySignal>
+>>>>>>> Stashed changes
           <IsAutoScale>false</IsAutoScale>
           <IsSimulatedStop>false</IsSimulatedStop>
           <IsStop>false</IsStop>
@@ -1588,6 +2036,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+<<<<<<< Updated upstream
             <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
             <DynamicValue>
               <IsExpanded>false</IsExpanded>
@@ -1596,11 +2045,25 @@ namespace NinjaTrader.NinjaScript.Strategies
               <OffsetType>Arithmetic</OffsetType>
               <AssignedCommand>
                 <Command>Quantity</Command>
+=======
+            <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+            <DynamicValue>
+              <IsExpanded>false</IsExpanded>
+              <IsSelected>true</IsSelected>
+              <Name>Qty</Name>
+              <OffsetType>Arithmetic</OffsetType>
+              <AssignedCommand>
+                <Command>Qty</Command>
+>>>>>>> Stashed changes
                 <Parameters />
               </AssignedCommand>
               <BarsAgo>0</BarsAgo>
               <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
               <Date>2024-05-14T06:42:19.6464623</Date>
+=======
+              <Date>2024-05-14T07:20:54.3762224</Date>
+>>>>>>> Stashed changes
               <DayOfWeek>Sunday</DayOfWeek>
               <EndBar>0</EndBar>
               <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1613,22 +2076,40 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
             <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
           <SoundLocation />
           <Tag>
+=======
+            <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+          </Quantity>
+          <ServiceName />
+          <ScreenshotPath />
+          <SignalName>
+>>>>>>> Stashed changes
             <SeparatorCharacter> </SeparatorCharacter>
             <Strings>
               <NinjaScriptString>
                 <Index>0</Index>
+<<<<<<< Updated upstream
                 <StringValue>Set Exit long position</StringValue>
               </NinjaScriptString>
             </Strings>
           </Tag>
           <TextPosition>BottomLeft</TextPosition>
           <VariableDateTime>2024-05-14T06:42:09.7374795</VariableDateTime>
+=======
+                <StringValue>Exit</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </SignalName>
+          <SoundLocation />
+          <TextPosition>BottomLeft</TextPosition>
+          <VariableDateTime>2024-05-14T07:21:09.3835684</VariableDateTime>
+>>>>>>> Stashed changes
           <VariableBool>false</VariableBool>
         </ActionProperties>
         <ActionType>Exit</ActionType>
@@ -1658,7 +2139,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:19.3975372</Date>
+=======
+                <Date>2024-05-14T06:24:25.9313782</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1685,7 +2170,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:19.4025348</Date>
+=======
+                <Date>2024-05-14T06:24:25.936378</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1728,6 +2217,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -1756,6 +2246,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -1936,7 +2433,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:33.447305</Date>
+=======
+                <Date>2024-05-14T06:24:39.0059496</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1963,7 +2464,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:33.4533041</Date>
+=======
+                <Date>2024-05-14T06:24:39.0139508</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -1978,7 +2483,11 @@ namespace NinjaTrader.NinjaScript.Strategies
             </WizardCondition>
           </Conditions>
           <IsGroup>false</IsGroup>
+<<<<<<< Updated upstream
           <DisplayName>WAE_Mod(Sensitivity, 10, true, 9, 30, true, 9, 30, 2, 200).TrendUp[0] &lt;= 0</DisplayName>
+=======
+          <DisplayName>WAE_Mod(150, 10, true, 9, 30, true, 9, 30, 2, 200).TrendUp[0] &lt;= 0</DisplayName>
+>>>>>>> Stashed changes
         </WizardConditionGroup>
       </Conditions>
       <SetName>Set 3</SetName>
@@ -1996,6 +2505,18 @@ namespace NinjaTrader.NinjaScript.Strategies
             <DivideTimePrice>false</DivideTimePrice>
             <Id />
             <File />
+<<<<<<< Updated upstream
+=======
+            <FromEntrySignal>
+              <SeparatorCharacter> </SeparatorCharacter>
+              <Strings>
+                <NinjaScriptString>
+                  <Index>0</Index>
+                  <StringValue>Short</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </FromEntrySignal>
+>>>>>>> Stashed changes
             <IsAutoScale>false</IsAutoScale>
             <IsSimulatedStop>false</IsSimulatedStop>
             <IsStop>false</IsStop>
@@ -2006,6 +2527,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <Quantity>
               <DefaultValue>0</DefaultValue>
               <IsInt>true</IsInt>
+<<<<<<< Updated upstream
               <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
               <DynamicValue>
                 <IsExpanded>false</IsExpanded>
@@ -2014,11 +2536,25 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <OffsetType>Arithmetic</OffsetType>
                 <AssignedCommand>
                   <Command>Quantity</Command>
+=======
+              <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+              <DynamicValue>
+                <IsExpanded>false</IsExpanded>
+                <IsSelected>true</IsSelected>
+                <Name>Qty</Name>
+                <OffsetType>Arithmetic</OffsetType>
+                <AssignedCommand>
+                  <Command>Qty</Command>
+>>>>>>> Stashed changes
                   <Parameters />
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:43:05.5925142</Date>
+=======
+                <Date>2024-05-14T07:21:29.8164468</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2031,22 +2567,40 @@ namespace NinjaTrader.NinjaScript.Strategies
                 <Time>0001-01-01T00:00:00</Time>
               </DynamicValue>
               <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
               <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
             </Quantity>
             <ServiceName />
             <ScreenshotPath />
             <SoundLocation />
             <Tag>
+=======
+              <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+            </Quantity>
+            <ServiceName />
+            <ScreenshotPath />
+            <SignalName>
+>>>>>>> Stashed changes
               <SeparatorCharacter> </SeparatorCharacter>
               <Strings>
                 <NinjaScriptString>
                   <Index>0</Index>
+<<<<<<< Updated upstream
                   <StringValue>Set Exit short position</StringValue>
                 </NinjaScriptString>
               </Strings>
             </Tag>
             <TextPosition>BottomLeft</TextPosition>
             <VariableDateTime>2024-05-14T06:43:00.4656761</VariableDateTime>
+=======
+                  <StringValue>Exit</StringValue>
+                </NinjaScriptString>
+              </Strings>
+            </SignalName>
+            <SoundLocation />
+            <TextPosition>BottomLeft</TextPosition>
+            <VariableDateTime>2024-05-14T07:21:18.9904977</VariableDateTime>
+>>>>>>> Stashed changes
             <VariableBool>false</VariableBool>
           </ActionProperties>
           <ActionType>Exit</ActionType>
@@ -2070,6 +2624,18 @@ namespace NinjaTrader.NinjaScript.Strategies
           <DivideTimePrice>false</DivideTimePrice>
           <Id />
           <File />
+<<<<<<< Updated upstream
+=======
+          <FromEntrySignal>
+            <SeparatorCharacter> </SeparatorCharacter>
+            <Strings>
+              <NinjaScriptString>
+                <Index>0</Index>
+                <StringValue>Short</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </FromEntrySignal>
+>>>>>>> Stashed changes
           <IsAutoScale>false</IsAutoScale>
           <IsSimulatedStop>false</IsSimulatedStop>
           <IsStop>false</IsStop>
@@ -2080,6 +2646,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Quantity>
             <DefaultValue>0</DefaultValue>
             <IsInt>true</IsInt>
+<<<<<<< Updated upstream
             <BindingValue xsi:type="xsd:string">Quantity</BindingValue>
             <DynamicValue>
               <IsExpanded>false</IsExpanded>
@@ -2088,11 +2655,25 @@ namespace NinjaTrader.NinjaScript.Strategies
               <OffsetType>Arithmetic</OffsetType>
               <AssignedCommand>
                 <Command>Quantity</Command>
+=======
+            <BindingValue xsi:type="xsd:string">Qty</BindingValue>
+            <DynamicValue>
+              <IsExpanded>false</IsExpanded>
+              <IsSelected>true</IsSelected>
+              <Name>Qty</Name>
+              <OffsetType>Arithmetic</OffsetType>
+              <AssignedCommand>
+                <Command>Qty</Command>
+>>>>>>> Stashed changes
                 <Parameters />
               </AssignedCommand>
               <BarsAgo>0</BarsAgo>
               <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
               <Date>2024-05-14T06:43:05.5925142</Date>
+=======
+              <Date>2024-05-14T07:21:29.8164468</Date>
+>>>>>>> Stashed changes
               <DayOfWeek>Sunday</DayOfWeek>
               <EndBar>0</EndBar>
               <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2105,22 +2686,40 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Time>0001-01-01T00:00:00</Time>
             </DynamicValue>
             <IsLiteral>false</IsLiteral>
+<<<<<<< Updated upstream
             <LiveValue xsi:type="xsd:string">Quantity</LiveValue>
           </Quantity>
           <ServiceName />
           <ScreenshotPath />
           <SoundLocation />
           <Tag>
+=======
+            <LiveValue xsi:type="xsd:string">Qty</LiveValue>
+          </Quantity>
+          <ServiceName />
+          <ScreenshotPath />
+          <SignalName>
+>>>>>>> Stashed changes
             <SeparatorCharacter> </SeparatorCharacter>
             <Strings>
               <NinjaScriptString>
                 <Index>0</Index>
+<<<<<<< Updated upstream
                 <StringValue>Set Exit short position</StringValue>
               </NinjaScriptString>
             </Strings>
           </Tag>
           <TextPosition>BottomLeft</TextPosition>
           <VariableDateTime>2024-05-14T06:43:00.4656761</VariableDateTime>
+=======
+                <StringValue>Exit</StringValue>
+              </NinjaScriptString>
+            </Strings>
+          </SignalName>
+          <SoundLocation />
+          <TextPosition>BottomLeft</TextPosition>
+          <VariableDateTime>2024-05-14T07:21:18.9904977</VariableDateTime>
+>>>>>>> Stashed changes
           <VariableBool>false</VariableBool>
         </ActionProperties>
         <ActionType>Exit</ActionType>
@@ -2151,7 +2750,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:19.3975372</Date>
+=======
+                <Date>2024-05-14T06:24:25.9313782</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2179,7 +2782,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:19.4025348</Date>
+=======
+                <Date>2024-05-14T06:24:25.936378</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2223,6 +2830,7 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
+<<<<<<< Updated upstream
                           <LiveValue xsi:type="xsd:string">Sensitivity</LiveValue>
                           <BindingValue xsi:type="xsd:string">Sensitivity</BindingValue>
                           <DefaultValue>0</DefaultValue>
@@ -2252,6 +2860,13 @@ namespace NinjaTrader.NinjaScript.Strategies
                             <Time>0001-01-01T00:00:00</Time>
                           </DynamicValue>
                           <IsLiteral>false</IsLiteral>
+=======
+                          <LiveValue xsi:type="xsd:string">150</LiveValue>
+                          <BindingValue xsi:type="xsd:string">150</BindingValue>
+                          <DefaultValue>0</DefaultValue>
+                          <IsInt>true</IsInt>
+                          <IsLiteral>true</IsLiteral>
+>>>>>>> Stashed changes
                         </anyType>
                       </value>
                     </item>
@@ -2432,7 +3047,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssociatedIndicator>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:33.447305</Date>
+=======
+                <Date>2024-05-14T06:24:39.0059496</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2460,7 +3079,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                 </AssignedCommand>
                 <BarsAgo>0</BarsAgo>
                 <CurrencyType>Currency</CurrencyType>
+<<<<<<< Updated upstream
                 <Date>2024-05-14T06:41:33.4533041</Date>
+=======
+                <Date>2024-05-14T06:24:39.0139508</Date>
+>>>>>>> Stashed changes
                 <DayOfWeek>Sunday</DayOfWeek>
                 <EndBar>0</EndBar>
                 <ForceSeriesIndex>false</ForceSeriesIndex>
@@ -2475,7 +3098,11 @@ namespace NinjaTrader.NinjaScript.Strategies
             </WizardCondition>
           </Conditions>
           <IsGroup>false</IsGroup>
+<<<<<<< Updated upstream
           <DisplayName>WAE_Mod(Sensitivity, 10, true, 9, 30, true, 9, 30, 2, 200).TrendDown[0] &gt;= 0</DisplayName>
+=======
+          <DisplayName>WAE_Mod(150, 10, true, 9, 30, true, 9, 30, 2, 200).TrendDown[0] &gt;= 0</DisplayName>
+>>>>>>> Stashed changes
         </WizardConditionGroup>
       </Conditions>
       <SetName>Set 4</SetName>
@@ -2496,6 +3123,7 @@ namespace NinjaTrader.NinjaScript.Strategies
   <FillLimitOrdersOnTouch>false</FillLimitOrdersOnTouch>
   <InputParameters>
     <InputParameter>
+<<<<<<< Updated upstream
       <Default>300</Default>
       <Description>Waddah Attar Explosion sensitivity</Description>
       <Name>Sensitivity</Name>
@@ -2530,6 +3158,14 @@ namespace NinjaTrader.NinjaScript.Strategies
       <Minimum />
       <Type>int</Type>
     </InputParameter>
+=======
+      <Default>1</Default>
+      <Description />
+      <Name>Qty</Name>
+      <Minimum>1</Minimum>
+      <Type>int</Type>
+    </InputParameter>
+>>>>>>> Stashed changes
   </InputParameters>
   <IsTradingHoursBreakLineVisible>true</IsTradingHoursBreakLineVisible>
   <IsInstantiatedOnEachOptimizationIteration>true</IsInstantiatedOnEachOptimizationIteration>
@@ -2546,6 +3182,7 @@ namespace NinjaTrader.NinjaScript.Strategies
   <ScriptType>Strategy</ScriptType>
   <Slippage>0</Slippage>
   <StartBehavior>WaitUntilFlat</StartBehavior>
+<<<<<<< Updated upstream
   <StopsAndTargets>
     <WizardAction>
       <IsExpanded>false</IsExpanded>
@@ -2755,6 +3392,9 @@ namespace NinjaTrader.NinjaScript.Strategies
       </Command>
     </WizardAction>
   </StopsAndTargets>
+=======
+  <StopsAndTargets />
+>>>>>>> Stashed changes
   <StopTargetHandling>PerEntryExecution</StopTargetHandling>
   <TimeInForce>Gtc</TimeInForce>
   <TraceOrders>false</TraceOrders>
