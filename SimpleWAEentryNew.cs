@@ -53,28 +53,20 @@ namespace NinjaTrader.NinjaScript.Strategies
 				// Disable this property for performance gains in Strategy Analyzer optimizations
 				// See the Help Guide for additional information
 				IsInstantiatedOnEachOptimizationIteration	= true;
-<<<<<<< Updated upstream
 				Sensitivity					= 300;
 				Quantity					= 1;
 				Fixed_rr					= false;
 				Risk					= 20;
 				Reward					= 100;
-=======
-				Qty					= 1;
->>>>>>> Stashed changes
 			}
 			else if (State == State.Configure)
 			{
 			}
 			else if (State == State.DataLoaded)
 			{				
-<<<<<<< Updated upstream
 				WAE_Mod1				= WAE_Mod(Close, Convert.ToInt32(Sensitivity), 10, true, 9, 30, true, 9, 30, 2, 200);
 				SetStopLoss("", CalculationMode.Ticks, Risk, false);
 				SetProfitTarget("", CalculationMode.Ticks, Reward);
-=======
-				WAE_Mod1				= WAE_Mod(Close, 150, 10, true, 9, 30, true, 9, 30, 2, 200);
->>>>>>> Stashed changes
 			}
 		}
 
@@ -87,7 +79,6 @@ namespace NinjaTrader.NinjaScript.Strategies
 				return;
 
 			 // Set 1
-<<<<<<< Updated upstream
 			if ((Position.MarketPosition == MarketPosition.Flat)
 				 && (CrossAbove(WAE_Mod1.TrendUp, WAE_Mod1.ExplosionLine, 1)))
 			{
@@ -99,41 +90,22 @@ namespace NinjaTrader.NinjaScript.Strategies
 				 && (CrossBelow(WAE_Mod1.TrendDown, WAE_Mod1.ExplosionLineDn, 1)))
 			{
 				EnterShort(Convert.ToInt32(Quantity), "");
-=======
-			if ((CrossAbove(WAE_Mod1.TrendUp, WAE_Mod1.ExplosionLine, 1))
-				 && (Position.MarketPosition == MarketPosition.Flat))
-			{
-				EnterLong(Convert.ToInt32(Qty), @"Long");
-			}
-			
-			 // Set 2
-			if ((CrossBelow(WAE_Mod1.TrendDown, WAE_Mod1.ExplosionLineDn, 1))
-				 && (Position.MarketPosition == MarketPosition.Flat))
-			{
-				EnterShort(Convert.ToInt32(Qty), @"Short");
->>>>>>> Stashed changes
 			}
 			
 			 // Set 3
 			if ((Position.MarketPosition == MarketPosition.Long)
 				 && (WAE_Mod1.TrendUp[0] <= 0))
 			{
-<<<<<<< Updated upstream
 				ExitLong(Convert.ToInt32(Quantity), "", "");
-=======
 				ExitLong(Convert.ToInt32(Qty), @"Exit", @"Long");
->>>>>>> Stashed changes
 			}
 			
 			 // Set 4
 			if ((Position.MarketPosition == MarketPosition.Short)
 				 && (WAE_Mod1.TrendDown[0] >= 0))
 			{
-<<<<<<< Updated upstream
 				ExitShort(Convert.ToInt32(Quantity), "", "");
-=======
 				ExitShort(Convert.ToInt32(Qty), @"Exit", @"Short");
->>>>>>> Stashed changes
 			}
 			
 		}
@@ -141,7 +113,6 @@ namespace NinjaTrader.NinjaScript.Strategies
 		#region Properties
 		[NinjaScriptProperty]
 		[Range(1, int.MaxValue)]
-<<<<<<< Updated upstream
 		[Display(Name="Sensitivity", Description="Waddah Attar Explosion sensitivity", Order=1, GroupName="Parameters")]
 		public int Sensitivity
 		{ get; set; }
@@ -165,10 +136,6 @@ namespace NinjaTrader.NinjaScript.Strategies
 		[NinjaScriptProperty]
 		[Display(Name="Reward", Order=5, GroupName="Parameters")]
 		public int Reward
-=======
-		[Display(Name="Qty", Order=1, GroupName="Parameters")]
-		public int Qty
->>>>>>> Stashed changes
 		{ get; set; }
 		#endregion
 
