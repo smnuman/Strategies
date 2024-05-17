@@ -373,7 +373,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 					{
 						/// Upon successful opening of an ATM Strategy print the entry criteria
 						/// 
-						Print(string.Format("{0} : Strategy launched Atm : \'{1}\'", Time[0], AtmStrategy));
+						Print(string.Format("{0} : Strategy launched Atm : \'{1}\'\n_______________________ on [{2}] using [{3}]", Time[0], AtmStrategy, Instrument.FullName, Account.Name));
 						
 						// Check for a pending entry order
 						if (orderId.Length > 0)
@@ -387,6 +387,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 								{
 									// Print out some information about the order to the output window
 									Print(Time[0] + ": ATM : _____________ LONG ___________________"); 
+									Print(Time[0] + ": ATM : [" + Instrument.FullName + "], [" + Account.Name + "]");
 									Print(Time[0] + ": ATM : Average fill price is: " + status[0]);
 									Print(Time[0] + ": ATM : Order filled amount is: " + status[1]);
 									Print(Time[0] + ": ATM : Order state is: " + status[2]);
@@ -457,8 +458,8 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 					{
 						/// Upon successful opening of an ATM Strategy print the entry criteria
 						/// 
-						Print(string.Format("{0} : Strategy launched Atm : \'{1}\'", Time[0], AtmStrategy));
-
+						Print(string.Format("{0} : Strategy launched Atm : \'{1}\'\n_______________________ on [{2}] using [{3}]", Time[0], AtmStrategy, Instrument.FullName, Account.Name));
+						
 						if (orderId.Length > 0)
 						{
 							string[] status = GetAtmStrategyEntryOrderStatus(orderId);
@@ -470,6 +471,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 								{
 									// Print out some information about the order to the output window
 									Print(Time[0] + ": ATM : _____________ SHORT ___________________");
+									Print(Time[0] + ": ATM : [" + Instrument.FullName + "], [" + Account.Name + "]");
 									Print(Time[0] + ": ATM : Average fill price is: " + status[0]);
 									Print(Time[0] + ": ATM : Order filled amount is: " + status[1]);
 									Print(Time[0] + ": ATM : Order state is: " + status[2]);								
