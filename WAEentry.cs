@@ -101,6 +101,7 @@ namespace NinjaTrader.NinjaScript.Strategies
     <ConditionalAction>
       <Actions>
         <WizardAction>
+          <Children />
           <IsExpanded>false</IsExpanded>
           <IsSelected>true</IsSelected>
           <Name>Enter long position by a stop limit order</Name>
@@ -118,6 +119,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">GetCurrentAsk(Default input)</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Ask</Name>
@@ -155,6 +157,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>true</IsInt>
               <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>false</IsSelected>
                 <Name>Default order quantity</Name>
@@ -197,6 +200,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <IsInt>false</IsInt>
               <BindingValue xsi:type="xsd:string">GetCurrentBid(Default input)</BindingValue>
               <DynamicValue>
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Bid</Name>
@@ -251,6 +255,7 @@ namespace NinjaTrader.NinjaScript.Strategies
         </WizardAction>
       </Actions>
       <ActiveAction>
+        <Children />
         <IsExpanded>false</IsExpanded>
         <IsSelected>true</IsSelected>
         <Name>Enter long position by a stop limit order</Name>
@@ -268,6 +273,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>false</IsInt>
             <BindingValue xsi:type="xsd:string">GetCurrentAsk(Default input)</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>true</IsSelected>
               <Name>Ask</Name>
@@ -305,6 +311,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>true</IsInt>
             <BindingValue xsi:type="xsd:string">DefaultQuantity</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>false</IsSelected>
               <Name>Default order quantity</Name>
@@ -347,6 +354,7 @@ namespace NinjaTrader.NinjaScript.Strategies
             <IsInt>false</IsInt>
             <BindingValue xsi:type="xsd:string">GetCurrentBid(Default input)</BindingValue>
             <DynamicValue>
+              <Children />
               <IsExpanded>false</IsExpanded>
               <IsSelected>true</IsSelected>
               <Name>Bid</Name>
@@ -406,6 +414,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Current market position</Name>
@@ -431,6 +440,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Market position</Name>
@@ -465,6 +475,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>WAE_Mod</Name>
@@ -486,11 +497,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -500,11 +511,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -522,11 +533,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -536,11 +547,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -558,11 +569,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -572,11 +583,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -586,11 +597,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -600,11 +611,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -686,6 +697,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Equals</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Numeric value</Name>
@@ -720,6 +732,7 @@ namespace NinjaTrader.NinjaScript.Strategies
           <Conditions>
             <WizardCondition>
               <LeftItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>WAE_Mod</Name>
@@ -741,11 +754,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -755,11 +768,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -777,11 +790,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -791,11 +804,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -813,11 +826,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -827,11 +840,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -841,11 +854,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -855,11 +868,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -941,6 +954,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Greater</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>Numeric value</Name>
@@ -1220,11 +1234,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1234,11 +1248,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1256,11 +1270,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1270,11 +1284,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1292,11 +1306,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1306,11 +1320,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1320,11 +1334,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1334,11 +1348,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1477,11 +1491,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1491,11 +1505,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1513,11 +1527,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1527,11 +1541,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1549,11 +1563,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1563,11 +1577,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1577,11 +1591,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1591,11 +1605,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1734,11 +1748,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1748,11 +1762,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1770,11 +1784,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1784,11 +1798,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1806,11 +1820,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1820,11 +1834,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1834,11 +1848,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1848,11 +1862,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1934,6 +1948,7 @@ namespace NinjaTrader.NinjaScript.Strategies
               <Lookback>1</Lookback>
               <Operator>Greater</Operator>
               <RightItem xsi:type="WizardConditionItem">
+                <Children />
                 <IsExpanded>false</IsExpanded>
                 <IsSelected>true</IsSelected>
                 <Name>WAE_Mod</Name>
@@ -1955,11 +1970,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">300</LiveValue>
-                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">300</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">300</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1969,11 +1984,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">10</LiveValue>
-                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">10</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">10</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -1991,11 +2006,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2005,11 +2020,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2027,11 +2042,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">9</LiveValue>
-                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">9</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">9</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2041,11 +2056,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">30</LiveValue>
-                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>true</IsInt>
+                          <BindingValue xsi:type="xsd:string">30</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">30</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2055,11 +2070,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">2</LiveValue>
-                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">2</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">2</LiveValue>
                         </anyType>
                       </value>
                     </item>
@@ -2069,11 +2084,11 @@ namespace NinjaTrader.NinjaScript.Strategies
                       </key>
                       <value>
                         <anyType xsi:type="NumberBuilder">
-                          <LiveValue xsi:type="xsd:string">200</LiveValue>
-                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <DefaultValue>0</DefaultValue>
                           <IsInt>false</IsInt>
+                          <BindingValue xsi:type="xsd:string">200</BindingValue>
                           <IsLiteral>true</IsLiteral>
+                          <LiveValue xsi:type="xsd:string">200</LiveValue>
                         </anyType>
                       </value>
                     </item>

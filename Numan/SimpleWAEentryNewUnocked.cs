@@ -56,7 +56,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				
 				Sensitivity					= 300;
 				Quantity					= 1;
-				Fixed_rr					= false;
+				Fixed_rr					= true;
 				Risk					= 20;
 				Reward					= 100;
 			}
@@ -83,32 +83,46 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			if (CurrentBars[0] < BarsRequiredToTrade)
 				return;
 
-			 // Set 1
+			 // Set 1 : Enter Long trade
 			if ((Position.MarketPosition == MarketPosition.Flat)
 				 && (CrossAbove(WAE.TrendUp, WAE.ExplosionLine, 1)))
 			{
-				EnterLong(Convert.ToInt32(Quantity), "");
+				EnterLongLimit(Convert.ToInt32(Quantity), GetCurrentBid());
 			}
 			
-			 // Set 2
+			 // Set 2 : Enter Short trade
 			if ((Position.MarketPosition == MarketPosition.Flat)
 				 && (CrossBelow(WAE.TrendDown, WAE.ExplosionLineDn, 1)))
 			{
-				EnterShort(Convert.ToInt32(Quantity), "");
+				EnterShortLimit(Convert.ToInt32(Quantity), GetCurrentAsk());
 			}
 			
-			 // Set 3
+			 // Set 3 : Long Trend reversed -> Reverse
 			if ((Position.MarketPosition == MarketPosition.Long)
 				 && (WAE.TrendUp[0] <= 0))
-			{
-				ExitLong(Convert.ToInt32(Quantity), "", "");
+			{	// Entry() methods will reverse the position automatically
+				EnterShortLimit(Convert.ToInt32(Quantity), GetCurrentAsk());
 			}
 			
-			 // Set 4
+			 // Set 4 : Short Trend reversed -> Reverse
 			if ((Position.MarketPosition == MarketPosition.Short)
 				 && (WAE.TrendDown[0] >= 0))
-			{
-				ExitShort(Convert.ToInt32(Quantity), "", "");
+			{	// Entry() methods will reverse the position automatically
+				EnterLongLimit(Convert.ToInt32(Quantity), GetCurrentBid());			
+			}
+						
+			 // Set 5 : Long Explosion Died -> Exit
+			if ((Position.MarketPosition == MarketPosition.Long)
+				 && (WAE.TrendUp[0] <= WAE.ExplosionLine[0]))
+			{	
+				ExitLongLimit(Convert.ToInt32(Quantity), GetCurrentBid());
+			}
+			
+			 // Set 6 : Short Explosion Died -> Exit
+			if ((Position.MarketPosition == MarketPosition.Short)
+				 && (WAE.TrendDown[0] >= WAE.ExplosionLineDn[0]))
+			{			
+				ExitShortLimit(Convert.ToInt32(Quantity), GetCurrentAsk());
 			}
 			
 		}
