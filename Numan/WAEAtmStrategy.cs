@@ -25,9 +25,10 @@ using NinjaTrader.NinjaScript.DrawingTools;
 namespace NinjaTrader.NinjaScript.Strategies.Numan
 {
 	#region // Properties display preference
-	[Gui.CategoryOrder("Trade Params", 1)]
-	[Gui.CategoryOrder("Trading Method (choose at least one!)", 2)]
-	[Gui.CategoryOrder("Troubleshooting", 3)]
+	[Gui.CategoryOrder("Chart setup", 1)]	
+	[Gui.CategoryOrder("Trade Params", 2)]	
+	[Gui.CategoryOrder("Trading Method (choose at least one!)", 3)]
+	[Gui.CategoryOrder("Troubleshooting", 5)]
 	[Gui.CategoryOrder("Atm Strategy", 4)] 
 	#endregion
 	
@@ -56,6 +57,7 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 		
 		#endregion
 		private string thisOrderName;
+		private string AtmStrategy;
 		#region ATM Strategy dropdown addition;
 		
 		private string  atmStrategyId			= string.Empty;
@@ -109,9 +111,11 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				
 				DefaultQuantity 		= Contracts; 	/// Default quantity is reset to user quantity.
 				IncludeCommission 		= true;  		/// Makes use of default 'commission' used for the account.
+				includeIndicators		= false;			/// Shows the Indicators on chart. Can be optionally toggled on/off!!
 				
 				UseATMStrategy			= true;
-				AtmStrategy				= @"Choose an ATM ";
+				slowAtmStrategy			= @"Choose an ATM ";
+				fastAtmStrategy			= @"Choose an ATM ";
 				debug					= true;
 				directiondetails		= true;
 				conditionDetails		= false;
@@ -131,8 +135,12 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				reversal					= ReversalTS(Close, 0, 0, 1, true, Brushes.DarkCyan, Brushes.Indigo, true, Brushes.Green, false);
 				reversal.Plots[0].Brush 	= Brushes.Transparent;
 				
-				AddChartIndicator(WAE); 
-				AddChartIndicator(reversal); 
+				if (includeIndicators)
+				{
+					AddChartIndicator(WAE); 
+					AddChartIndicator(reversal); 					
+				}
+
 			}
 		}
 
@@ -223,23 +231,24 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			#region -- Reversal Conditions --
 			///						Reversal pattern spotted: when current down bar is above the previous down bar and the down bar before 
 			/// 					but the previous down bar is below the one before!
-			bool WAEReversalUp	= (reversal[0] == 1);	// using TradeSabre's free ReversalTS indicator; make sure to have it installed as an Indicator.
-									/// old school way
+			bool WAEReversalUp	= false;	/// old school way
 //									(	(WAE.TrendDown[1] > WAE.TrendDown[2])
 //									&& (WAE.TrendDown[1] > WAE.TrendDown[3])
 //									&& (WAE.TrendDown[3] > WAE.TrendDown[2]) ) ;
+			bool ReversalUp		= (reversal[0] == 1);	// using TradeSabre's free ReversalTS indicator; make sure to have it installed as an Indicator.
+						
+			tradeMsg			+= (WAEReversalUp ? "\nEntry Class: WAEReversalUp" : (ReversalUp ? "\nEntry Class: Reversal Indicator" :"") ) ;
 			
-			tradeMsg			+= (WAEReversalUp ? "\nEntry Class: WAEReversalUp" : "") ;
 			
 			///						Reversal pattern spotted: when current up bar is below the previous up bar and the up bar before 
 			/// 					but the previous bar is above the one before!
-			bool WAEReversalDn	= (reversal[0] == -1);	// using TradeSabre's free ReversalTS indicator; make sure to have it installed as an Indicator.
-									/// old school way
+			bool WAEReversalDn	= false;	/// old school way
 //									(	(WAE.TrendUp[1] < WAE.TrendUp[2])
 //									&& (WAE.TrendUp[1] < WAE.TrendUp[3])
-//									&& (WAE.TrendUp[3] < WAE.TrendUp[2]) ) ;			
-			
-			tradeMsg			+= (WAEReversalDn ? "\nEntry Class: WAEReversalDn" : "") ;
+//									&& (WAE.TrendUp[3] < WAE.TrendUp[2]) ) ;
+			bool ReversalDn		= (reversal[0] == -1);	// using TradeSabre's free ReversalTS indicator; make sure to have it installed as an Indicator.
+						
+			tradeMsg			+= (WAEReversalDn ? "\nEntry Class: WAEReversalDn" : (ReversalDn ? "\nEntry Class: Reversal Indicator" :"") ) ;
 			
 			#endregion // Active with TradeSabre's ReversalTS
 			
@@ -258,8 +267,8 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			}
 			#endregion
 			
-			bool WAE_up = (	(allowCrossOver && WAExUP) || (allowReversal && WAEReversalUp) || (allowTrend && WAETrendUp)	|| (WAEupRun && allowHighRiskProfit) ) ;
-			bool WAE_dn = (	(allowCrossOver && WAExDn) || (allowReversal && WAEReversalDn) || (allowTrend && WAETrendDown)	|| (WAEdownRun && allowHighRiskProfit) ) ;
+			bool WAE_up = (	(allowReversal && (WAEReversalUp || ReversalUp)) || (allowCrossOver && WAExUP) || (allowTrend && WAETrendUp)	|| (allowHighRiskProfit && WAEupRun) ) ;
+			bool WAE_dn = (	(allowReversal && (WAEReversalDn || ReversalDn)) || (allowCrossOver && WAExDn) || (allowTrend && WAETrendDown)	|| (allowHighRiskProfit && WAEdownRun) ) ;
 			
 			#region // Prints - debug : Numan  
 			if (debug && directiondetails)
@@ -335,15 +344,18 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 			#endregion
 			
 			#region --- Trades with ATM attachment ---
+			AtmStrategy	= slowAtmStrategy;	// calculate for varied between different ATMs, for now it is static!!
+			
 			if (UseATMStrategy && (Position.MarketPosition == MarketPosition.Flat))
 			{
+				Print(string.Format("\n *** {0} \n ***", tradeMsg));
+				tradeMsg = "-" ; /// reset 'tradeMsg' !
+				
 				#region // Long Trade 
 				/// Mods by Numan
 				/// ---- need to modify & optimize more
 				if (WAE_up)
 				{
-					Print(string.Format("\n *** {0} \n ***", tradeMsg));
-					tradeMsg = "-" ; /// reset 'tradeMsg' !
 					// Submits an entry limit order at the current low price to initiate an ATM Strategy if both order id and strategy id are in a reset state
 					// **** YOU MUST HAVE AN ATM STRATEGY TEMPLATE NAMED 'AtmStrategyTemplate' CREATED IN NINJATRADER (SUPERDOM FOR EXAMPLE) FOR THIS TO WORK ****
 					if (orderId.Length == 0 && atmStrategyId.Length == 0) /// Entry conditions are taken outside completely to accommodate the Short option
@@ -427,10 +439,8 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				/// Addition by Numan
 				/// ---- need to modify & optimize here
 				/// Hint: merge with previous 'if' for 'Long'
-				if (WAE_dn)
+				else if (WAE_dn)
 				{
-					Print(string.Format("\n *** {0} \n ***", tradeMsg));
-					tradeMsg = "-";	/// reset 'tradeMsg' !
 					// Submits an entry limit order at the current low price to initiate an ATM Strategy if both order id and strategy id are in a reset state
 					// **** YOU MUST HAVE AN ATM STRATEGY TEMPLATE NAMED 'AtmStrategyTemplate' CREATED IN NINJATRADER (SUPERDOM FOR EXAMPLE) FOR THIS TO WORK ****
 					if (orderId.Length == 0 && atmStrategyId.Length == 0)
@@ -509,36 +519,58 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 				#endregion				
 			}
 			#endregion
+			#region --- Trade without ATM attachment ---
+			else if (IsFirstTickOfBar && !UseATMStrategy)
+			{
+				Print(string.Format("\n *** {0} \n ***", tradeMsg));
+				tradeMsg = "-" ; /// reset 'tradeMsg' !
+				
+				if (WAE_up)
+				{
+					EnterLong();
+				}
+				else if (WAE_dn)
+				{
+					EnterShort();
+				}
+			}
+			#endregion
 			
 			#region // ATM Closure on reversal/exit condition
-			
-//			if (atmStrategyId.Length>0)
-//			{			
-//				bool 	closeAtmStrategyNow = false;
-				
-//				double 	profitAmt 	= GetAtmStrategyUnrealizedProfitLoss(atmStrategyId);
-//				bool 	profitable 	= profitAmt > 0;				
-////				closeAtmStrategyNow	= ( WAE_up_close || WAE_dn_close || (WAE_PullBack ) );//pullback && !profitable
-				
-//				if (isAtmStrategyCreated && closeAtmStrategyNow)
+			if (UseATMStrategy && Position.MarketPosition != MarketPosition.Flat)
+			{			
+//				if (atmStrategyId.Length>0)
+//				{			
+//					bool 	closeAtmStrategyNow = false;
+					
+//					double 	profitAmt 	= GetAtmStrategyUnrealizedProfitLoss(atmStrategyId);
+//					bool 	profitable 	= profitAmt > 0;				
+//	//				closeAtmStrategyNow	= ( WAE_up_close || WAE_dn_close || (WAE_PullBack ) );//pullback && !profitable
+					
+//					if (isAtmStrategyCreated && closeAtmStrategyNow)
+//					{
+//						if ( AtmStrategyClose(atmStrategyId) ) 
+//						{
+//							Print(string.Format("\n{0} : ATM Strategy ({1}) is closed down successfully.\n _____________________ Exit Reason <<{2}>>", Time[0], atmStrategyId, exitMsg));					
+//						}
+//						else
+//						{
+//							Print(string.Format("\n{0} : Failed closing ATM strategy with Id ({1}) \n_____________________ OR No ATM Strategy found!!\n_____________________ Exit Reason <<{2}>>", Time[0], atmStrategyId, exitMsg));
+//						}					
+	
+//					}				
+//				}
+//				else
 //				{
-//					if ( AtmStrategyClose(atmStrategyId) ) 
-//					{
-//						Print(string.Format("\n{0} : ATM Strategy ({1}) is closed down successfully.\n _____________________ Exit Reason <<{2}>>", Time[0], atmStrategyId, exitMsg));					
-//					}
-//					else
-//					{
-//						Print(string.Format("\n{0} : Failed closing ATM strategy with Id ({1}) \n_____________________ OR No ATM Strategy found!!\n_____________________ Exit Reason <<{2}>>", Time[0], atmStrategyId, exitMsg));
-//					}					
-
-//				}				
-//			}
-//			else
-//			{
-//				Print( string.Format("\n{0} : AtmStrategy ID empty => No ATM Strategy launched\n{1}\n{2}", Time[0], tradeMsg, exitMsg) );
-//			}
-
-			#endregion // work on later
+//					Print( string.Format("\n{0} : slowAtmStrategy ID empty => No ATM Strategy launched\n{1}\n{2}", Time[0], tradeMsg, exitMsg) );
+//				}
+			} // work on later
+			else if (!UseATMStrategy && Position.MarketPosition != MarketPosition.Flat)
+			{
+				ExitLong();
+				ExitShort();
+			}
+			#endregion 
 		}
 		
 		#region Properties
@@ -571,52 +603,58 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 		// 
 		
 		[NinjaScriptProperty]
-		[Display(Name="Allow reversal trade?", Description="If you do not have trailing drawdowns", Order=105, GroupName="Trading Method (choose at least one!)")]
+		[Display(Name="Allow reversal trade?", Description="To allow trade by reversal by TradeSabre", Order=105, GroupName="Trading Method (choose at least one!)")]
 		public bool allowReversal
 		{ get; set; }
 		
 		[NinjaScriptProperty]
-		[Display(Name="Allow trend trading?", Description="If you do not have trailing drawdowns", Order=106, GroupName="Trading Method (choose at least one!)")]
+		[Display(Name="Allow trend trading?", Description="To allow Waddah AAttar Trend trading", Order=106, GroupName="Trading Method (choose at least one!)")]
 		public bool allowTrend
 		{ get; set; }
 				
 		[NinjaScriptProperty]
-		[Display(Name="Allow contra-trend trading?", Description="If you do not have trailing drawdowns", Order=106, GroupName="Trading Method (choose at least one!)")]
+		[Display(Name="Allow contra-trend trading?", Description="To Allow trades with Waddha Attar contra-trend", Order=107, GroupName="Trading Method (choose at least one!)")]
 		public bool allowContraTrend
 		{ get; set; }
 		
 		[NinjaScriptProperty]
-		[Display(Name="Allow WAE crossover trades?", Description="If you do not have trailing drawdowns", Order=107, GroupName="Trading Method (choose at least one!)")]
+		[Display(Name="Allow WAE crossover trades?", Description="To allow Waddah Attar trend explosion trading", Order=108, GroupName="Trading Method (choose at least one!)")]
 		public bool allowCrossOver
 		{ get; set; }
 		
 		[NinjaScriptProperty]
-		[Display(Name="Allow High Risk Profit?", Description="If you do not have trailing drawdowns", Order=108, GroupName="Trading Method (choose at least one!)")]
+		[Display(Name="Allow High Risk Profit?", Description="To allow trading during pullbacks or exit in the begining of it", Order=109, GroupName="Trading Method (choose at least one!)")]
 		public bool allowHighRiskProfit
+		{ get; set; }
+		
+		[NinjaScriptProperty]
+		[Display(Name="Show strategy indicators on chart?", Description="Show indicators on chart if needed", Order=110, GroupName="Chart setup")]
+		public bool includeIndicators
 		{ get; set; }
 		#endregion
 		
 		#region Troubleshooting
+		
 		[NinjaScriptProperty]
-		[Display(Name="Show debug prints?", Description="If you do not have trailing drawdowns", Order=201, GroupName="Troubleshooting")]
+		[Display(Name="Show debug prints", Description="If you do not have trailing drawdowns", Order=201, GroupName="Troubleshooting")]
 		public bool debug
 		{ get; set; }
 		
 		[NinjaScriptProperty]
-		[Display(Name="trade directions?", Description="Shows the direction of the trade (Long or Short)", Order=202, GroupName="Troubleshooting")]
+		[Display(Name="Trend directions", Description="Shows the direction of the trade (Long or Short)", Order=202, GroupName="Troubleshooting")]
 		public bool directiondetails
 		{ get; set; }
 		
 		[NinjaScriptProperty]
-		[Display(Name="trade conditions?", Description="Shows the trade conditions ( for Entry or Exit)", Order=203, GroupName="Troubleshooting")]
+		[Display(Name="Trade conditions", Description="Shows the trade conditions ( for Entry or Exit)", Order=203, GroupName="Troubleshooting")]
 		public bool conditionDetails
 		{ get; set; }
 				
 		[NinjaScriptProperty]
-		[Display(Name="stoploss & profit Target?", Description="Shows the SL & PT details", Order=204, GroupName="Troubleshooting")]
+		[Display(Name="Stop & Profit Target", Description="Shows the SL & PT details", Order=204, GroupName="Troubleshooting")]
 		public bool slptSetup
 		{ get; set; }
-				
+		
 		#endregion
 		
 		#region ATM Dropdown Option
@@ -627,14 +665,14 @@ namespace NinjaTrader.NinjaScript.Strategies.Numan
 		
 		[TypeConverter(typeof(FriendlyAtmConverter))] // Converts the found ATM template file names to string values
 		[PropertyEditor("NinjaTrader.Gui.Tools.StringStandardValuesEditorKey")] // Create the combo box on the property grid
-		[Display(Name = "Atm Strategy 1", Order = 302, GroupName = "Atm Strategy")]
-		public string AtmStrategy
+		[Display(Name = "Slow Atm Strategy", Order = 302, GroupName = "Atm Strategy")]
+		public string slowAtmStrategy
 		{ get; set; }
 		
 		[TypeConverter(typeof(FriendlyAtmConverter))] // Converts the found ATM template file names to string values
 		[PropertyEditor("NinjaTrader.Gui.Tools.StringStandardValuesEditorKey")] // Create the combo box on the property grid
-		[Display(Name = "Atm Strategy 2", Order = 303, GroupName = "Atm Strategy")]
-		public string AtmStrategy2
+		[Display(Name = "Quick Atm Strategy", Order = 303, GroupName = "Atm Strategy")]
+		public string fastAtmStrategy
 		{ get; set; }
 		#endregion
 		

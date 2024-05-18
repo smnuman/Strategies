@@ -97,7 +97,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 				 && (WAE_Mod1.TrendUp[0] <= 0))
 			{
 				ExitLong(Convert.ToInt32(Quantity), "", "");
-				ExitLong(Convert.ToInt32(Qty), @"Exit", @"Long");
+				//ExitLong(Convert.ToInt32(Qty), @"Exit", @"Long");
 			}
 			
 			 // Set 4
@@ -105,7 +105,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 				 && (WAE_Mod1.TrendDown[0] >= 0))
 			{
 				ExitShort(Convert.ToInt32(Quantity), "", "");
-				ExitShort(Convert.ToInt32(Qty), @"Exit", @"Short");
+				//ExitShort(Convert.ToInt32(Qty), @"Exit", @"Short");
 			}
 			
 		}
