@@ -81,56 +81,62 @@ namespace NinjaTrader.NinjaScript.Strategies
 			
 			if ( !Backtest && (State != State.Realtime) )
 				return;
+			
+			if (BarsSinceEntryExecution() >= 80)
+			{
+				ExitLong();
+				ExitShort();
+			}
 
 			 // Set 1 : Long Entry
 			if ((ReversalBar[1] == 1))
 			{
-				ExitShort(Convert.ToInt32(Quantity), @"Stop", @"Short");
-				EnterLongLimit(Convert.ToInt32(Quantity), (GetCurrentAsk(0) + (OffsetTicks * TickSize)) , @"Long");
+//				ExitShort(Convert.ToInt32(Quantity), @"Stop", @"Short");
+				EnterLongLimit(Convert.ToInt32(Quantity), (Close[1] + (OffsetTicks * TickSize)) , @"Long");
 			}
 			
 			 // Set 2 : Short entry
 			if (ReversalBar[1] == -1)
 			{
-				ExitLong(Convert.ToInt32(Quantity), @"Stop", @"Long");
-				EnterShortLimit(Convert.ToInt32(Quantity), (GetCurrentBid(0) - (OffsetTicks * TickSize)) , @"Short");
+//				ExitLong(Convert.ToInt32(Quantity), @"Stop", @"Long");
+				EnterShortLimit(Convert.ToInt32(Quantity), (Close[1] - (OffsetTicks * TickSize)) , @"Short");
 			}
 			
-			 // Set 3 : Additional Trade  -- Long
-			if ((EngulfingBar.ContiOutsideBar[0] == 1)
-				 && (QtyAdd > 0)
-				 && (Position.MarketPosition == MarketPosition.Long)
-				)
-			{
-				EnterLong(Convert.ToInt32(QtyAdd), @"Long");
-			}
+//			 // Set 3 : Additional Trade  -- Long
+//			if ((EngulfingBar.ContiOutsideBar[0] == 1)
+//				 && (QtyAdd > 0)
+//				 && (Position.MarketPosition == MarketPosition.Long)
+//				)
+//			{
+//				EnterLong(Convert.ToInt32(QtyAdd), @"Long");
+//			}
 			
-			 // Set 4 : Long Entry on Conti Bar
-			if ((EngulfingBar.ContiOutsideBar[0] == 1)
-				 && (QtyAdd == 0)
-				 && (Position.MarketPosition != MarketPosition.Long)
-				)
-			{
-				EnterLongLimit(Convert.ToInt32(Quantity), (GetCurrentAsk(0) + (OffsetTicks * TickSize)) , @"Long");
-			}
+//			 // Set 4 : Long Entry on Conti Bar
+//			if ((EngulfingBar.ContiOutsideBar[0] == 1)
+//				 && (QtyAdd == 0)
+//				 && (Position.MarketPosition != MarketPosition.Long)
+//				)
+//			{
+//				EnterLongLimit(Convert.ToInt32(Quantity), (GetCurrentAsk(0) + (OffsetTicks * TickSize)) , @"Long");
+//			}
 			
-			 // Set 5 : Additional Trade -- Short
-			if ((EngulfingBar.ContiOutsideBar[0] == -1)
-				 && (QtyAdd > 0)
-				 && (Position.MarketPosition == MarketPosition.Short)
-				)
-			{
-				EnterShort(Convert.ToInt32(QtyAdd), @"Short");
-			}
+//			 // Set 5 : Additional Trade -- Short
+//			if ((EngulfingBar.ContiOutsideBar[0] == -1)
+//				 && (QtyAdd > 0)
+//				 && (Position.MarketPosition == MarketPosition.Short)
+//				)
+//			{
+//				EnterShort(Convert.ToInt32(QtyAdd), @"Short");
+//			}
 			
-			 // Set 6 : Short Entry on Conti Bar
-			if ((EngulfingBar.ContiOutsideBar[0] == -1)
-				 && (QtyAdd == 0)
-				 && (Position.MarketPosition != MarketPosition.Short)
-				)
-			{
-				EnterShortLimit(Convert.ToInt32(Quantity), (GetCurrentBid(0) + (OffsetTicks * TickSize)) , @"Short");
-			}
+//			 // Set 6 : Short Entry on Conti Bar
+//			if ((EngulfingBar.ContiOutsideBar[0] == -1)
+//				 && (QtyAdd == 0)
+//				 && (Position.MarketPosition != MarketPosition.Short)
+//				)
+//			{
+//				EnterShortLimit(Convert.ToInt32(Quantity), (GetCurrentBid(0) + (OffsetTicks * TickSize)) , @"Short");
+//			}
 			
 		}
 
